@@ -1,18 +1,24 @@
 import { LiaBarsSolid } from "react-icons/lia";
 import { IoPersonOutline } from "react-icons/io5";
-import { IoIosSearch, IoMdHeartEmpty } from "react-icons/io";
+import { IoIosSearch, IoMdHeartEmpty, IoMdClose } from "react-icons/io";
 import { BsBag } from "react-icons/bs";
 import { Link } from 'react-router-dom'
+import { useState } from "react";
 
 const Navbar = () => {
+ 
+  const [isOpen, setIsOpen] = useState(false)
+
   return (
-    // navbar for big and medium screens
+    
+    <>
+    {/* navbar for big and small screens */}
     <div>
       <div className="bg-black text-white text-center font-poppins py-2 text-[0.5rem] md:text-[0.75rem] font-normal">SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%! <span className="ml-2 font-bold">SHOP NOW</span> </div>
       <div className="flex items-center justify-between px-5 md:px-24 py-5 text-black bg-white">
         {/* first container */}
         <div className="text-[1rem] flex items-center gap-8">
-          <LiaBarsSolid className="text-[1.8rem]"/>
+          <LiaBarsSolid className="text-[1.8rem]" onClick={()=> setIsOpen((prev)=>(!prev))}/>
           <span className="font-medium hidden md:block">
             <Link to="/">
               HOME
@@ -51,6 +57,71 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+
+    {isOpen && (
+    <div className="fixed top-0 left-0 w-full h-full  z-50 font-poppins">
+      {/* modal background to make the body less visible when the navbar is active */}
+      <div className="absolute w-full h-full bg-black opacity-20 "></div>
+
+      {/* Modal content */}
+      <div className="relative text-black z-10 p-4 bg-white h-full md:w-[20%] w-[41%]">
+        <div className="px-4">
+          <div className="flex items-center justify-between pb-10">
+            <div className="text-[2rem] font-black roboto tracking-normal">
+              Clotya
+            </div>
+            <div className="p-2 bg-gray-300">
+              <IoMdClose onClick={()=> setIsOpen(false)}/>
+            </div>
+          </div>
+
+          <div className="text-[0.8rem] flex flex-col gap-5 pb-10 border-b border-gray-300">
+            <h1 className="text-[0.7rem] text-gray-600">Main Menu</h1>
+            <span >Home</span>
+            <span>Shop</span>
+            <span>Women</span>
+            <span>Men</span>
+            <span>Outerwear</span>
+            <span>Blog</span>
+            <span>Contact</span>
+          </div>
+
+          <div className="text-[0.8rem] flex flex-col gap-5 py-10">
+            <h1 className="text-[0.7rem] text-gray-600">categories</h1>
+            <span >Men</span>
+            <span>Women</span>
+            <span>Women</span>
+            <span>Kids</span>
+            <span>Baby</span>
+            <div className="flex items-center justify-between">
+              <span>Shoes</span>
+              <div className="px-2 text-[0.6rem] bg-green-300 text-white rounded-3xl">HOT</div>
+            </div>
+            <span >Bags</span>
+            <span >Accessories</span>
+            <span >Watches</span>
+            <div className="flex items-center justify-between">
+              <span>Cargo Trousers</span>
+              <div className="px-2 text-[0.6rem] bg-yellow-300 text-white rounded-3xl">NEW</div>
+            </div>
+            <span >Outwear</span>
+            <span >Wallet</span>
+            <span >Belts</span>
+            <span >Best Sellers</span>
+            <span >Featured Products</span>
+            <div className="flex items-center justify-between">
+              <span>New Arrivals</span>
+              <div className="px-2 text-[0.6rem] bg-pink-300 text-white rounded-3xl">SAVE 25%</div>
+            </div>
+            <span >Ready to Wear</span>
+            <span >All For MEn</span>
+          </div>
+
+          <p className="text-[0.7rem] text-gray-600 text-center max-w-[200px]">Copyright 2023 @ vader. All rights reserved</p>
+        </div>
+      </div>
+    </div>) }
+    </>
   )
 }
 
