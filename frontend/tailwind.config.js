@@ -11,6 +11,10 @@ module.exports = {
         lg: "1200px",
         xl: "1700px",
       },
+      fontFamily : {
+        poppins: ["Poppins", "sans-serif"],
+        roboto : ["Roboto", "sans-serif"]
+      }
     },
   },
   plugins: [],
