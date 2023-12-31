@@ -64,7 +64,7 @@ const Navbar = () => {
       <div className="absolute w-full h-full bg-black opacity-20 "></div>
 
       {/* Modal content */}
-      <div className="relative text-black z-10 p-4 bg-white h-full md:w-[20%] w-[41%]">
+      <div className="scrollable relative text-black z-10 p-4 bg-white h-full md:w-[20%] w-[41%] overflow-y-scroll">
         <div className="px-4">
           <div className="flex items-center justify-between pb-10">
             <div className="text-[2rem] font-black roboto tracking-normal">
