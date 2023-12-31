@@ -14,7 +14,12 @@ module.exports = {
       fontFamily : {
         poppins: ["Poppins", "sans-serif"],
         roboto : ["Roboto", "sans-serif"]
-      }
+      },
+      wordSpacing: {
+        'tight': '-0.05em',
+        'normal': '0',
+        'wide': '1.2em',
+      },
     },
   },
   plugins: [],
