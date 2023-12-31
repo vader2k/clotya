@@ -7,9 +7,19 @@ const HeroSlider = () => {
   // carousell images
   const data = [ slide1, slide2, slide3 ]
 
+  // carousel states
+  const [ currentSlide, setCurrentSlide ] = useState(0)
+
+  const prev = () => {
+    setCurrentSlide(currentSlide === 0 ? 2 : (prev) => (prev -1))
+  }
+
+  const next = () => {
+    setCurrentSlide(currentSlide === 2 ? 0 : (prev) => (prev + 1))
+  }
   return (
     <div className="w-[100vw] ">
-      <div className="carousel w-[300vw] flex">
+      <div className="carousel w-[300vw] flex" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <div className="relative">
           <img src={data[0]} alt="carousel image 1" />
           <div className="absolute top-0 w-full h-full flex flex-col items-center gap-8 mt-36 text-white">
