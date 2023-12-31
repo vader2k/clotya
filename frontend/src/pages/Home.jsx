@@ -3,7 +3,7 @@ import { HeroSlider, Categories, Featured, TopBrand, Collections, News, } from "
 const Home = () => {
   return (
     <div>
-      home
+      <HeroSlider/>
     </div>
   )
 }

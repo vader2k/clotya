@@ -6,7 +6,7 @@
 
 .scrollable::-webkit-scrollbar {
     width: 5px;
-    background: lightgray;
+    background: rgba(211, 211, 211, 0.432);
 }
 
 ::-webkit-scrollbar {
