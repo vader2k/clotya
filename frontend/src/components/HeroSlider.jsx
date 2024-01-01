@@ -90,7 +90,7 @@ const HeroSlider = () => {
         <img width="25" height="30" src="https://img.icons8.com/ios/100/back--v1.png" alt="back--v1" onClick={prev}/>
       </div>
 
-      <div className="absolute flex md:bottom-[5%] xs:bottom-[13%] bottom-[5%] left-[50%] text-[1rem] md:text-gray-500 text-gray-400">
+      <div className="absolute flex md:bottom-[2%] xs:bottom-[13%] bottom-[5%] left-[50%] text-[1rem] md:text-gray-500 text-gray-400">
         {data.map((_, index) => (
           <GoDotFill
             key={index}

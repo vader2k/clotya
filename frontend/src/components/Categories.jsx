@@ -42,18 +42,56 @@ const Categories = () => {
       </div>
       
       <div className="flex justify-between gap-8 py-20 ">
-        <div>
+        <div className="relative cursor-pointer">
           <img src={women} alt="women banner" />
+          <div className="absolute top-[8%] left-[8%] flex flex-col gap-4">
+            <span className="text-[0.8rem]">54 products</span>
+            <h1 className="text-[1.5rem] font-medium">Women</h1>
+            <p className="text-[0.8rem] max-w-[320px] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla beatae quia eligendi!</p>
+
+            <div className="mt-6 text-[0.8rem] flex flex-col gap-2">
+              <p>Blazers</p>
+              <p>Blouse & shirts</p>
+              <p>Dresses</p>
+              <p>Jackets & coats</p>
+              <p>Jeans</p>
+              <p>Knit</p>
+              <p>Pants</p>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col gap-8">
-          <div>
+          <div className="relative cursor-pointer">
             <img src={men} alt="men banner" />
+            <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
+            <span className="text-[0.8rem]">23 products</span>
+            <h1 className="text-[1.5rem] font-medium">Men</h1>
+
+            <div className="mt-6 text-[0.8rem] flex flex-col gap-2">
+              <p>Pants</p>
+              <p>Shirts</p>
+              <p>Shorts</p>
+              <p>Sweatshirts & Hoodies</p>
+            </div>
+          </div>
           </div>
 
           <div className="flex gap-8">
-            <img src={shoe} alt="shoe banner" className="h-[285px] object-contain"/>
-            <img src={accessory} alt="accessories banner" className="h-[285px] object-contain"/>
+            <div className="relative">
+              <img src={shoe} alt="shoe banner" className=" object-contain"/>
+              <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
+                <span className="text-[0.8rem]">1 product</span>
+                <h1 className="text-[1.5rem] font-medium">Shoes</h1>
+              </div>
+            </div>
+            <div className="relative">
+              <img src={accessory} alt="accessories banner" className="object-contain"/>
+              <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
+                <span className="text-[0.8rem]">3 products</span>
+                <h1 className="text-[1.5rem] font-medium">Accessories</h1>
+              </div>
+            </div>
           </div>
         </div>
       </div>
