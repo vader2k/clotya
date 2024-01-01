@@ -15,7 +15,7 @@ const Navbar = () => {
     {/* navbar for big and small screens */}
     <div>
       <div className="bg-black text-white text-center font-poppins py-2 text-[0.5rem] md:text-[0.75rem] font-normal">SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%! <span className="ml-2 font-bold">SHOP NOW</span> </div>
-      <div className="flex items-center justify-between px-5 md:px-24 py-5 text-black bg-white">
+      <div className="flex items-center justify-between px-5 md:px-24 py-1 text-black bg-white">
         {/* first container */}
         <div className="text-[1rem] flex items-center gap-8">
           <LiaBarsSolid className="text-[1.8rem]" onClick={()=> setIsOpen((prev)=>(!prev))}/>
