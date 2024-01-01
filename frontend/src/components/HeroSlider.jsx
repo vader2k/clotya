@@ -26,7 +26,7 @@ const HeroSlider = () => {
 
   return (
     <div className="w-[100vw] h-[75dvh] overflow-hidden relative hero">
-      <div className="carousel w-[300vw] h-full flex" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+      <div className="carousel w-[300vw] h-full flex cursor-pointer" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <div className="relative">
           <img src={data[0]} alt="carousel image 1" />
           <div className="absolute top-0 w-full h-full flex flex-col items-center gap-8 mt-36 text-white">
@@ -82,20 +82,20 @@ const HeroSlider = () => {
         </div>
       </div>
       
-      <div className="direction absolute right-0 top-[50%] py-3 px-1 bg-gray-200">
+      <div className="direction absolute right-0 top-[50%] py-3 px-1 bg-gray-200 cursor-pointer">
         <img width="25" height="30" src="https://img.icons8.com/ios/50/forward--v1.png" alt="forward--v1" onClick={next}/>
       </div>
 
-      <div className="direction absolute top-[50%] py-3 px-1 bg-gray-200">
+      <div className="direction absolute top-[50%] py-3 px-1 bg-gray-200 cursor-pointer">
         <img width="25" height="30" src="https://img.icons8.com/ios/100/back--v1.png" alt="back--v1" onClick={prev}/>
       </div>
 
-      <div className="absolute flex bottom-[5%] left-[50%] text-[1.2rem] text-gray-300">
+      <div className="absolute flex bottom-[5%] left-[50%] text-[1rem] text-gray-500">
         {data.map((_, index) => (
           <GoDotFill
             key={index}
             onClick={() => goToSlide(index)}
-            className={`cursor-pointer ${currentSlide === index ? 'text-white scale-[1.2]' : ''}`}
+            className={`cursor-pointer ${currentSlide === index ? 'text-white' : ''} hover:text-white cursor-pointer`}
           />
         ))}
       </div>
