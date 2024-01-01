@@ -2,7 +2,7 @@
 const FeaturedProducts = () => {
   return (
     <div>
-      
+      fewatu
     </div>
   )
 }
