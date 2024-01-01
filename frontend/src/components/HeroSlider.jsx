@@ -1,14 +1,15 @@
 import { useState } from "react"
 import { slide1, slide2, slide3 } from "../assets"
-import { MdKeyboardArrowRight , MdKeyboardArrowLeft } from "react-icons/md";
 import { FaArrowRightLong } from "react-icons/fa6";
+import { GoDotFill } from "react-icons/go";
 
 const HeroSlider = () => {
   // carousell images
   const data = [ slide1, slide2, slide3 ]
 
-  // carousel states
+  // carousel states with direction button
   const [ currentSlide, setCurrentSlide ] = useState(0)
+
 
   const prev = () => {
     setCurrentSlide(currentSlide === 0 ? 2 : (prev) => (prev -1))
@@ -17,9 +18,15 @@ const HeroSlider = () => {
   const next = () => {
     setCurrentSlide(currentSlide === 2 ? 0 : (prev) => (prev + 1))
   }
+
+  const goToSlide = (index) => {
+    setCurrentSlide(index);
+  };
+
+
   return (
-    <div className="w-[100vw] ">
-      <div className="carousel w-[300vw] flex" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
+    <div className="w-[100vw] h-[75dvh] overflow-hidden relative hero">
+      <div className="carousel w-[300vw] h-full flex" style={{transform:`translateX(-${currentSlide * 100}vw)`}}>
         <div className="relative">
           <img src={data[0]} alt="carousel image 1" />
           <div className="absolute top-0 w-full h-full flex flex-col items-center gap-8 mt-36 text-white">
@@ -75,7 +82,23 @@ const HeroSlider = () => {
         </div>
       </div>
       
+      <div className="direction absolute right-0 top-[50%] py-3 px-1 bg-gray-200">
+        <img width="25" height="30" src="https://img.icons8.com/ios/50/forward--v1.png" alt="forward--v1" onClick={next}/>
+      </div>
 
+      <div className="direction absolute top-[50%] py-3 px-1 bg-gray-200">
+        <img width="25" height="30" src="https://img.icons8.com/ios/100/back--v1.png" alt="back--v1" onClick={prev}/>
+      </div>
+
+      <div className="absolute flex bottom-[5%] left-[50%] text-[1.2rem] text-gray-300">
+        {data.map((_, index) => (
+          <GoDotFill
+            key={index}
+            onClick={() => goToSlide(index)}
+            className={`cursor-pointer ${currentSlide === index ? 'text-white scale-[1.2]' : ''}`}
+          />
+        ))}
+      </div>
     </div>
   )
 }

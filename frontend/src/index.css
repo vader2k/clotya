@@ -33,3 +33,16 @@
   ::-webkit-scrollbar-thumb:active {
     background: #555;
   }
+
+.direction {
+    visibility: hidden;
+    transition: 1s ease-in-out;
+  }
+
+.hero:hover .direction {
+  visibility: visible;
+}
+
+.carousel {
+  transition: all 1s ease;
+}
