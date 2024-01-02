@@ -78,14 +78,14 @@ const Categories = () => {
           </div>
 
           <div className="flex gap-8 w-full">
-            <div className="relative w-full">
+            <div className="relative w-full cursor-pointer">
               <img src={shoe} alt="shoe banner" className=" object-contain w-full"/>
               <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                 <span className="text-[0.8rem]">1 product</span>
                 <h1 className="text-[1.5rem] xxs:text-[1.2rem] font-medium">Shoes</h1>
               </div>
             </div>
-            <div className="relative w-full">
+            <div className="relative w-full cursor-pointer">
               <img src={accessory} alt="accessories banner" className="object-contain w-full"/>
               <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                 <span className="text-[0.8rem]">3 products</span>

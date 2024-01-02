@@ -90,12 +90,12 @@ const HeroSlider = () => {
         <img width="25" height="30" src="https://img.icons8.com/ios/100/back--v1.png" alt="back--v1" onClick={prev}/>
       </div>
 
-      <div className="absolute flex md:bottom-[2%] xs:bottom-[13%] bottom-[5%] left-[50%] text-[1rem] md:text-gray-500 text-gray-400">
+      <div className="absolute flex md:bottom-[2%] xs:bottom-[3%] bottom-[5%] left-[50%] text-[1rem] md:text-gray-500 text-gray-400">
         {data.map((_, index) => (
           <GoDotFill
             key={index}
             onClick={() => goToSlide(index)}
-            className={`cursor-pointer ${currentSlide === index ? 'md:text-white xs:text-gray-700 text-black' : ''} hover:text-white cursor-pointer`}
+            className={`cursor-pointer ${currentSlide === index ? 'text-white md:text-white xxs:text-black' : ''} hover:text-white cursor-pointer`}
           />
         ))}
       </div>
