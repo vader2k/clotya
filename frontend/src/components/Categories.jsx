@@ -46,10 +46,10 @@ const Categories = () => {
           <img src={women} className="w-full" alt="women banner" />
           <div className="absolute top-[8%] xxs:top-[5%] left-[8%] flex flex-col gap-4 xxs:gap-2">
             <span className="text-[0.8rem]">54 products</span>
-            <h1 className="text-[1.5rem] xxs:text-[1.2rem] font-medium">Women</h1>
-            <p className="text-[0.8rem] xxs:text-[0.7rem] max-w-[320px] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla beatae quia eligendi!</p>
+            <h1 className="md:text-[1.5rem] xxs:text-[1.2rem] font-medium">Women</h1>
+            <p className="md:text-[0.8rem] xxs:text-[0.7rem] max-w-[320px] text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente nulla beatae quia eligendi!</p>
 
-            <div className="mt-6 xxs:mt-2 text-[0.8rem] flex flex-col gap-2">
+            <div className="md:mt-6 xxs:mt-2 text-[0.8rem] flex flex-col gap-2">
               <p>Blazers</p>
               <p>Blouse & shirts</p>
               <p>Dresses</p>
@@ -66,7 +66,7 @@ const Categories = () => {
             <img src={men} className="w-full xs:h-full h-[300px]" alt="men banner" />
             <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
             <span className="text-[0.8rem]">23 products</span>
-            <h1 className="text-[1.5rem] xxs:text-[1.2rem] font-medium">Men</h1>
+            <h1 className="md:text-[1.5rem] xxs:text-[1.2rem] font-medium">Men</h1>
 
             <div className="mt-6 text-[0.8rem] flex flex-col gap-2">
               <p>Pants</p>
@@ -82,14 +82,14 @@ const Categories = () => {
               <img src={shoe} alt="shoe banner" className=" object-contain w-full"/>
               <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                 <span className="text-[0.8rem]">1 product</span>
-                <h1 className="text-[1.5rem] xxs:text-[1.2rem] font-medium">Shoes</h1>
+                <h1 className="md:text-[1.5rem] xxs:text-[1.2rem] font-medium">Shoes</h1>
               </div>
             </div>
             <div className="relative w-full cursor-pointer">
               <img src={accessory} alt="accessories banner" className="object-contain w-full"/>
               <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                 <span className="text-[0.8rem]">3 products</span>
-                <h1 className="text-[1.5rem] xxs:text-[1.2rem]  font-medium">Accessories</h1>
+                <h1 className="md:text-[1.5rem] xxs:text-[1.2rem]  font-medium">Accessories</h1>
               </div>
             </div>
           </div>
