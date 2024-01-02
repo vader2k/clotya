@@ -1,17 +1,8 @@
-import 
+
 
 const FeaturedProducts = () => {
 
-  const data = [
-    {
-     name: "Basic Colored Sweatpants With Elastic Hems",
-     tag: "24%",
-     oldPrice: "$25.90",
-     price: "$19.90",
-     review: "2",
-     img1:
-    },
-  ]
+  
 
   return (
     <div className="py-8">
