@@ -2,21 +2,21 @@ import { basic1, basic2, basic3, basic4 } from "../assets"
 import { useState } from "react";
 
 const FeaturedProducts = () => {
-
+  
+  const totalPictures = 4;
   const data = [
     basic1, basic2, basic3, basic4
   ]
   const [currentImage, setCurrentImage] = useState(0);
 
-  const handleHover = (percentage) => {
-    // Calculate the new picture index based on the percentage.
-    const totalImages = data.length;
-    const newIndex = Math.floor((percentage / 100) * totalImages) % totalImages;
+  const handleHover = (event) => {
+    const box = event.currentTarget;
+    const boxWidth = box.offsetWidth;
+    const percentage = (event.nativeEvent.offsetX / boxWidth) * 100;
 
-    // Set the new picture as the current picture.
+    const newIndex = Math.floor((percentage / 100) * totalPictures) % totalPictures;
     setCurrentImage(newIndex);
   };
-
 
   return (
     <div className="py-8">
@@ -26,14 +26,13 @@ const FeaturedProducts = () => {
       </div>
 
       <div className="w-[300px] h-[600px] bg-gray-200 relative"
-        onMouseEnter={(e) => {
-          // Get the width of the box.
-          const boxWidth = e.target.offsetWidth;
-            // Calculate the percentage based on where you hover.
-          const hoverPercentage = (e.nativeEvent.offsetX / boxWidth) * 100;
-            // Call the handleHover function with this percentage.
-          handleHover(hoverPercentage);
-        }}>
+         onMouseMove={handleHover}
+         style={{
+           width: '500px',
+           height: '300px',
+           background: `url(image${currentImage + 1}.jpg)`,
+           backgroundSize: 'cover',
+         }}>
     
         <img
           src={data[currentImage]}
