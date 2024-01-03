@@ -4,6 +4,10 @@ import { Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import { FaStar } from "react-icons/fa";
+import { FiHeart } from "react-icons/fi";
+import { LiaCompressArrowsAltSolid } from "react-icons/lia";
+import { PiRepeatThin } from "react-icons/pi";
+import { IoBagOutline } from "react-icons/io5";
 
 const FeaturedProducts = () => {
 
