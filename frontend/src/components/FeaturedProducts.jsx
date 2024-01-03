@@ -40,22 +40,6 @@ const FeaturedProducts = () => {
         <h1 className="text-[1.8rem] font-medium">Featured Products</h1>
         <p className="max-w-[730px] text-gray-500 font-extralight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
       </div>
-
-      {/* <div className="py-8 flex overflow-x-auto gap-8 h-[700px] holder relative">
-        {FeaturedData1.map((item) => (
-          <div
-            key={item.id}
-            className="flex-none relative"
-            onMouseMove={(event) => handleHover(item.id, event)}
-          >
-            <img
-              className="object-contain w-[380px] h-[600px] cursor-pointer"
-              src={item[`img${activeImageIndices[item.id] || 1}`]}
-              alt={`product-${item.id}`}
-            />
-          </div>
-        ))}
-      </div> */}
       <Swiper
         // install Swiper modules
         modules={[Navigation, Pagination, A11y]}
