@@ -1,5 +1,9 @@
 import { pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
-    , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4 } from "../assets"
+    , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
+    trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
+    ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,
+     nylon1, nylon2, nylon3, nylon4, sleev1, sleev2, sleev3, sleev4, ribbed1, ribbed2, ribbed3, ribbed4,
+     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4 } from "../assets"
 
 export const FeaturedData1 = [
     {
@@ -43,7 +47,7 @@ export const FeaturedData1 = [
     
   export const FeaturedData2 = [
     {
-      id:4,
+      id:1,
       name: "Check Overshirt With Pocket Detail",
       tag: "14%",
       oldPrice: "$129.00",
@@ -56,7 +60,7 @@ export const FeaturedData1 = [
      },
 
      {
-      id:5,
+      id:2,
       name: "Rose Printed Hoodie",
       price: "$110.99",
       review: "1 review",
@@ -67,7 +71,7 @@ export const FeaturedData1 = [
      },
 
      {
-      id:6,
+      id:3,
       name: "Word Wide Cup Print T-shirt",
       tag: "21%",
       oldPrice: "$29.99",
@@ -84,7 +88,7 @@ export const FeaturedData1 = [
 
     export const FeaturedData3 = [
       {
-        id:7,
+        id:1,
         name: "Sleeveless Ribbed Short Dress Black",
         tag: "26%",
         oldPrice: "$19.99",
@@ -97,7 +101,7 @@ export const FeaturedData1 = [
        },
   
        {
-        id:8,
+        id:2,
         name: "Slogan Hoodie With Label Detail",
         tag: "37%",
         oldPrice: "$18.99",
@@ -110,7 +114,7 @@ export const FeaturedData1 = [
        },
   
        {  
-          id:9,
+          id:3,
           name: "Basic Colored Sweatpants With Elastic Hems",
           tag: "24%",
           oldPrice: "$25.90",
@@ -123,4 +127,349 @@ export const FeaturedData1 = [
       },
     ]
 
-  
+    export const TopMen = [
+      {
+        id:1,
+        name: "Check Overshirt With Pocket Detail",
+        tag: "14%",
+        oldPrice: "$129.00",
+        price: "$112.00",
+        review: " review",
+        img1: overshirt1,
+        img2: overshirt2,
+        img3: overshirt3,
+        img4: overshirt4
+       },
+       {
+        id:2,
+        name: "Word Wide Cup Print T-shirt",
+        tag: "21%",
+        oldPrice: "$29.99",
+        price: "$23.99",
+        review: "1 review",
+        img1: cup1,
+        img2: cup2,
+        img3: cup3,
+        img4: cup4
+       },
+       {
+        id:3,
+        name: "Slogan Hoodie With Label Detail",
+        tag: "37%",
+        oldPrice: "$18.99",
+        price: "$11.90",
+        review: "1 review",
+        img1: slogan1,
+        img2: slogan2,
+        img3: slogan3,
+        img4: slogan4
+       },
+      {
+        id:4,
+        name: "Pouch Pocket Hoodie Orange",
+        tag: "22%",
+        oldPrice: "$37.50",
+        price: "$29.50",
+        review: "1 review",
+        img1: pocketmen1,
+        img2: pocketmen2,
+        img3: pocketmen3,
+        img4: pocketmen4
+      }
+    ]
+
+  export const TopMen2 = [
+    {
+      id:1,
+      name: "Riptop Cargo Trousers With Pockets",
+      tag: "29%",
+      oldPrice: "$69.99",
+      price: "$49.99",
+      review: " review",
+      img1: trousers1,
+      img2: trousers2,
+      img3: trousers3,
+      img4: trousers4
+     },
+     {
+      id:2,
+      name: "Relaxed Fit Plaid Flannel Shirt",
+      price: "$34.99",
+      review: "1 review",
+      img1: shirt1,
+      img2: shirt2,
+      img3: shirt3,
+      img4: shirt4
+     },
+     {
+      id:3,
+      name: "Quilted Bomber Jacket With Ribbed Trims",
+      tag: "32%",
+      oldPrice: "$69.49",
+      price: "$47.58",
+      review: "1 review",
+      img1: bomber1,
+      img2: bomber2,
+      img3: bomber3,
+      img4: bomber4
+     },
+    {
+      id:4,
+      name: "Pouch Pocket Hoodie",
+      tag: "16%",
+      oldPrice: "$32.40",
+      price: "$27.40",
+      review: "1 review",
+      img1: pocket1,
+      img2: pocket2,
+      img3: pocket3,
+      img4: pocket4
+    }
+  ]
+
+  export const TopWomen1 = [
+    {
+      id:1,
+      name: "Basic Colored Sweatpants With Elastic Hems",
+      tag: "24%",
+      oldPrice: "$25.90",
+      price: "$19.90",
+      review: "2 reviews",
+      img1: pants1,
+      img2: pants2,
+      img3: pants3,
+      img4: pants4
+     },
+ 
+     {
+       id:2,
+       name: "Basic High-Neck Puff Jacket",
+       tag: "Trending",
+       price: "$89.90",
+       review: "1 review",
+       img1: basic1,
+       img2: basic2,
+       img3: basic3,
+       img4: basic4
+      },
+ 
+      {
+       id:3,
+       name: "Basic Relax Fit Leggings",
+       tag: "17%",
+       oldPrice: "$29.90",
+       price: "$24.90",
+       review: "1 review",
+       img1: leggings1,
+       img2: leggings2,
+       img3: leggings3,
+       img4: leggings4
+      },
+      {
+        id:4,
+        name: "Rose Printed Hoodie",
+        price: "$110.99",
+        review: "1 review",
+        img1: pink1,
+        img2: pink2,
+        img3: pink3,
+        img4: pink4
+       },
+  ]
+
+  export const TopBlouse = [
+    {
+      id:1,
+      name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
+      price: "$28.00",
+      review: "1 reviews",
+      img1: ribbed1,
+      img2: ribbed2,
+      img3: ribbed3,
+      img4: ribbed4
+     },
+ 
+     {
+       id:2,
+       name: "Blue Starter Logo T-shirt",
+       tag: "18%",
+       oldPrice: "$22.70",
+       price: "%18.70",
+       review: "1 review",
+       img1: starter1,
+       img2: starter2,
+       img3: starter3,
+       img4: starter4
+      },
+ 
+      {
+       id:3,
+       name: "Oversize Corduroy Shirt",
+       price: "$24.99",
+       review: "1 review",
+       img1: corduroy1,
+       img2: corduroy2,
+       img3: corduroy3,
+       img4: corduroy1,
+      },
+      {
+        id:4,
+        name: "Faux Leather Blazer",
+        price: "$139.00",
+        review: "1 review",
+        img1: faux1,
+        img2: faux2,
+        img3: faux3,
+        img4: faux4
+       },
+  ]
+
+  export const TopWomen2 = [
+    {
+      id:1,
+      name: "Brown Arizona Sweatshirt",
+      tag: "27%",
+      oldPrice: "$28.60",
+      price: "$22.60",
+      review: "1 reviews",
+      img1: arizona1,
+      img2: arizona2,
+      img3: arizona3,
+      img4: arizona4
+     },
+ 
+     {
+       id:2,
+       name: "Sweater With Chain Detail",
+       tag: "37%",
+       oldPrice: "$22.99",
+       price: "%47.99",
+       review: "1 review",
+       img1: sweater1,
+       img2: sweater2,
+       img3: sweater3,
+       img4: sweater4
+      },
+ 
+      {
+        id:3,
+        name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
+        price: "$28.00",
+        review: "1 reviews",
+        img1: ribbed1,
+        img2: ribbed2,
+        img3: ribbed3,
+        img4: ribbed4
+       },
+       {
+        id:4,
+        name: "Blue Starter Logo T-shirt",
+        tag: "18%",
+        oldPrice: "$22.70",
+        price: "%18.70",
+        review: "1 review",
+        img1: starter1,
+        img2: starter2,
+        img3: starter3,
+        img4: starter4
+       }
+]
+
+export const Outwear1 = [
+  {
+    id:1,
+    name: "Basic High-Neck Puff Jacket",
+    tag: "Trending",
+    price: "$89.90",
+    review: "1 review",
+    img1: basic1,
+    img2: basic2,
+    img3: basic3,
+    img4: basic4
+   },
+   {
+    id:2,
+    name: "Short Nylon-Effe t Puffer Jacket",
+    tag: "26%",
+    price: "$29.90",
+    review: "2 reviews",
+    img1: nylon1,
+    img2: nylon2,
+    img3: nylon3,
+    img4: nylon4
+   },
+   {
+    id:3,
+    name: "Quilted Bomber Jacket With Ribbed Trims",
+    tag: "32%",
+    oldPrice: "$69.48",
+    price: "$47.90",
+    review: "2 reviews",
+    img1: bomber1,
+    img2: bomber2,
+    img3: bomber3,
+    img4: bomber4
+   },
+
+   {
+    id:4,
+    name: "Oversize Hoodie With Zipper",
+    price: "$147.90",
+    review: "2 reviews",
+    img1: zipper1,
+    img2: zipper2,
+    img3: zipper3,
+    img4: zipper4
+   },
+]
+
+export const Outwear2 = [
+  {
+    id:1,
+    name: "Oversize Faux Leather Biker Jacket",
+    tag: "42%",
+    oldPrice: '$79.99',
+    price: "$45.99",
+    review: "1 review",
+    img1: biker1,
+    img2: biker2,
+    img3: biker3,
+    img4: biker4
+   },
+   {
+    id:2,
+    name: "Nylon Puffer Gilet",
+    tag: "8%",
+    oldPrice: "$1,399.00",
+    price: "$1,299.00",
+    review: "1 review1",
+    img1: gilet1,
+    img2: gilet2,
+    img3: gilet3,
+    img4: gilet4
+   },
+   {
+    id:3,
+    name: "QMulticilred Open-Knit Crewneck Sweater",
+    tag: "25%",
+    oldPrice: "$65.90",
+    price: "$49.90",
+    review: "1 review",
+    img1: knit1,
+    img2: knit2,
+    img3: knit3,
+    img4: knit4
+   },
+
+   {
+    id:4,
+    name: "Hot Stuff Hoodie",
+    price: "$49.00",
+    oldPrice: "$89.00",
+    review: "1 review1",
+    img1: stuff1,
+    img2: stuff2,
+    img3: stuff3,
+    img4: stuff4
+   },
+]
