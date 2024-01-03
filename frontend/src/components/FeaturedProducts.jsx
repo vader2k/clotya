@@ -62,7 +62,6 @@ const FeaturedProducts = () => {
                   src={item[`img${activeImageIndices[item.id] || 1}`]}
                   alt={`product-${item.id}`}
                 />
-
                 <div className="absolute bg-white p-5 px-6 w-[345px] bottom-[10px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
@@ -73,6 +72,12 @@ const FeaturedProducts = () => {
                 </div>
                 <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
                   {item.tag}
+                </div>
+                <div className="absolute top-5 right-5 text-[1.5rem] flex flex-col gap-3">
+                  <FiHeart />
+                  <LiaCompressArrowsAltSolid />
+                  <PiRepeatThin />
+                  <IoBagOutline />
                 </div>
               </div> 
             ))}
