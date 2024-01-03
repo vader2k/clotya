@@ -1,7 +1,7 @@
 import { pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
     , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4 } from "../assets"
 
-export const FeaturedData = [
+export const FeaturedData1 = [
     {
      id:1,
      name: "Basic Colored Sweatpants With Elastic Hems",
@@ -39,10 +39,10 @@ export const FeaturedData = [
       img3: leggings3,
       img4: leggings4
      },
-
-    //  second page
-
-     {
+  ]
+    
+  export const FeaturedData2 = [
+    {
       id:4,
       name: "Check Overshirt With Pocket Detail",
       tag: "14%",
@@ -79,46 +79,48 @@ export const FeaturedData = [
       img4: cup4
      },
 
-    //  third page
-
-     {
-      id:7,
-      name: "Sleeveless Ribbed Short Dress Black",
-      tag: "26%",
-      oldPrice: "$19.99",
-      price: "$14.99",
-      review: "1",
-      img1: dressblack1,
-      img2: dressblack2,
-      img3: dressblack3,
-      img4: dressblack4
-     },
-
-     {
-      id:8,
-      name: "Slogan Hoodie With Label Detail",
-      tag: "37%",
-      oldPrice: "$18.99",
-      price: "$11.90",
-      review: "1",
-      img1: slogan1,
-      img2: slogan2,
-      img3: slogan3,
-      img4: slogan4
-     },
-
-     {  
-        id:9,
-        name: "Basic Colored Sweatpants With Elastic Hems",
-        tag: "24%",
-        oldPrice: "$25.90",
-        price: "$19.90",
-        review: "2",
-        img1: pants1,
-        img2: pants2,
-        img3: pants3,
-        img4: pants4
-    },
   ]
+
+
+    export const FeaturedData3 = [
+      {
+        id:7,
+        name: "Sleeveless Ribbed Short Dress Black",
+        tag: "26%",
+        oldPrice: "$19.99",
+        price: "$14.99",
+        review: "1",
+        img1: dressblack1,
+        img2: dressblack2,
+        img3: dressblack3,
+        img4: dressblack4
+       },
+  
+       {
+        id:8,
+        name: "Slogan Hoodie With Label Detail",
+        tag: "37%",
+        oldPrice: "$18.99",
+        price: "$11.90",
+        review: "1",
+        img1: slogan1,
+        img2: slogan2,
+        img3: slogan3,
+        img4: slogan4
+       },
+  
+       {  
+          id:9,
+          name: "Basic Colored Sweatpants With Elastic Hems",
+          tag: "24%",
+          oldPrice: "$25.90",
+          price: "$19.90",
+          review: "2",
+          img1: pants1,
+          img2: pants2,
+          img3: pants3,
+          img4: pants4
+      },
+    ]
 
   
