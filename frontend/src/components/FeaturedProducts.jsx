@@ -40,6 +40,8 @@ const FeaturedProducts = () => {
           spaceBetween={50}
           slidesPerView={1}
           pagination={{ clickable: true }}
+          speed={2000}
+          parallax
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
@@ -64,6 +66,9 @@ const FeaturedProducts = () => {
                     <span className="text-gray-400 line-through">{item?.oldPrice}</span>
                     <span>{item?.price}</span>
                   </div>
+                </div>
+                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
+                  {item.tag}
                 </div>
               </div> 
             ))}
@@ -90,6 +95,9 @@ const FeaturedProducts = () => {
                     <span>{item?.price}</span>
                   </div>
                 </div>
+                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
+                  {item?.tag}
+                </div>
               </div>
             ))}
             </div>
@@ -114,6 +122,9 @@ const FeaturedProducts = () => {
                     <span className="text-gray-400 line-through">{item?.oldPrice}</span>
                     <span>{item?.price}</span>
                   </div>
+                </div>
+                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
+                  {item?.tag}
                 </div>
               </div>
             ))}
