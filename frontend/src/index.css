@@ -54,3 +54,11 @@ body {
 .holder::-webkit-scrollbar {
   display: none;
 }
+
+.sideBtns {
+  visibility: hidden;
+}
+
+.img-holder:hover .sideBtns {
+  visibility: visible;
+}
