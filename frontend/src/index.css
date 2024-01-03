@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: poppins , sans-serif;
 }
 .scrollable::-webkit-scrollbar {
     width: 5px;
