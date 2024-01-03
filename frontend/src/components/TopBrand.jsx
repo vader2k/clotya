@@ -31,6 +31,8 @@ const TopBrand = () => {
           </div> 
         </div>
       </div>
+
+      {/* carousel components */}
     </div>
   )
 }

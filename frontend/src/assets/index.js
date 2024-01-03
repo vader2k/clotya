@@ -56,5 +56,83 @@ import slogan4 from '../assets/slogan4.jpg'
 import banner22 from '../assets/banner-22.jpg'
 import banner23 from '../assets/banner-23.jpg'
 
+
+// pouch pocket hooide orange
+import pocketmen1 from '../assets/pocketmen1.jpeg'
+import pocketmen2 from '../assets/pocketmen2.jpeg'
+import pocketmen3 from '../assets/pocketmen3.jpeg'
+import pocketmen4 from '../assets/pocketmen4.jpeg'
+
+// ripstop cargo trousers with pockets
+import trousers1 from '../assets/trousers1.jpeg'
+import trousers2 from '../assets/trousers2.jpeg'
+import trousers3 from '../assets/trousers3.jpeg'
+import trousers4 from '../assets/trousers4.jpeg'
+
+// relaxed fit plaid flannel shirt
+import shirt1 from '../assets/shirt1.jpeg'
+import shirt2 from '../assets/shirt2.jpeg'
+import shirt3 from '../assets/shirt3.jpeg'
+import shirt4 from '../assets/shirt4.jpeg'
+
+// Quilted bomber jacket
+import bomber1 from '../assets/bomber1.jpg'
+import bomber2 from '../assets/bomber2.jpg'
+import bomber3 from '../assets/bomber3.jpg'
+import bomber4 from '../assets/bomber4.jpg'
+
+
+// pouch pocket Hoodie
+import pocket1 from '../assets/pocket1.jpeg'
+import pocket2 from '../assets/pocket2.jpeg'
+import pocket3 from '../assets/pocket3.jpeg'
+import pocket4 from '../assets/pocket4.jpeg'
+
+// short Nylon-effect puffer jacket
+import nylon1 from '../assets/nylon1.jpg'
+import nylon2 from '../assets/nylon2.jpg'
+import nylon3 from '../assets/nylon3.jpg'
+import nylon4 from '../assets/nylon4.jpg'
+
+// sleeveless ribbed short dress
+import sleev1 from '../assets/sleev1.jpeg'
+import sleev2 from '../assets/sleev2.jpeg'
+import sleev3 from '../assets/sleev3.jpeg'
+import sleev4 from '../assets/sleev4.jpeg'
+
+// ribbed v-neck cardigan
+import ribbed1 from '../assets/ribbed1.jpg'
+import ribbed2 from '../assets/ribbed2.jpg'
+import ribbed3 from '../assets/ribbed3.jpg'
+import ribbed4 from '../assets/ribbed4.jpg'
+
+//red blue started logo t-shirt
+import starter1 from '../assets/starter1.jpeg'
+import starter2 from '../assets/starter2.jpeg'
+import starter3 from '../assets/starter3.jpeg'
+import starter4 from '../assets/starter4.jpeg'
+
+// oversize cordury shirt
+import corduroy1 from '../assets/corduroy1.jpeg'
+import corduroy2 from '../assets/corduroy2.jpeg'
+import corduroy3 from '../assets/corduroy3.jpeg'
+
+// faux
+import faux1 from '../assets/faux1.jpg'
+import faux2 from '../assets/faux2.jpg'
+import faux3 from '../assets/faux3.jpg'
+import faux4 from '../assets/faux4.jpg'
+
+// oversize hoodie with zipper
+import zipper1 from '../assets/zipper1.jpeg'
+import zipper2 from '../assets/zipper2.jpeg'
+import zipper3 from '../assets/zipper3.jpeg'
+import zipper4 from '../assets/zipper4.jpeg'
+
+
 export { slide1, slide2, slide3, women, men, shoe, accessory, basic1, basic2, basic3, basic4, pants1, pants2, pants3, pants4, leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
-, pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4, banner22, banner23 } 
+, pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4, banner22, banner23 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
+trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
+,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4,
+ nylon1, nylon2, nylon3, nylon4, sleev1, sleev2, sleev3, sleev4, ribbed1, ribbed2, ribbed3, ribbed4,
+ starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4  } 
