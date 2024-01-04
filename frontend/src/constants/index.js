@@ -1,4 +1,4 @@
-import { pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
+import {  blog1, blog2, blog3, pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
     , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
     trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
     ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,
@@ -574,5 +574,32 @@ export const BestSeller2 = [
     img2: starter2,
     img3: starter3,
     img4: starter4
+  },
+]
+
+export const news = [
+  {
+    id:1,
+    img: blog1,
+    cat: "COLLECTION",
+    date: "- 25 Apr 2022",
+    title: "The Best Products That Shape Fashion",
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
+  },
+  {
+    id:2,
+    img: blog2,
+    cat: "FASHION",
+    date: "- 25 Apr 2022",
+    title: "New Finds From Tuckernuck",
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
+  },
+  {
+    id:3,
+    img: blog3,
+    cat: "CLOTHING",
+    date: "- 25 Apr 2022",
+    title: "Sunset Sets From Saks",
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
   },
 ]
