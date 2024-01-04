@@ -3,7 +3,7 @@ import { pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggin
     trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
     ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,
      nylon1, nylon2, nylon3, nylon4, sleev1, sleev2, sleev3, sleev4, ribbed1, ribbed2, ribbed3, ribbed4,
-     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4 } from "../assets"
+     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4, knotted1, knotted2, knotted3, knotted4, } from "../assets"
 
 export const FeaturedData1 = [
     {
@@ -523,4 +523,56 @@ export const Outwear2 = [
     img3: stuff3,
     img4: stuff4
    },
+]
+
+export const BestSeller1 = [
+  {
+    id:1,
+    name: "Pouch Pocket Hoodie",
+    tag: "16%",
+    oldPrice: "$32.40",
+    price: "$27.40",
+    review: "1 review",
+    img1: pocket1,
+    img2: pocket2,
+    img3: pocket3,
+    img4: pocket4
+  },
+  {
+    id:2,
+    name: "Short Dress With Knotted Skirt",
+    tag: "47%",
+    oldPrice: "$85.90",
+    price: "$45.90",
+    review: "1 review",
+    img1: knotted1,
+    img2: knotted2,
+    img3: knotted3,
+    img4: knotted4
+  },
+]
+
+export const BestSeller2 = [
+  {
+    id:1,
+    name: "Oversized Corduroy Shirt",
+    price: "$24.99",
+    review: "1 review",
+    img1: corduroy1,
+    img2: corduroy2,
+    img3: corduroy3,
+    img4: corduroy2
+  },
+  {
+    id:2,
+    name: "Blue Starter Logo T-shirt",
+    tag: "18%",
+    oldPrice: "$22.70",
+    price: "$18.70",
+    review: "1 review",
+    img1: starter1,
+    img2: starter2,
+    img3: starter3,
+    img4: starter4
+  },
 ]

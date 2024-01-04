@@ -171,7 +171,13 @@ import banner25 from '../assets/banner-25.jpg'
 import image09 from '../assets/image-09.jpg'
 import slider14 from '../assets/slider-14.jpg'
 
-export { banner24, banner25, image09, slider14, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,slide1, slide2, slide3, women, men, shoe, accessory, basic1, basic2, basic3, basic4, pants1, pants2, pants3, pants4, leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
+// short Dress with knoteed skirt
+import knotted1 from '../assets/knotted1.jpeg'
+import knotted2 from '../assets/knotted2.jpeg'
+import knotted3 from '../assets/knotted3.jpeg'
+import knotted4 from '../assets/knotted4.jpeg'
+
+export { knotted1, knotted2, knotted3, knotted4, banner24, banner25, image09, slider14, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,slide1, slide2, slide3, women, men, shoe, accessory, basic1, basic2, basic3, basic4, pants1, pants2, pants3, pants4, leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
 , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4, banner22, banner23 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
 trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
 ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4,
