@@ -171,6 +171,59 @@ const Collections = () => {
           </div>
         </div>
       </div>
+
+
+      <div className='flex flex-row-reverse items-start gap-8 py-10'>
+        <div>
+        <div className="flex overflow-x-auto gap-8 holder relative ">
+            {BestSeller2.map((item) => (
+              <div
+                key={item.id}
+                className="flex-none relative "
+                onMouseMove={(event) => handleHover(item.id, event)}
+              >
+                <div className="img-holder">
+                  <img
+                    className="object-cover w-[290px] h-[450px] cursor-pointer"
+                    src={item[`img${activeImageIndices[item.id] || 1}`]}
+                    alt={`product-${item.id}`}
+                  />
+                  {/* side functions */}
+                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                  </div>
+                </div>
+                <div className="bg-white flex flex-col gap- my-3">
+                  <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
+                  <p className="text-[0.8rem] capitalize">{item?.name}</p>
+                  <div className="flex items-center gap-5 text-[0.9rem]">
+                    <span className="text-gray-400 line-through">{item?.oldPrice}</span>
+                    <span>{item?.price}</span>
+                  </div>
+                </div>
+                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
+                  {item.tag}
+                </div>
+              </div> 
+            ))}
+            </div>
+        </div>
+        <div className='relative cursor-pointer'>
+          <img src={banner25} alt="banner" />
+          <div className='absolute top-10 px-10 py-40 text-white flex flex-col gap-2'>
+            <p className='text-[0.8rem] font-medium'>WINTER 2022 COLLECTION</p>
+            <h1 className='text-[1.8rem] font-medium max-w-[300px]'>Aenean id sapein sit amet urna laoreet</h1>
+            <p className='text-gray-300 text-[0.8rem] py-2 max-w-[300px]'>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <button className="flex items-center gap-3 md:mt-0 xs:mt-2 mt-4">
+              <p className="font-bold text-[0.8rem] ">Shop Collection</p>
+              <FaArrowRightLong className="text-[1rem]"/>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
   )
