@@ -1,7 +1,11 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { banner22, banner23 } from '../assets'
-
+import { useState } from 'react'
 const TopBrand = () => {
+
+const [ tab , setTab ] = useState("men")
+
+
   return (
     <div>
       <div className='flex justify-between items-center'>
@@ -33,6 +37,62 @@ const TopBrand = () => {
       </div>
 
       {/* carousel components */}
+      <div>
+        <div className="flex justify-between items-center py-10">
+          <h1 className="text-[1.8rem] font-medium">Our Top Seller Brands</h1>
+          <div>
+            <div className="flex items-center justify-between gap-8">
+                <button 
+                  onClick={()=> setTab("men")}
+                  className={`${
+                    tab === "men" 
+                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                    Men
+                </button>
+
+                <button 
+                  onClick={()=> setTab("women")}
+                  className={`${
+                    tab === "women" 
+                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                    Women
+                </button>
+
+                <button 
+                  onClick={()=> setTab("blouse")}
+                  className={`${
+                    tab === "blouse" 
+                  && 'text-blue-900'} font-medium text-gray-400 hover:text-gray-600`}>
+                    Blouse & shirts
+                </button>
+
+                <button 
+                  onClick={()=> setTab("outerwear")}
+                  className={`${
+                    tab === "outerwear" 
+                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                    Outerwear
+                </button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      {/* tab content */}
+      <div>
+        {
+          tab === "men" && <div>men</div>
+        }
+        {
+          tab === "women" && <div>women</div>
+        }
+        {
+          tab === "blouse" && <div>Blouse & shirts</div>
+        }
+        {
+          tab === "outerwear" && <div>outerwear</div>
+        }
+      </div>
     </div>
   )
 }
