@@ -63,3 +63,8 @@ body {
   visibility: visible;
 }
 
+
+.swiper-pagination-bullet-active{
+  background:black ;
+  border: none;
+}
