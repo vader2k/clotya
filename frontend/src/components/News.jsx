@@ -13,7 +13,7 @@ const News = () => {
           news.map(items=> (
             <div
             key={items.id}>
-              <div className='flex flex-col gap-5' >
+              <div className='flex flex-col gap-5 cursor-pointer' >
                 <img className='' src={items.img} alt={items.title} />
                 <div className='flex items-center gap-3 text-gray-500'>
                   <h2 className='text-[0.9rem] font-medium'>{items.cat}</h2>
