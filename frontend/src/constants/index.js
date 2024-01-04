@@ -127,7 +127,7 @@ export const FeaturedData1 = [
       },
     ]
 
-    export const TopMen = [
+    export const TopMen1 = [
       {
         id:1,
         name: "Check Overshirt With Pocket Detail",
@@ -277,7 +277,7 @@ export const FeaturedData1 = [
        },
   ]
 
-  export const TopBlouse = [
+  export const TopBlouse1 = [
     {
       id:1,
       name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
@@ -324,12 +324,12 @@ export const FeaturedData1 = [
        },
   ]
 
-  export const TopWomen2 = [
+  export const TopBlouse2 = [
     {
       id:1,
       name: "Brown Arizona Sweatshirt",
-      tag: "27%",
-      oldPrice: "$28.60",
+      tag: "21%",
+      oldPrice: "$28.00",
       price: "$22.60",
       review: "1 reviews",
       img1: arizona1,
@@ -342,8 +342,8 @@ export const FeaturedData1 = [
        id:2,
        name: "Sweater With Chain Detail",
        tag: "37%",
-       oldPrice: "$22.99",
-       price: "%47.99",
+       oldPrice: "$74.99",
+       price: "$47.99",
        review: "1 review",
        img1: sweater1,
        img2: sweater2,
@@ -352,26 +352,77 @@ export const FeaturedData1 = [
       },
  
       {
-        id:3,
-        name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
-        price: "$28.00",
-        review: "1 reviews",
-        img1: ribbed1,
-        img2: ribbed2,
-        img3: ribbed3,
-        img4: ribbed4
+       id:3,
+       name: "Oversize Corduroy Shirt",
+       price: "$24.99",
+       review: "1 review",
+       img1: corduroy1,
+       img2: corduroy2,
+       img3: corduroy3,
+       img4: corduroy1,
+      },
+      {
+        id:4,
+        name: "Faux Leather Blazer",
+        price: "$139.00",
+        review: "1 review",
+        img1: faux1,
+        img2: faux2,
+        img3: faux3,
+        img4: faux4
        },
+  ]
+
+ 
+  export const TopWomen2 = [
+    {
+      id:1,
+      name: "Sleeveless Ribbed Short Dress Black",
+      tag: "26%",
+      oldPrice: "$19.99",
+      price: "$14.99",
+      review: "1 review",
+      img1: dressblack1,
+      img2: dressblack2,
+      img3: dressblack3,
+      img4: dressblack4
+     },
+ 
+     {
+      id:2,
+      name: "Slogan Hoodie With Label Detail",
+      tag: "37%",
+      oldPrice: "$18.99",
+      price: "$11.90",
+      review: "1 review",
+      img1: slogan1,
+      img2: slogan2,
+      img3: slogan3,
+      img4: slogan4
+     },
+ 
+     {
+      id:3,
+      name: "Short Nylon-Effe t Puffer Jacket",
+      tag: "26%",
+      price: "$29.90",
+      review: "2 reviews",
+      img1: nylon1,
+      img2: nylon2,
+      img3: nylon3,
+      img4: nylon4
+     },
        {
         id:4,
-        name: "Blue Starter Logo T-shirt",
-        tag: "18%",
-        oldPrice: "$22.70",
-        price: "%18.70",
+        name: "Sleeveless Ribbed Short Dress",
+        tag: "26%",
+        oldPrice: "$19.99",
+        price: "%14.99",
         review: "1 review",
-        img1: starter1,
-        img2: starter2,
-        img3: starter3,
-        img4: starter4
+        img1: sleev1,
+        img2: sleev2,
+        img3: sleev3,
+        img4: sleev4
        }
 ]
 

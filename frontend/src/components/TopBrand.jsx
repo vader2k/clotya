@@ -1,6 +1,17 @@
 import { FaArrowRightLong } from "react-icons/fa6";
 import { banner22, banner23 } from '../assets'
 import { useState } from 'react'
+import { Pagination, A11y } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/swiper-bundle.css';
+import { FaStar } from "react-icons/fa";
+import { IoIosHeartEmpty } from "react-icons/io";
+import { LiaCompressSolid } from "react-icons/lia";
+import { BsArrowRepeat } from "react-icons/bs";
+import { IoBagOutline } from "react-icons/io5";
+
+import { TopMen, TopMen2, TopWomen1, TopWomen2, TopBlouse, TopB } from "../constants";
+
 const TopBrand = () => {
 
 const [ tab , setTab ] = useState("men")
