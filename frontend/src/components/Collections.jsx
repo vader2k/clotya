@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { slide3, slider14, banner24, banner25 } from '../assets/index'
+import { slide3, slider14, banner24, banner25, image09 } from '../assets/index'
 import { FaArrowRightLong } from "react-icons/fa6";
 import { GoDotFill } from "react-icons/go";
 import { FaStar } from "react-icons/fa";
@@ -223,6 +223,22 @@ const Collections = () => {
             </button>
           </div>
         </div>
+      </div>
+    </div>
+
+    {/* shop now CTA design to end the section */}
+    <div className='flex justify-center items-center h-[510px] overflow-hidden bg-pink'>
+      <div className='h-full w-full flex flex-col items-center justify-center gap-5 text-center'>
+        <h3 className='text-[0.8rem] font-semibold'>SUMMER COLLECTION</h3>
+        <h1 className='text-[2.5rem] font-normal max-w-[400px] font-roboto leading-[3rem] tracking-wider'>Risus commodo viverra maecenas accumsan.</h1>
+        <p className='text-[0.8rem] max-w-[400px] text-gray-500 leading-6'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae, quod. Corporis fugiat suscipit officiis neque ratione?</p>
+        <button className="flex items-center gap-3 md:mt-0 xs:mt-2 mt-4 border border-red-400 px-6 py-4 text-red-400 hover:text-white hover:bg-red-400">
+          <p className="font-bold text-[0.8rem] ">Shop Collection</p>
+          <FaArrowRightLong className="text-[1rem]"/>
+        </button>
+      </div>
+      <div className='flex items-center justify-center'>
+        <img className='h-full w-auto' src={image09} alt="cta banner image" />
       </div>
     </div>
   </div>

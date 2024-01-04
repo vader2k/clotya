@@ -21,6 +21,9 @@ module.exports = {
         'normal': '0',
         'wide': '1.2em',
       },
+      colors : {
+        pink: "#fdf8f7"
+      }
     },
   },
   plugins: [],
