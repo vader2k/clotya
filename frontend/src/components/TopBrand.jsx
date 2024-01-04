@@ -76,7 +76,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
                   onClick={()=> setTab("men")}
                   className={`${
                     tab === "men" 
-                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                  && 'text-blue-500' } font-medium text-gray-400 hover:text-gray-600`}>
                     Men
                 </button>
 
@@ -84,7 +84,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
                   onClick={()=> setTab("women")}
                   className={`${
                     tab === "women" 
-                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                  && 'text-blue-500' } font-medium text-gray-400 hover:text-gray-600`}>
                     Women
                 </button>
 
@@ -92,7 +92,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
                   onClick={()=> setTab("blouse")}
                   className={`${
                     tab === "blouse" 
-                  && 'text-blue-900'} font-medium text-gray-400 hover:text-gray-600`}>
+                  && 'text-blue-500'} font-medium text-gray-400 hover:text-gray-600`}>
                     Blouse & shirts
                 </button>
 
@@ -100,7 +100,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
                   onClick={()=> setTab("outerwear")}
                   className={`${
                     tab === "outerwear" 
-                  && 'text-blue-900' } font-medium text-gray-400 hover:text-gray-600`}>
+                  && 'text-blue-500' } font-medium text-gray-400 hover:text-gray-600`}>
                     Outerwear
                 </button>
               </div>
