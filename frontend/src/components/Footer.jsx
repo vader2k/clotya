@@ -1,3 +1,4 @@
+import card from '../assets/cards.png'
 
 const Footer = () => {
   return (
