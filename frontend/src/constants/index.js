@@ -47,7 +47,7 @@ export const FeaturedData1 = [
     
   export const FeaturedData2 = [
     {
-      id:1,
+      id:4,
       name: "Check Overshirt With Pocket Detail",
       tag: "14%",
       oldPrice: "$129.00",
@@ -60,7 +60,7 @@ export const FeaturedData1 = [
      },
 
      {
-      id:2,
+      id:5,
       name: "Rose Printed Hoodie",
       price: "$110.99",
       review: "1 review",
@@ -71,7 +71,7 @@ export const FeaturedData1 = [
      },
 
      {
-      id:3,
+      id:6,
       name: "Word Wide Cup Print T-shirt",
       tag: "21%",
       oldPrice: "$29.99",
@@ -88,7 +88,7 @@ export const FeaturedData1 = [
 
     export const FeaturedData3 = [
       {
-        id:1,
+        id:7,
         name: "Sleeveless Ribbed Short Dress Black",
         tag: "26%",
         oldPrice: "$19.99",
@@ -101,7 +101,7 @@ export const FeaturedData1 = [
        },
   
        {
-        id:2,
+        id:7,
         name: "Slogan Hoodie With Label Detail",
         tag: "37%",
         oldPrice: "$18.99",
@@ -114,7 +114,7 @@ export const FeaturedData1 = [
        },
   
        {  
-          id:3,
+          id:9,
           name: "Basic Colored Sweatpants With Elastic Hems",
           tag: "24%",
           oldPrice: "$25.90",
@@ -180,7 +180,7 @@ export const FeaturedData1 = [
 
   export const TopMen2 = [
     {
-      id:1,
+      id:5,
       name: "Riptop Cargo Trousers With Pockets",
       tag: "29%",
       oldPrice: "$69.99",
@@ -192,7 +192,7 @@ export const FeaturedData1 = [
       img4: trousers4
      },
      {
-      id:2,
+      id:6,
       name: "Relaxed Fit Plaid Flannel Shirt",
       price: "$34.99",
       review: "1 review",
@@ -202,7 +202,7 @@ export const FeaturedData1 = [
       img4: shirt4
      },
      {
-      id:3,
+      id:7,
       name: "Quilted Bomber Jacket With Ribbed Trims",
       tag: "32%",
       oldPrice: "$69.49",
@@ -214,7 +214,7 @@ export const FeaturedData1 = [
       img4: bomber4
      },
     {
-      id:4,
+      id:8,
       name: "Pouch Pocket Hoodie",
       tag: "16%",
       oldPrice: "$32.40",
@@ -326,7 +326,7 @@ export const FeaturedData1 = [
 
   export const TopBlouse2 = [
     {
-      id:1,
+      id:5,
       name: "Brown Arizona Sweatshirt",
       tag: "21%",
       oldPrice: "$28.00",
@@ -339,7 +339,7 @@ export const FeaturedData1 = [
      },
  
      {
-       id:2,
+       id:6,
        name: "Sweater With Chain Detail",
        tag: "37%",
        oldPrice: "$74.99",
@@ -352,7 +352,7 @@ export const FeaturedData1 = [
       },
  
       {
-       id:3,
+       id:7,
        name: "Oversize Corduroy Shirt",
        price: "$24.99",
        review: "1 review",
@@ -362,7 +362,7 @@ export const FeaturedData1 = [
        img4: corduroy1,
       },
       {
-        id:4,
+        id:8,
         name: "Faux Leather Blazer",
         price: "$139.00",
         review: "1 review",
@@ -376,7 +376,7 @@ export const FeaturedData1 = [
  
   export const TopWomen2 = [
     {
-      id:1,
+      id:5,
       name: "Sleeveless Ribbed Short Dress Black",
       tag: "26%",
       oldPrice: "$19.99",
@@ -389,7 +389,7 @@ export const FeaturedData1 = [
      },
  
      {
-      id:2,
+      id:6,
       name: "Slogan Hoodie With Label Detail",
       tag: "37%",
       oldPrice: "$18.99",
@@ -402,7 +402,7 @@ export const FeaturedData1 = [
      },
  
      {
-      id:3,
+      id:7,
       name: "Short Nylon-Effe t Puffer Jacket",
       tag: "26%",
       price: "$29.90",
@@ -413,7 +413,7 @@ export const FeaturedData1 = [
       img4: nylon4
      },
        {
-        id:4,
+        id:8,
         name: "Sleeveless Ribbed Short Dress",
         tag: "26%",
         oldPrice: "$19.99",
@@ -476,7 +476,7 @@ export const Outwear1 = [
 
 export const Outwear2 = [
   {
-    id:1,
+    id:5,
     name: "Oversize Faux Leather Biker Jacket",
     tag: "42%",
     oldPrice: '$79.99',
@@ -488,7 +488,7 @@ export const Outwear2 = [
     img4: biker4
    },
    {
-    id:2,
+    id:6,
     name: "Nylon Puffer Gilet",
     tag: "8%",
     oldPrice: "$1,399.00",
@@ -500,7 +500,7 @@ export const Outwear2 = [
     img4: gilet4
    },
    {
-    id:3,
+    id:7,
     name: "QMulticilred Open-Knit Crewneck Sweater",
     tag: "25%",
     oldPrice: "$65.90",
@@ -513,7 +513,7 @@ export const Outwear2 = [
    },
 
    {
-    id:4,
+    id:8,
     name: "Hot Stuff Hoodie",
     price: "$49.00",
     oldPrice: "$89.00",
@@ -554,7 +554,7 @@ export const BestSeller1 = [
 
 export const BestSeller2 = [
   {
-    id:1,
+    id:3,
     name: "Oversized Corduroy Shirt",
     price: "$24.99",
     review: "1 review",
@@ -564,7 +564,7 @@ export const BestSeller2 = [
     img4: corduroy2
   },
   {
-    id:2,
+    id:4,
     name: "Blue Starter Logo T-shirt",
     tag: "18%",
     oldPrice: "$22.70",
