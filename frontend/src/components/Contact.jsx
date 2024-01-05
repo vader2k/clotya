@@ -8,12 +8,41 @@ const Contact = () => {
         <div>
           <h1>Get our emails for info on new items, sales and more.</h1>
           <p>We'll email you a voucher worth £10 off your first order over $50</p>
-          <div>
+          <div className="flex items-center text-[0.9rem]">
             <input type="text" 
             placeholder="Enter your email address"
-            className=""/>
+            className="p-3 outline-none border-none text-gray-500 "/>
+            <button className="cursor-pointer text-white bg-black hover:bg-gray-600">Subscribe</button>
           </div>
-          
+          <p>By subscribing you agree to our Terms & Conditions and Privacy & Cookies Policy.</p>
+        </div>
+
+        <div>
+          <h1>Need help ?</h1>
+          <span>(+800) 1234 5678 90</span>
+          <p>We are available 8:00am – 7:00pm</p>
+          <div className="flex items-center gap-2">
+            <button className="flex items-center text-white bg-black border border-gray-500 rounded-[10px] p-1">
+              <div>
+                <FaApple className="text-[2rem]"/>
+              </div>
+              <div className="flex flex-col gap-0 mt-2">
+                <span className="text-[0.4rem]">Download on the</span>
+                <span className="text-[0.9rem]">App Store</span>
+              </div>
+            </button>
+
+            <button className="flex items-center text-white bg-black border border-gray-500 rounded-[10px] p-1">
+              <div>
+                <IoLogoGooglePlaystore className="text-[2rem]"/>
+              </div>
+              <div className="flex flex-col gap-0 mt-2">
+                <span className="text-[0.4rem]">GET IT ON</span>
+                <span className="text-[0.9rem]">Google Play</span>
+              </div>
+            </button>
+          </div>
+          <p>Shopping App: Try our View in Your Room feature, manage registries and save payment info.</p>
         </div>
       </div>
     </div>
