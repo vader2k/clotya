@@ -1,4 +1,5 @@
-
+import { FaApple } from "react-icons/fa";
+import { IoLogoGooglePlaystore } from "react-icons/io5";
 
 const Contact = () => {
   return (
