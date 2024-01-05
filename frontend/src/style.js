@@ -1,5 +1,5 @@
 const styles = {
-    boxWidth: "xl:max-w-[1300px] w-full",
+    boxWidth: "xl:max-w-[1300px] w-full m-auto",
     
     flexCenter: "flex justify-center items-center",
     flexStart: "flex justify-center items-start",
