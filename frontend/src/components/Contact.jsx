@@ -42,7 +42,7 @@ const Contact = () => {
               </div>
             </button>
           </div>
-          <p className="py-4 text-[0.7rem] text-gray-400">Shopping App: Try our View in Your Room feature, manage registries and save payment info.</p>
+          <p className="py-4 text-[0.7rem] text-gray-400"><span className="font-bold">Shopping App:</span> Try our View in Your Room feature, manage registries and save payment info.</p>
         </div>
       </div>
     </div>
