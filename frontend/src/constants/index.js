@@ -16,7 +16,8 @@ export const FeaturedData1 = [
      img1: pants1,
      img2: pants2,
      img3: pants3,
-     img4: pants4
+     img4: pants4,
+     path: "/details"
     },
 
     {
@@ -28,7 +29,8 @@ export const FeaturedData1 = [
       img1: basic1,
       img2: basic2,
       img3: basic3,
-      img4: basic4
+      img4: basic4,
+      path: "/details"
      },
 
      {
@@ -41,7 +43,8 @@ export const FeaturedData1 = [
       img1: leggings1,
       img2: leggings2,
       img3: leggings3,
-      img4: leggings4
+      img4: leggings4,
+      path: "/details"
      },
   ]
     
@@ -56,7 +59,8 @@ export const FeaturedData1 = [
       img1: overshirt1,
       img2: overshirt2,
       img3: overshirt3,
-      img4: overshirt4
+      img4: overshirt4,
+      path: "/details"
      },
 
      {
@@ -67,7 +71,8 @@ export const FeaturedData1 = [
       img1: pink1,
       img2: pink2,
       img3: pink3,
-      img4: pink4
+      img4: pink4,
+      path: "/details"
      },
 
      {
@@ -80,7 +85,8 @@ export const FeaturedData1 = [
       img1: cup1,
       img2: cup2,
       img3: cup3,
-      img4: cup4
+      img4: cup4,
+      path: "/details"
      },
 
   ]
@@ -97,7 +103,8 @@ export const FeaturedData1 = [
         img1: dressblack1,
         img2: dressblack2,
         img3: dressblack3,
-        img4: dressblack4
+        img4: dressblack4,
+        path: "/details"
        },
   
        {
@@ -110,7 +117,8 @@ export const FeaturedData1 = [
         img1: slogan1,
         img2: slogan2,
         img3: slogan3,
-        img4: slogan4
+        img4: slogan4,
+        path: "/details"
        },
   
        {  
@@ -123,7 +131,8 @@ export const FeaturedData1 = [
           img1: pants1,
           img2: pants2,
           img3: pants3,
-          img4: pants4
+          img4: pants4,
+          path: "/details"
       },
     ]
 
@@ -138,7 +147,8 @@ export const FeaturedData1 = [
         img1: overshirt1,
         img2: overshirt2,
         img3: overshirt3,
-        img4: overshirt4
+        img4: overshirt4,
+        path: "/details"
        },
        {
         id:2,
@@ -150,7 +160,8 @@ export const FeaturedData1 = [
         img1: cup1,
         img2: cup2,
         img3: cup3,
-        img4: cup4
+        img4: cup4,
+        path: "/details"
        },
        {
         id:3,
@@ -162,7 +173,8 @@ export const FeaturedData1 = [
         img1: slogan1,
         img2: slogan2,
         img3: slogan3,
-        img4: slogan4
+        img4: slogan4,
+        path: "/details"
        },
       {
         id:4,
@@ -174,7 +186,8 @@ export const FeaturedData1 = [
         img1: pocketmen1,
         img2: pocketmen2,
         img3: pocketmen3,
-        img4: pocketmen4
+        img4: pocketmen4,
+        path: "/details"
       }
     ]
 
@@ -189,7 +202,8 @@ export const FeaturedData1 = [
       img1: trousers1,
       img2: trousers2,
       img3: trousers3,
-      img4: trousers4
+      img4: trousers4,
+      path: "/details"
      },
      {
       id:6,
@@ -199,7 +213,8 @@ export const FeaturedData1 = [
       img1: shirt1,
       img2: shirt2,
       img3: shirt3,
-      img4: shirt4
+      img4: shirt4,
+      path: "/details"
      },
      {
       id:7,
@@ -211,7 +226,8 @@ export const FeaturedData1 = [
       img1: bomber1,
       img2: bomber2,
       img3: bomber3,
-      img4: bomber4
+      img4: bomber4,
+      path: "/details"
      },
     {
       id:8,
@@ -223,7 +239,8 @@ export const FeaturedData1 = [
       img1: pocket1,
       img2: pocket2,
       img3: pocket3,
-      img4: pocket4
+      img4: pocket4,
+      path: "/details"
     }
   ]
 
@@ -238,7 +255,8 @@ export const FeaturedData1 = [
       img1: pants1,
       img2: pants2,
       img3: pants3,
-      img4: pants4
+      img4: pants4,
+      path: "/details"
      },
  
      {
@@ -250,7 +268,8 @@ export const FeaturedData1 = [
        img1: basic1,
        img2: basic2,
        img3: basic3,
-       img4: basic4
+       img4: basic4,
+       path: "/details"
       },
  
       {
@@ -263,7 +282,8 @@ export const FeaturedData1 = [
        img1: leggings1,
        img2: leggings2,
        img3: leggings3,
-       img4: leggings4
+       img4: leggings4,
+       path: "/details"
       },
       {
         id:4,
@@ -273,7 +293,8 @@ export const FeaturedData1 = [
         img1: pink1,
         img2: pink2,
         img3: pink3,
-        img4: pink4
+        img4: pink4,
+        path: "/details"
        },
   ]
 
@@ -286,7 +307,8 @@ export const FeaturedData1 = [
       img1: ribbed1,
       img2: ribbed2,
       img3: ribbed3,
-      img4: ribbed4
+      img4: ribbed4,
+      path: "/details"
      },
  
      {
@@ -299,7 +321,8 @@ export const FeaturedData1 = [
        img1: starter1,
        img2: starter2,
        img3: starter3,
-       img4: starter4
+       img4: starter4,
+       path: "/details"
       },
  
       {
@@ -311,6 +334,7 @@ export const FeaturedData1 = [
        img2: corduroy2,
        img3: corduroy3,
        img4: corduroy1,
+       path: "/details"
       },
       {
         id:4,
@@ -320,7 +344,8 @@ export const FeaturedData1 = [
         img1: faux1,
         img2: faux2,
         img3: faux3,
-        img4: faux4
+        img4: faux4,
+        path: "/details"
        },
   ]
 
@@ -335,7 +360,8 @@ export const FeaturedData1 = [
       img1: arizona1,
       img2: arizona2,
       img3: arizona3,
-      img4: arizona4
+      img4: arizona4,
+      path: "/details"
      },
  
      {
@@ -348,7 +374,8 @@ export const FeaturedData1 = [
        img1: sweater1,
        img2: sweater2,
        img3: sweater3,
-       img4: sweater4
+       img4: sweater4,
+       path: "/details"
       },
  
       {
@@ -360,6 +387,7 @@ export const FeaturedData1 = [
        img2: corduroy2,
        img3: corduroy3,
        img4: corduroy1,
+       path: "/details"
       },
       {
         id:8,
@@ -369,7 +397,8 @@ export const FeaturedData1 = [
         img1: faux1,
         img2: faux2,
         img3: faux3,
-        img4: faux4
+        img4: faux4,
+        path: "/details"
        },
   ]
 
@@ -385,7 +414,8 @@ export const FeaturedData1 = [
       img1: dressblack1,
       img2: dressblack2,
       img3: dressblack3,
-      img4: dressblack4
+      img4: dressblack4,
+      path: "/details"
      },
  
      {
@@ -398,7 +428,8 @@ export const FeaturedData1 = [
       img1: slogan1,
       img2: slogan2,
       img3: slogan3,
-      img4: slogan4
+      img4: slogan4,
+      path: "/details"
      },
  
      {
@@ -410,7 +441,8 @@ export const FeaturedData1 = [
       img1: nylon1,
       img2: nylon2,
       img3: nylon3,
-      img4: nylon4
+      img4: nylon4,
+      path: "/details"
      },
        {
         id:8,
@@ -422,7 +454,8 @@ export const FeaturedData1 = [
         img1: sleev1,
         img2: sleev2,
         img3: sleev3,
-        img4: sleev4
+        img4: sleev4,
+        path: "/details"
        }
 ]
 
@@ -436,7 +469,8 @@ export const Outwear1 = [
     img1: basic1,
     img2: basic2,
     img3: basic3,
-    img4: basic4
+    img4: basic4,
+    path: "/details"
    },
    {
     id:2,
@@ -447,7 +481,8 @@ export const Outwear1 = [
     img1: nylon1,
     img2: nylon2,
     img3: nylon3,
-    img4: nylon4
+    img4: nylon4,
+    path: "/details"
    },
    {
     id:3,
@@ -459,7 +494,8 @@ export const Outwear1 = [
     img1: bomber1,
     img2: bomber2,
     img3: bomber3,
-    img4: bomber4
+    img4: bomber4,
+    path: "/details"
    },
 
    {
@@ -470,7 +506,8 @@ export const Outwear1 = [
     img1: zipper1,
     img2: zipper2,
     img3: zipper3,
-    img4: zipper4
+    img4: zipper4,
+    path: "/details"
    },
 ]
 
@@ -485,7 +522,8 @@ export const Outwear2 = [
     img1: biker1,
     img2: biker2,
     img3: biker3,
-    img4: biker4
+    img4: biker4,
+    path: "/details"
    },
    {
     id:6,
@@ -497,7 +535,8 @@ export const Outwear2 = [
     img1: gilet1,
     img2: gilet2,
     img3: gilet3,
-    img4: gilet4
+    img4: gilet4,
+    path: "/details"
    },
    {
     id:7,
@@ -509,7 +548,8 @@ export const Outwear2 = [
     img1: knit1,
     img2: knit2,
     img3: knit3,
-    img4: knit4
+    img4: knit4,
+    path: "/details"
    },
 
    {
@@ -521,7 +561,8 @@ export const Outwear2 = [
     img1: stuff1,
     img2: stuff2,
     img3: stuff3,
-    img4: stuff4
+    img4: stuff4,
+    path: "/details"
    },
 ]
 
@@ -536,7 +577,8 @@ export const BestSeller1 = [
     img1: pocket1,
     img2: pocket2,
     img3: pocket3,
-    img4: pocket4
+    img4: pocket4,
+    path: "/details"
   },
   {
     id:2,
@@ -548,7 +590,8 @@ export const BestSeller1 = [
     img1: knotted1,
     img2: knotted2,
     img3: knotted3,
-    img4: knotted4
+    img4: knotted4,
+    path: "/details"
   },
 ]
 
@@ -561,7 +604,8 @@ export const BestSeller2 = [
     img1: corduroy1,
     img2: corduroy2,
     img3: corduroy3,
-    img4: corduroy2
+    img4: corduroy2,
+    path: "/details"
   },
   {
     id:4,
@@ -573,7 +617,8 @@ export const BestSeller2 = [
     img1: starter1,
     img2: starter2,
     img3: starter3,
-    img4: starter4
+    img4: starter4,
+    path: "/details"
   },
 ]
 
