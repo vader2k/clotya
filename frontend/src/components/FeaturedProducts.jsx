@@ -8,6 +8,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { LiaCompressSolid } from "react-icons/lia";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
+import { Link } from "react-router-dom";
 
 const FeaturedProducts = () => {
 
@@ -58,18 +59,21 @@ const FeaturedProducts = () => {
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
                 <div className="img-holder">
-                  <img
-                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                    src={item[`img${activeImageIndices[item.id] || 1}`]}
-                    alt={`product-${item.id}`}
-                  />
-                  {/* side functions */}
-                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                  </div>
+                  <Link to={item.path}>
+                    <img
+                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
+                      src={item[`img${activeImageIndices[item.id] || 1}`]}
+                      alt={`product-${item.id}`}
+                    />
+                    {/* side functions */}
+                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    </div>
+                  </Link>
+                  
                 </div>
                 {/* item properties */}
                 <div className="absolute bg-white p-5 px-6 xl:w-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] w-[170px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] bottom-[-20px] left-[20px] flex flex-col gap-3 h-[160px]">
@@ -96,18 +100,20 @@ const FeaturedProducts = () => {
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
                 <div className="img-holder">
-                  <img
-                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                    src={item[`img${activeImageIndices[item.id] || 1}`]}
-                    alt={`product-${item.id}`}
-                  />
-                  {/* side functions */}
-                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                  </div>
+                  <Link to={item.path}>
+                    <img
+                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
+                      src={item[`img${activeImageIndices[item.id] || 1}`]}
+                      alt={`product-${item.id}`}
+                    />
+                    {/* side functions */}
+                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    </div>
+                  </Link>
                 </div>
                 <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
@@ -133,18 +139,20 @@ const FeaturedProducts = () => {
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
                 <div className="img-holder">
-                  <img
-                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                    src={item[`img${activeImageIndices[item.id] || 1}`]}
-                    alt={`product-${item.id}`}
-                  />
-                  {/* side functions */}
-                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                  </div>
+                  <Link to={item.path}>
+                    <img
+                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
+                      src={item[`img${activeImageIndices[item.id] || 1}`]}
+                      alt={`product-${item.id}`}
+                    />
+                    {/* side functions */}
+                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    </div>
+                  </Link>                 
                 </div>
                 <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
