@@ -33,8 +33,8 @@ const FeaturedProducts = () => {
 
   return (
     <div className="py-8 xxs:py-4 relative ">
-      <div className="flex justify-between ">
-        <h1 className="md:text-[1.8rem] font-medium">Featured Products</h1>
+      <div className="lg:flex md:flex sm:flex sm:flex-col sm:gap-2 flex-col flex justify-between ">
+        <h1 className="md:text-[1.8rem] lg:text-[1.8rem] xl:text-[1.8rem] sm:text-[1.3rem] text-[1.1rem] font-medium">Featured Products</h1>
         <p className="max-w-[730px]  text-gray-500 font-extralight">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
       </div>
       <div className="relative ">
@@ -50,7 +50,7 @@ const FeaturedProducts = () => {
           onSwiper={(swiper) => console.log(swiper)}
         >
           <SwiperSlide>
-            <div className="py-8 flex overflow-x-auto gap-8 h-[750px] holder relative">
+            <div className="py-20 flex overflow-x-auto gap-8 lg:max-h-[750px] md:max-h-[750px] sm:max-h-[650px] max-h-[550px] holder relative">
             {FeaturedData1.map((item) => (
               <div
                 key={item.id}
@@ -59,7 +59,7 @@ const FeaturedProducts = () => {
               >
                 <div className="img-holder">
                   <img
-                    className="object-contain w-[390px] h-[600px] cursor-pointer"
+                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
                     src={item[`img${activeImageIndices[item.id] || 1}`]}
                     alt={`product-${item.id}`}
                   />
@@ -71,7 +71,8 @@ const FeaturedProducts = () => {
                     <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
                   </div>
                 </div>
-                <div className="absolute bg-white p-5 px-6 w-[345px] bottom-[10px] left-[20px] flex flex-col gap-3 h-[160px]">
+                {/* item properties */}
+                <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
                   <div className="flex items-center gap-5 text-[0.9rem]">
@@ -87,7 +88,7 @@ const FeaturedProducts = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="py-8 flex overflow-x-auto gap-8 h-[750px] holder relative">
+          <div className="py-20 flex overflow-x-auto gap-8 lg:max-h-[750px] md:max-h-[750px] sm:max-h-[650px] max-h-[550px] holder relative">
             {FeaturedData2.map((item) => (
               <div
                 key={item.id}
@@ -96,7 +97,7 @@ const FeaturedProducts = () => {
               >
                 <div className="img-holder">
                   <img
-                    className="object-contain w-[390px] h-[600px] cursor-pointer"
+                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
                     src={item[`img${activeImageIndices[item.id] || 1}`]}
                     alt={`product-${item.id}`}
                   />
@@ -108,7 +109,7 @@ const FeaturedProducts = () => {
                     <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
                   </div>
                 </div>
-                <div className="absolute bg-white p-5 px-6 w-[345px] bottom-[10px] left-[20px] flex flex-col gap-3 h-[160px]">
+                <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
                   <div className="flex items-center gap-5 text-[0.9rem]">
@@ -124,7 +125,7 @@ const FeaturedProducts = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="py-8 flex overflow-x-auto gap-8 h-[750px] holder relative">
+          <div className="py-20 flex overflow-x-auto gap-8 lg:max-h-[750px] md:max-h-[750px] sm:max-h-[650px] max-h-[550px] holder relative">
             {FeaturedData3.map((item) => (
               <div
                 key={item.id}
@@ -133,7 +134,7 @@ const FeaturedProducts = () => {
               >
                 <div className="img-holder">
                   <img
-                    className="object-contain w-[390px] h-[600px] cursor-pointer"
+                    className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
                     src={item[`img${activeImageIndices[item.id] || 1}`]}
                     alt={`product-${item.id}`}
                   />
@@ -145,7 +146,7 @@ const FeaturedProducts = () => {
                     <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
                   </div>
                 </div>
-                <div className="absolute bg-white p-5 px-6 w-[345px] bottom-[10px] left-[20px] flex flex-col gap-3 h-[160px]">
+                <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
                   <div className="flex items-center gap-5 text-[0.9rem]">

@@ -101,7 +101,7 @@ export const FeaturedData1 = [
        },
   
        {
-        id:7,
+        id:8,
         name: "Slogan Hoodie With Label Detail",
         tag: "37%",
         oldPrice: "$18.99",
