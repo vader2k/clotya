@@ -28,14 +28,24 @@ const Details = () => {
   const sizeContent = [ "XXS", "XS", "S", "M", "L", "XL", "XXL" ]
 
   return (
-    <div className={`${styles.boxWidth}`}>
+    <div className={`${styles.boxWidth} ${styles.paddingY}`}>
       <div className='flex justify-center items-start'>
-        <div>
-          <img src="" alt="" />
+        <div className='flex-1'>
+          <div className='flex flex-col gap-2'>
+            <div>
+              <img className='h-[700px]' src={arizona1} alt="arizona1" />
+            </div>
+            <div className='flex items-center gap-3'>
+              <img className='w-[80px] h-[80px] object-cover' src={arizona1} alt="arizona1" />
+              <img className='w-[80px] h-[80px] object-cover' src={arizona2} alt="arizona2" />
+              <img className='w-[80px] h-[80px] object-cover' src={arizona3} alt="arizona3" />
+              <img className='w-[80px] h-[80px] object-cover' src={arizona4} alt="arizona4" />
+            </div>
+          </div>
         </div>
 
-        <div className='flex flex-col gap-3'>
-          <h1>Basic Colred Sweatpants With Elastic Hems</h1>
+        <div className='flex flex-col gap-3 flex-1'>
+          <h1 className='text-[1.5rem] font-medium max-w-[400px]'>Basic Colred Sweatpants With Elastic Hems</h1>
           <div className='flex items-center gap-3 text-[0.8rem] font-medium'>
             <div className='flex gap-1'>
               {[...Array(noOfStars)].map((_,index) => (
