@@ -5,15 +5,24 @@ import { FaStar } from "react-icons/fa";
 import { TbWorldHeart } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiShare1 } from "react-icons/ci";
+import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const Details = () => {
 
   const [ colors, setColors ] = useState(null)
   const [ sizes, setSizes] =  useState(null)
   const [ quantity, setQuantity ] = useState(1)
+  const [ activeImage, setActiveImage ] = useState(0)
 
+  // image gallery
+  const images = [
+    arizona1, arizona2, arizona3, arizona4
+  ]
+
+  // star icon
   const noOfStars = 5;
 
+  // color selector for outfits
   const colorsBg = [
     'bg-red-600',
     'bg-blue-600',
@@ -25,26 +34,33 @@ const Details = () => {
     'bg-gray-300'
   ]
 
+  // sizes options
   const sizeContent = [ "XXS", "XS", "S", "M", "L", "XL", "XXL" ]
 
   return (
     <div className={`${styles.boxWidth} ${styles.paddingY}`}>
       <div className='flex justify-center items-start'>
         <div className='flex-1'>
-          <div className='flex flex-col gap-2'>
-            <div>
-              <img className='h-[700px]' src={arizona1} alt="arizona1" />
+          <div className='flex flex-col gap-3 '>
+            <div className='relative w-fit'>
+              <img className='h-[650px]' src={images[activeImage]} alt="arizona1" />
+              <div className='absolute top-[50%] text-[2rem] text-gray-500'>
+                <IoIosArrowBack className='cursor-pointer' onClick={()=>setActiveImage( activeImage === 0 ? 3 : activeImage - 1)}/>
+              </div>
+              <div className='absolute top-[50%] right-0 text-[2rem] text-gray-500'>
+                <IoIosArrowForward className='cursor-pointer' onClick={()=> setActiveImage( activeImage === 3 ? 0 : activeImage + 1)}/>
+              </div>
             </div>
             <div className='flex items-center gap-3'>
-              <img className='w-[80px] h-[80px] object-cover' src={arizona1} alt="arizona1" />
-              <img className='w-[80px] h-[80px] object-cover' src={arizona2} alt="arizona2" />
-              <img className='w-[80px] h-[80px] object-cover' src={arizona3} alt="arizona3" />
-              <img className='w-[80px] h-[80px] object-cover' src={arizona4} alt="arizona4" />
+              <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={images[0]} alt="arizona1" onClick={()=>setActiveImage(0)}/>
+              <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={images[1]} alt="arizona2" onClick={()=>setActiveImage(1)}/>
+              <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={images[2]} alt="arizona3" onClick={()=>setActiveImage(2)}/>
+              <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={images[3]} alt="arizona4" onClick={()=>setActiveImage(3)}/>
             </div>
           </div>
         </div>
 
-        <div className='flex flex-col gap-3 flex-1'>
+        <div className='flex flex-col gap-2 flex-1'>
           <h1 className='text-[1.5rem] font-medium max-w-[400px]'>Basic Colred Sweatpants With Elastic Hems</h1>
           <div className='flex items-center gap-3 text-[0.8rem] font-medium'>
             <div className='flex gap-1'>
