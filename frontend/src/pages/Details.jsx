@@ -70,7 +70,8 @@ const Details = () => {
               {
                 sizeContent.map((item, index)=> (
                   <div key={index}>
-                    <button className='h-[40px] w-[80px] p-2 border border-gray-200'>{item}</button>
+                    <button className={`${item} h-[40px] w-[80px] p-2 border border-gray-200 ${sizes === item ? 'bg-red-500 text-white' : ""}`} 
+                    onClick={()=> setSizes(item)}>{item}</button>
                   </div>
                 ))
               }
