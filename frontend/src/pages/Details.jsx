@@ -6,6 +6,7 @@ import { TbWorldHeart } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
 import { CiShare1 } from "react-icons/ci";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { RelatedProducts } from '../components/index.js'
 
 const Details = () => {
 
@@ -142,57 +143,50 @@ const Details = () => {
       </div>
         
         {/* Description, Additional Information & Reviews tab */}
-      <div className='flex items-center gap-8 py-10 text-[1.1rem] font-medium border-b border-gray-300'>
-        <button 
-          onClick={()=> setActiveTab("description")}
-          className={`${activeTab === "description" && 'text-gray-900' } font-medium text-gray-400 hover:text-gray-600`}>
-          Description
-        </button>
-        <button 
-          onClick={()=> setActiveTab("information")}
-          className={`${activeTab === "information" && 'text-gray-900' } font-medium text-gray-400 hover:text-gray-600`}>
-          Additional information
-        </button>
-        <button 
-          onClick={()=> setActiveTab("reviews")}
-          className={`${activeTab === "reviews" && 'text-gray-900' } font-medium text-gray-400 hover:text-gray-600`}>
-          Reviews
-        </button>
+      <div>
+        <div className='flex items-center gap-8 py-10 text-[1.1rem] font-medium border-b border-gray-300'>
+          <button 
+            onClick={()=> setActiveTab("description")}
+            className={`${activeTab === "description" && 'text-gray-900' } font-medium text-gray-400 hover:text-gray-600`}>
+            Description
+          </button>
+          <button 
+            onClick={()=> setActiveTab("information")}
+            className={`${activeTab === "information" && 'text-gray-900' } font-medium text-gray-400 hover:text-gray-600`}>
+            Additional information
+          </button>
+        </div>
+        <div className='py-5'>
+          {
+            activeTab === 'description' 
+              && 
+                <div className='flex flex-col gap-2 text-[0.85rem] leading-[2rem]'>
+                  <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
+                  <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
+                </div>
+          }
+
+          {
+            activeTab === 'information' 
+              && 
+                <div className='flex flex-col gap-2 py-2'>
+                  <h1>Additional information</h1>
+                  <div className='flex items-center'>
+                    <span className='h-[50px] w-[150px] flex items-center px-3 font-bold border border-gray-300'>Color</span>
+                    <span className='h-[50px] w-[1000px] flex items-center px-3 text-[0.85rem] border border-gray-300'>Apple, Red, Bio, Blue, Orange, Green, Pink, Black, white</span>
+                  </div>
+                  <div className='flex items-center'>
+                    <span className='h-[50px] w-[150px] flex items-center px-3 font-bold border border-gray-300'>Size</span>
+                    <span className='h-[50px] w-[1000px] flex items-center px-3 text-[0.85rem] border border-gray-300'>XXS, XS, S, M, L, XL, XXL</span>
+                  </div>
+                </div>
+            }
+        </div>
       </div>
-      <div className='py-5'>
-        {
-          activeTab === 'description' 
-            && 
-              <div className='flex flex-col gap-2 text-[0.85rem] leading-[2rem]'>
-                <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
-                <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
-              </div>
-        }
 
-{
-          activeTab === 'information' 
-            && 
-              <div className='flex flex-col gap-2 py-2'>
-                <h1>Additional information</h1>
-                <div className='flex items-center'>
-                  <span className='h-[50px] w-[150px] flex items-center px-3 font-bold border border-gray-300'>Color</span>
-                  <span className='h-[50px] w-[1000px] flex items-center px-3 text-[0.85rem] border border-gray-300'>Apple, Red, Bio, Blue, Orange, Green, Pink, Black, white</span>
-                </div>
-                <div className='flex items-center'>
-                  <span className='h-[50px] w-[150px] flex items-center px-3 font-bold border border-gray-300'>Size</span>
-                  <span className='h-[50px] w-[1000px] flex items-center px-3 text-[0.85rem] border border-gray-300'>XXS, XS, S, M, L, XL, XXL</span>
-                </div>
-              </div>
-        }
-
-{
-          activeTab === 'reviewa' 
-            && 
-              <div className='flex flex-col gap-2 text-[0.85rem] leading-[2rem]'>
-                <p>Quisque varius diam vel metus mattis, id aliquam diam rhoncus. Proin vitae magna in dui finibus malesuada et at nulla. Morbi elit ex, viverra vitae ante vel, blandit feugiat ligula. Fusce fermentum iaculis nibh, at sodales leo maximus a. Nullam ultricies sodales nunc, in pellentesque lorem mattis quis. Cras imperdiet est in nunc tristique lacinia. Nullam aliquam mauris eu accumsan tincidunt. Suspendisse velit ex, aliquet vel ornare vel, dignissim a tortor.</p>
-                <p>Morbi ut sapien vitae odio accumsan gravida. Morbi vitae erat auctor, eleifend nunc a, lobortis neque. Praesent aliquam dignissim viverra. Maecenas lacus odio, feugiat eu nunc sit amet, maximus sagittis dolor. Vivamus nisi sapien, elementum sit amet eros sit amet, ultricies cursus ipsum. Sed consequat luctus ligula. Curabitur laoreet rhoncus blandit. Aenean vel diam ut arcu pharetra dignissim ut sed leo. Vivamus faucibus, ipsum in vestibulum vulputate, lorem orci convallis quam, sit amet consequat nulla felis pharetra lacus. Duis semper erat mauris, sed egestas purus commodo vel.</p>
-              </div>
-        }
+      {/* related products component */}
+      <div className='py-8'>
+        <RelatedProducts/>
       </div>
     </div>
   )

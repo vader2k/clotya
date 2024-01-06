@@ -7,5 +7,6 @@ import HeroSlider from './HeroSlider'
 import Navbar from './Navbar'
 import News from './News'
 import TopBrand from './TopBrand'
+import RelatedProducts from './RelatedProducts'
 
-export {Categories,Collections,Contact,Featured,Footer,HeroSlider,Navbar,News,TopBrand}
+export {Categories,Collections,Contact,Featured,Footer,HeroSlider,Navbar,News,TopBrand, RelatedProducts}
