@@ -1,9 +1,9 @@
-import {  blog1, blog2, blog3, pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
+import { bucket1, bucket2, bucket3, bucket4, loose1, loose2, loose3, loose4, fuzzy1, fuzzy2, fuzzy3, fuzzy4, blog1, blog2, blog3, pants1, pants2, pants3, pants4, basic1, basic2, basic3, basic4,  leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
     , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
     trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
     ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,
      nylon1, nylon2, nylon3, nylon4, sleev1, sleev2, sleev3, sleev4, ribbed1, ribbed2, ribbed3, ribbed4,
-     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4, knotted1, knotted2, knotted3, knotted4, } from "../assets"
+     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4, knotted1, knotted2, knotted3, knotted4, leather1, leather2, leather3, leather4, mountain1, mountain2, mountain3, mountain4, } from "../assets"
 
 export const FeaturedData1 = [
     {
@@ -647,4 +647,112 @@ export const news = [
     title: "Sunset Sets From Saks",
     desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
   },
+]
+
+export const womenRelatedProducts = [
+  {
+    id:1,
+    name: "Fuzzy yellow jacket",
+    tag: "16%",
+    oldPrice: "$32.40",
+    price: "$27.40",
+    review: "1 review",
+    img1: fuzzy1,
+    img2: fuzzy2,
+    img3: fuzzy3,
+    img4: fuzzy4,
+    path: "/details"
+  },
+  {
+    id:2,
+    name: "Brown leather jacket",
+    tag: "47%",
+    oldPrice: "$85.90",
+    price: "$45.90",
+    review: "1 review",
+    img1: leather1,
+    img2: leather2,
+    img3: leather3,
+    img4: leather4,
+    path: "/details"
+  },
+  {
+    id:3,
+    name: "Moutain colred shirt",
+    tag: "26%",
+    price: "$49.00",
+    oldPrice: "$89.00",
+    review: "1 review1",
+    img1: mountain1,
+    img2: mountain2,
+    img3: mountain3,
+    img4: mountain4,
+    path: "/details"
+  },
+  {
+    id:4,
+    name: "Sleeveless Ribbed Short Dress",
+    tag: "26%",
+    oldPrice: "$19.99",
+    price: "%14.99",
+    review: "1 review",
+    img1: sleev1,
+    img2: sleev2,
+    img3: sleev3,
+    img4: sleev4,
+    path: "/details"
+   }
+]
+
+export const menProducts = [
+  {
+    id:1,
+    name: "Riptop Cargo Trousers With Pockets",
+    tag: "29%",
+    oldPrice: "$69.99",
+    price: "$49.99",
+    review: " review",
+    img1: trousers1,
+    img2: trousers2,
+    img3: trousers3,
+    img4: trousers4,
+    path: "/details"
+   },
+   {
+    id:2,
+    name: "Relaxed Fit Plaid Flannel Shirt",
+    price: "$34.99",
+    review: "1 review",
+    img1: shirt1,
+    img2: shirt2,
+    img3: shirt3,
+    img4: shirt4,
+    path: "/details"
+   },
+  {
+    id:3,
+    name: "Sky blue loosed jeans",
+    tag: "26%",
+    price: "$49.00",
+    oldPrice: "$89.00",
+    review: "1 review1",
+    img1: loose1,
+    img2: loose2,
+    img3: loose3,
+    img4: loose4,
+    path: "/details"
+  },
+  {
+    id:4,
+    name: "Brow Curdoroy bucket cap",
+    tag: "26%",
+    oldPrice: "$19.99",
+    price: "%14.99",
+    review: "1 review",
+    img1: bucket1,
+    img2: bucket2,
+    img3: bucket3,
+    img4: bucket4,
+    path: "/details"
+   }
 ]

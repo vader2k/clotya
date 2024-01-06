@@ -182,7 +182,35 @@ import blog1 from '../assets/blog-4.jpg'
 import blog2 from '../assets/blog-5.jpg'
 import blog3 from '../assets/blog-6.jpg'
 
-export { blog1, blog2, blog3, knotted1, knotted2, knotted3, knotted4, banner24, banner25, image09, slider14, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,slide1, slide2, slide3, women, men, shoe, accessory, basic1, basic2, basic3, basic4, pants1, pants2, pants3, pants4, leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
+// featured images
+import fuzzy1 from '../assets/fuzzy1.jpg'
+import fuzzy2 from '../assets/fuzzy2.jpg'
+import fuzzy3 from '../assets/fuzzy3.jpg'
+import fuzzy4 from '../assets/fuzzy4.jpg'
+
+import leather1 from '../assets/leather.jpeg'
+import leather2 from '../assets/leather2.jpeg'
+import leather3 from '../assets/leather3.jpeg'
+import leather4 from '../assets/leather4.jpeg'
+
+import mountain1 from '../assets/mountain1.jpeg'
+import mountain2 from '../assets/mountain2.jpeg'
+import mountain3 from '../assets/mountain3.jpeg'
+import mountain4 from '../assets/mountain4.jpeg'
+
+
+import loose1 from '../assets/loose1.jpg'
+import loose2 from '../assets/loose2.jpg'
+import loose3 from '../assets/loose3.jpg'
+import loose4 from '../assets/loose4.jpg'
+
+import bucket1 from '../assets/bucket1.jpg'
+import bucket2 from '../assets/bucket2.jpg'
+import bucket3 from '../assets/bucket3.jpg'
+import bucket4 from '../assets/bucket4.jpg'
+
+
+export { bucket1, bucket2, bucket3, bucket4, loose1, loose2, loose3, loose4, fuzzy1, fuzzy2, fuzzy3, fuzzy4, leather1, leather2, leather3, leather4, mountain1, mountain2, mountain3, mountain4, blog1, blog2, blog3, knotted1, knotted2, knotted3, knotted4, banner24, banner25, image09, slider14, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,slide1, slide2, slide3, women, men, shoe, accessory, basic1, basic2, basic3, basic4, pants1, pants2, pants3, pants4, leggings1, leggings2, leggings3, leggings4, overshirt1, overshirt2, overshirt3, overshirt4
 , pink1, pink2, pink3, pink4, cup1, cup2, cup3, cup4, dressblack1, dressblack2, dressblack3, dressblack4, slogan1, slogan2, slogan3, slogan4, banner22, banner23 , pocketmen1, pocketmen2, pocketmen3, pocketmen4,
 trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
 ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4,
