@@ -3,7 +3,7 @@ import { bucket1, bucket2, bucket3, bucket4, loose1, loose2, loose3, loose4, fuz
     trousers1, trousers2, trousers3, trousers4, shirt1, shirt2, shirt3, shirt4
     ,bomber1, bomber2, bomber3, bomber4, pocket1, pocket2, pocket3, pocket4, arizona1, arizona2, arizona3, arizona4, sweater1, sweater2, sweater3, sweater4, biker1, biker2, biker3, biker4, gilet1, gilet2, gilet3, gilet4, knit1, knit2, knit3, knit4, stuff1, stuff2, stuff3 ,stuff4 ,
      nylon1, nylon2, nylon3, nylon4, sleev1, sleev2, sleev3, sleev4, ribbed1, ribbed2, ribbed3, ribbed4,
-     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4, knotted1, knotted2, knotted3, knotted4, leather1, leather2, leather3, leather4, mountain1, mountain2, mountain3, mountain4, } from "../assets"
+     starter1, starter2, starter3, starter4, corduroy1, corduroy2, corduroy3, faux1, faux2, faux3, faux4, zipper1, zipper2, zipper3, zipper4, knotted1, knotted2, knotted3, knotted4, leather1, leather2, leather4, mountain1, mountain2, mountain3, mountain4, } from "../assets"
 
 export const FeaturedData1 = [
     {
@@ -672,8 +672,8 @@ export const womenRelatedProducts = [
     review: "1 review",
     img1: leather1,
     img2: leather2,
-    img3: leather3,
-    img4: leather4,
+    img3: leather4,
+    img4: leather1,
     path: "/details"
   },
   {
