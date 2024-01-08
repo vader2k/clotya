@@ -2,6 +2,8 @@ import { useParams } from "react-router-dom"
 import styles from '../style'
 import cover from '../assets/banner-26.jpg'
 
+import Card from '../ui/Card'
+
 const Products = () => {
 
     // const catId = parseInt(useParams().id)
@@ -24,7 +26,7 @@ const Products = () => {
           <div className="flex-[0.5]">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-5">
-                <h2>Filter by price</h2>
+                <h2 className="text-[0.9rem] font-bold">Filter by price</h2>
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2"><p>Price:</p> <span>$0 - $1,300</span></div>
                   <button className="bg-gray-200 text-[0.65rem] p-2">FILTER</button>
@@ -37,7 +39,7 @@ const Products = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="text-[0.9rem] font-medium">Filter by Color</h2>
+                <h2 className="text-[0.9rem] font-bold">Filter by Color</h2>
                 <div className="flex items-center gap-3">
                   <div className="flex flex-col gap-5">
                     {
@@ -61,7 +63,7 @@ const Products = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="text-[0.9rem] font-medium">Filter by Size</h2>
+                <h2 className="text-[0.9rem] font-bold">Filter by Size</h2>
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3 text-[0.8rem]">
                     <input type="checkbox" name="" id="" />
@@ -95,7 +97,7 @@ const Products = () => {
               </div>
 
               <div className="flex flex-col gap-5">
-                <h2 className="text-[0.9rem] font-medium">Product Status</h2>
+                <h2 className="text-[0.9rem] font-bold">Product Status</h2>
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3 text-[0.8rem]">
                     <input type="checkbox" name="" id="" />
@@ -111,7 +113,17 @@ const Products = () => {
           </div>
 
           <div className="flex-[2]">
-            <img src={cover} alt="" />
+            <div className="relative">
+              <img src={cover} alt="" />
+              <div className="absolute top-0 py-20 px-20">
+                <h1 className="text-[2rem] max-w-[300px]">Plus-Size Styles for Every Season</h1>
+                <p className="py-5 text-[0.9rem] text-gray-500 max-w-[300px]">Quis ipsum dolor sit amet consectetur adipisicing elit. Quasi.</p>
+              </div>
+            </div>
+
+            <div className="py-10">
+              <Card/>
+            </div>
           </div>
         </div>
       </div>
