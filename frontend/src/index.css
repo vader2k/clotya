@@ -68,3 +68,12 @@ body {
   background:black ;
   border: none;
 }
+
+input[ type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  cursor: pointer;
+}
