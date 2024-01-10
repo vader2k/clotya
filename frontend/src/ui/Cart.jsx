@@ -2,10 +2,10 @@ import cloth from '../assets/arizona1.jpeg'
 
 const Cart = () => {
   return (
-    <div>
+    <div className='absolute right-[100px] top-[80px] z-50 bg-white'>
       <div>
         <div>
-          <img src={cloth} alt=""/>
+          <img className='h-[80px] object-contain' src={cloth} alt=""/>
           <div>
             <span>Basic Colored Sweatpants With Elastic Hems</span>
             <div>

@@ -4,16 +4,18 @@ import { IoIosSearch, IoMdHeartEmpty, IoMdClose } from "react-icons/io";
 import { BsBag } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
+import Cart from "../ui/Cart";
 
 const Navbar = () => {
  
   const [isOpen, setIsOpen] = useState(false)
+  const [ isCartOpen, setIsCartOpen ] = useState(false)
 
   return (
     
     <>
     {/* navbar for big and small screens */}
-    <div>
+    <div className="relative">
       <div className="bg-black text-white text-center font-poppins py-2 text-[0.5rem] md:text-[0.75rem] font-normal">SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY - OFF 50%! <span className="ml-2 font-bold">SHOP NOW</span> </div>
       <div className="flex items-center justify-between px-5 md:px-24 py-1 text-black bg-white">
         {/* first container */}
@@ -43,19 +45,20 @@ const Navbar = () => {
 
         {/* third container */}
         <div className="flex items-center gap-4 text-[1.5rem] text-gray-600">
-          <IoPersonOutline className="hidden md:block"/>
-          <IoIosSearch className="hidden md:block"/>
-          <div className="relative hidden md:block">
+          <IoPersonOutline className="hidden md:block cursor-pointer"/>
+          <IoIosSearch className="hidden md:block cursor-pointer"/>
+          <div className="relative hidden md:block cursor-pointer">
             <IoMdHeartEmpty/>
             <p className="absolute px-1 bg-red-500 rounded-full text-white text-[0.5rem] top-[-3px] right-[-2px]">1</p>
           </div>
           <p className="text-[0.9rem]">$0.00</p>
-          <div className="relative">
-            <BsBag />
+          <div className="relative cursor-pointer">
+            <BsBag onClick={()=> setIsCartOpen(!isCartOpen)}/>
             <p className="absolute px-1 bg-red-500 rounded-full text-white text-[0.5rem] top-[-3px] right-[-2px]">0</p>
           </div>
         </div>
       </div>
+      { isCartOpen && <Cart/>}
     </div>
 
     {isOpen && (
