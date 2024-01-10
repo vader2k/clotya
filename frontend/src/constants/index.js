@@ -629,7 +629,8 @@ export const news = [
     cat: "COLLECTION",
     date: "- 25 Apr 2022",
     title: "The Best Products That Shape Fashion",
-    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros",
+    path : "/collection"
   },
   {
     id:2,
@@ -637,7 +638,8 @@ export const news = [
     cat: "FASHION",
     date: "- 25 Apr 2022",
     title: "New Finds From Tuckernuck",
-    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros",
+    path: '/fashion'
   },
   {
     id:3,
@@ -645,7 +647,9 @@ export const news = [
     cat: "CLOTHING",
     date: "- 25 Apr 2022",
     title: "Sunset Sets From Saks",
-    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros"
+    desc: "Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros",
+    path: '/clothing'
+    
   },
 ]
 

@@ -1,5 +1,5 @@
 import { news } from '../constants/index'
-
+import { Link } from 'react-router-dom'
 const News = () => {
   return (
     <div className="py-20">
@@ -13,14 +13,16 @@ const News = () => {
           news.map(items=> (
             <div
             key={items.id}>
-              <div className='flex flex-col gap-5 cursor-pointer' >
-                <img className='' src={items.img} alt={items.title} />
-                <div className='flex items-center gap-3 text-gray-500'>
-                  <h2 className='text-[0.9rem] font-medium'>{items.cat}</h2>
-                  <p className='text-[0.8rem]'>{items.date}</p>
+              <Link to={items.path}>
+                <div className='flex flex-col gap-5 cursor-pointer' >
+                  <img className='' src={items.img} alt={items.title} />
+                  <div className='flex items-center gap-3 text-gray-500'>
+                    <h2 className='text-[0.9rem] font-medium'>{items.cat}</h2>
+                    <p className='text-[0.8rem]'>{items.date}</p>
+                  </div>
+                  <h1 className='font-bold text-[1.3rem] font-roboto'>{items.title}</h1>
                 </div>
-                <h1 className='font-bold text-[1.3rem] font-roboto'>{items.title}</h1>
-              </div>
+              </Link>
               <p className='py-3 text-gray-400 text-[0.9rem]'>{items.desc}</p>
             </div>
           ))
