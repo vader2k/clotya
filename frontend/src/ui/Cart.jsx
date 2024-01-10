@@ -20,7 +20,7 @@ const Cart = () => {
             </div>
           </div>
           <div>
-            <RiDeleteBin5Line className='text-red-500'/>
+            <RiDeleteBin5Line className='text-red-500 cursor-pointer'/>
           </div>
         </div>
 
