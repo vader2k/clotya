@@ -1,5 +1,5 @@
 import cloth from '../assets/arizona1.jpeg'
-import { MdClose } from "react-icons/md";
+import { RiDeleteBin5Line } from "react-icons/ri";
 
 
 const Cart = () => {
