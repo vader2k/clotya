@@ -8,12 +8,12 @@ const Collection = () => {
       <div className='flex items-start gap-5'>
         <div className='flex-[2]'>
           <img src={blog1} alt="blog image 1" />
-          <div className='flex items-center'>
-            <span>COLLECTION - </span>
-            <span>April25, 2022</span>
+          <div className='flex items-center py-5 gap-3'>
+            <span className='font-medium text-[0.9rem] text-gray-500'>COLLECTION --- </span>
+            <span className='text-[0.8rem] text-gray-500'>April25, 2022</span>
           </div>
-          <h1>The Best Product That Shap Fashion</h1>
-          <div>
+          <h1 className='pb-5 text-[2.5rem] font-bold'>The Best Product That Shap Fashion</h1>
+          <div className='text-[0.9rem] flex flex-col gap-4 text-gray-500'>
             <p>
             Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam consequat est nec turpis eleifend ornare. Vestibulum eu justo lobortis mauris commodo efficitur. Nunc pulvinar pulvinar cursus.
             </p>
