@@ -1,4 +1,3 @@
-import React from 'react'
 import { blog1, blog2, blog3 } from '../../assets'
 import styles from '../../style'
 
@@ -12,7 +11,7 @@ const Collection = () => {
             <span className='font-medium text-[0.9rem] text-gray-500'>COLLECTION --- </span>
             <span className='text-[0.8rem] text-gray-500'>April25, 2022</span>
           </div>
-          <h1 className='pb-5 text-[2.5rem] font-bold'>The Best Product That Shap Fashion</h1>
+          <h1 className='pb-5 text-[2.2rem] font-medium'>The Best Products That Shape Fashion</h1>
           <div className='text-[0.9rem] flex flex-col gap-4 text-gray-500'>
             <p>
             Donec rhoncus quis diam sit amet faucibus. Vivamus pellentesque, sem sed convallis ultricies, ante eros laoreet libero, vitae suscipit lorem turpis sit amet lectus. Quisque egestas lorem ut mauris ultrices, vitae sollicitudin quam facilisis. Vivamus rutrum urna non ligula tempor aliquet. Fusce tincidunt est magna, id malesuada massa imperdiet ut. Nunc non nisi urna. Nam consequat est nec turpis eleifend ornare. Vestibulum eu justo lobortis mauris commodo efficitur. Nunc pulvinar pulvinar cursus.
@@ -21,7 +20,7 @@ const Collection = () => {
             Nulla id nibh ligula. Etiam finibus elit nec nisl faucibus, vel auctor tortor iaculis. Vivamus aliquet ipsum purus, vel auctor felis interdum at. Praesent quis fringilla justo. Ut non dui at mi laoreet gravida vitae eu elit. Aliquam in elit eget purus scelerisque efficitur vel ac sem. Etiam ante magna, vehicula et vulputate in, aliquam sit amet metus. Donec mauris eros, aliquet in nibh quis, semper suscipit nunc. Phasellus ornare nibh vitae dapibus tempor.
             </p>
 
-            <div>
+            <div className='text-[0.85rem] p-10 border-l-[4px] border-gray-300 '>
               <p>Aliquam purus enim, fringilla vel nunc imperdiet, consequat ultricies massa. Praesent sed turpis sollicitudin, dignissim justo vel, fringilla mi.</p>
             </div>
 
