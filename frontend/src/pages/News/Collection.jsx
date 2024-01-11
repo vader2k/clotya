@@ -13,7 +13,7 @@ const Collection = () => {
           <img src={blog1} alt="blog image 1" />
           <div className='flex items-center py-5 gap-3'>
             <span className='font-medium text-[0.9rem] text-gray-500'>COLLECTION --- </span>
-            <span className='text-[0.8rem] text-gray-500'>April25, 2022</span>
+            <span className='text-[0.8rem] text-gray-500'>April 25, 2022</span>
           </div>
           <h1 className='pb-5 text-[2.2rem] font-medium'>The Best Products That Shape Fashion</h1>
           <div className='text-[0.9rem] flex flex-col gap-4 text-gray-500 pb-10'>
@@ -84,11 +84,11 @@ const Collection = () => {
             <Link to='/clothing'>
               <div className='flex items-start gap-8 cursor-pointer'>
                 <div>
-                  <img className='w-[80px] h-[80px] object-cover' src={blog2} alt="blog2" />
+                  <img className='w-[80px] h-[80px] object-cover' src={blog3} alt="blog2" />
                 </div>
                 <div className='flex flex-col gap-3'>
                   <h2 className='text-gray-500'>April 25, 2022</h2>
-                  <p className='text-[0.9rem] font-medium max-w-[200px]'>New Finds From Tuckerneck</p>
+                  <p className='text-[0.9rem] font-medium max-w-[200px]'>Sunset Sets From Saks</p>
                 </div>
               </div>
             </Link>
@@ -108,11 +108,11 @@ const Collection = () => {
             <Link to='/fashion'>
               <div className='flex items-start gap-8 cursor-pointer'>
                 <div>
-                  <img className='w-[80px] h-[80px] object-cover' src={blog3} alt="blog2" />
+                  <img className='w-[80px] h-[80px] object-cover' src={blog2} alt="blog2" />
                 </div>
                 <div className='flex flex-col gap-3'>
                   <h2 className='text-gray-500'>April 25, 2022</h2>
-                  <p className='text-[0.9rem] font-medium max-w-[200px]'>Sunset Sets From Saks</p>
+                  <p className='text-[0.9rem] font-medium max-w-[200px]'>New Finds From Tuckerneck</p>
                 </div>
               </div>
             </Link>
