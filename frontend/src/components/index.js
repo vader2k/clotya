@@ -8,5 +8,6 @@ import Navbar from './Navbar'
 import News from './News'
 import TopBrand from './TopBrand'
 import RelatedProducts from './RelatedProducts'
+import List from './List'
 
-export {Categories,Collections,Contact,Featured,Footer,HeroSlider,Navbar,News,TopBrand, RelatedProducts}
+export {Categories,Collections,Contact,Featured,Footer,HeroSlider,Navbar,News,TopBrand, RelatedProducts, List}

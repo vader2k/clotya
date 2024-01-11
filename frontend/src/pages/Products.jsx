@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom"
 import styles from '../style'
 import cover from '../assets/banner-26.jpg'
-
-import Card from '../ui/Card'
-
+import { List } from '../components'
+import { useState } from "react"
 const Products = () => {
 
     // const catId = parseInt(useParams().id)
@@ -18,6 +17,17 @@ const Products = () => {
       'bg-gray-300'
     ]
   
+    const [maxValue, setMaxValue] = useState(1300)
+
+    // created an onChange function to handle the change event of the checkbox. it takes the event as an argument and updates the selected sub category state.
+    const handleChange = (e) => {
+      const value = e.target.value
+      const isChecked = e.target.checked
+      // if the checkbox is checked, the selected sub category state is updated with the value of the checkbox
+      // if the checkbox is unchecked, the selected sub category state is updated with the value of the checkbox
+      setSelectedSubCategory(isChecked ? [...selectedSubCategory, value] : selectedSubCategory.filter((item) => item !== value))
+    }
+
 
   return (
     <div>
@@ -122,7 +132,7 @@ const Products = () => {
             </div>
 
             <div className="py-10">
-              <Card/>
+              <List />
             </div>
           </div>
         </div>
