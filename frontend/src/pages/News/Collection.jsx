@@ -1,11 +1,15 @@
 import { blog1, blog2, blog3 } from '../../assets'
 import styles from '../../style'
+import { CiSearch } from "react-icons/ci";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from 'react-router-dom'
 
 const Collection = () => {
+
   return (
     <div className={`${styles.boxWidth} ${styles.paddingY}`}>
-      <div className='flex items-start gap-5'>
-        <div className='flex-[2]'>
+      <div className='flex items-start gap-10'>
+        <div className='flex-[3]'>
           <img src={blog1} alt="blog image 1" />
           <div className='flex items-center py-5 gap-3'>
             <span className='font-medium text-[0.9rem] text-gray-500'>COLLECTION --- </span>
@@ -67,8 +71,90 @@ const Collection = () => {
         </div>
         </div>
 
-        <div className='flex-1'>
-          hmm
+        <div className='flex-[1] text-[0.8rem] sticky top-0'>
+          <div className='relative'>
+            <input 
+              type="text" 
+              placeholder='Search...'
+              className='w-full p-3 border'/>
+            <CiSearch className='text-[1rem] absolute right-[10px] top-4'/>
+          </div>
+          <div className='flex flex-col gap-8'>
+            <h1 className='py-4 border-b border-gray-300 text-[0.9rem] font-medium'>Popular Posts</h1>
+            <Link to='/clothing'>
+              <div className='flex items-start gap-8 cursor-pointer'>
+                <div>
+                  <img className='w-[80px] h-[80px] object-cover' src={blog2} alt="blog2" />
+                </div>
+                <div className='flex flex-col gap-3'>
+                  <h2 className='text-gray-500'>April 25, 2022</h2>
+                  <p className='text-[0.9rem] font-medium max-w-[200px]'>New Finds From Tuckerneck</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link to='/collection'>
+              <div className='flex items-start gap-8 cursor-pointer'>
+                <div>
+                  <img className='w-[80px] h-[80px] object-cover' src={blog1} alt="blog2" />
+                </div>
+                <div className='flex flex-col gap-3'>
+                  <h2 className='text-gray-500'>April 25, 2022</h2>
+                  <p className='text-[0.9rem] font-medium max-w-[200px]'>The Best Products That Shape Fashion</p>
+                </div>
+              </div>
+            </Link>
+
+            <Link to='/fashion'>
+              <div className='flex items-start gap-8 cursor-pointer'>
+                <div>
+                  <img className='w-[80px] h-[80px] object-cover' src={blog3} alt="blog2" />
+                </div>
+                <div className='flex flex-col gap-3'>
+                  <h2 className='text-gray-500'>April 25, 2022</h2>
+                  <p className='text-[0.9rem] font-medium max-w-[200px]'>Sunset Sets From Saks</p>
+                </div>
+              </div>
+            </Link>
+
+                         
+              {/* categories */}
+              <div>
+                <h1 className='py-4 border-b border-gray-300 text-[0.9rem] font-medium'>Categories</h1>
+              </div>
+              <div className='flex flex-col gap-3'>
+                <div className='flex items-center gap-2'>
+                  <MdOutlineKeyboardArrowRight/>
+                  <p>Clothing</p>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <MdOutlineKeyboardArrowRight/>
+                  <p>Collection</p>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <MdOutlineKeyboardArrowRight/>
+                  <p>Dresses</p>
+                </div>
+                <div className='flex items-center gap-2'>
+                  <MdOutlineKeyboardArrowRight/>
+                  <p>Fashion</p>
+                </div>
+              </div>
+
+              {/* Tags */}
+              <div>
+                <h1 className='py-4 border-b border-gray-300 text-[0.9rem] font-medium'>Tags</h1>
+              </div>
+              <div className='flex gap-2 items-start max-w-[300px] flex-wrap'>
+                <button className='py-2 px-3 border'>clothing</button>
+                <button className='py-2 px-3 border'>fashion</button>
+                <button className='py-2 px-3 border'>theme</button>
+                <button className='py-2 px-3 border'>products</button>
+                <button className='py-2 px-3 border'>store</button>
+                <button className='py-2 px-3 border'>themeforest</button>
+                <button className='py-2 px-3 border'>e-commerce</button>
+              </div>
+          </div>
         </div>
       </div>
     </div>
