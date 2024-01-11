@@ -760,3 +760,184 @@ export const menProducts = [
     path: "/details"
    }
 ]
+
+export const cardItems = [
+  {
+    id:1,
+    name: "Basic High-Neck Puff Jacket",
+    tag: "Trending",
+    price: "$89.90",
+    review: "1 review",
+    img1: basic1,
+    img2: basic2,
+    img3: basic3,
+    img4: basic4,
+    path: "/details"
+   },
+   {
+    id:2,
+    name: "Short Nylon-Effe t Puffer Jacket",
+    tag: "26%",
+    price: "$29.90",
+    review: "2 reviews",
+    img1: nylon1,
+    img2: nylon2,
+    img3: nylon3,
+    img4: nylon4,
+    path: "/details"
+   },
+   {
+    id:3,
+    name: "Quilted Bomber Jacket With Ribbed Trims",
+    tag: "32%",
+    oldPrice: "$69.48",
+    price: "$47.90",
+    review: "2 reviews",
+    img1: bomber1,
+    img2: bomber2,
+    img3: bomber3,
+    img4: bomber4,
+    path: "/details"
+   },    {
+    id:4,
+    name: "Brown Arizona Sweatshirt",
+    tag: "21%",
+    oldPrice: "$28.00",
+    price: "$22.60",
+    review: "1 reviews",
+    img1: arizona1,
+    img2: arizona2,
+    img3: arizona3,
+    img4: arizona4,
+    path: "/details"
+   },
+
+   {
+     id:5,
+     name: "Sweater With Chain Detail",
+     tag: "37%",
+     oldPrice: "$74.99",
+     price: "$47.99",
+     review: "1 review",
+     img1: sweater1,
+     img2: sweater2,
+     img3: sweater3,
+     img4: sweater4,
+     path: "/details"
+    },
+
+    {
+     id:6,
+     name: "Oversize Corduroy Shirt",
+     price: "$24.99",
+     review: "1 review",
+     img1: corduroy1,
+     img2: corduroy2,
+     img3: corduroy3,
+     img4: corduroy1,
+     path: "/details"
+    },
+    {
+      id:7,
+      name: "Faux Leather Blazer",
+      price: "$139.00",
+      review: "1 review",
+      img1: faux1,
+      img2: faux2,
+      img3: faux3,
+      img4: faux4,
+      path: "/details"
+     },
+     {
+      id:8,
+      name: "Check Overshirt With Pocket Detail",
+      tag: "14%",
+      oldPrice: "$129.00",
+      price: "$112.00",
+      review: " review",
+      img1: overshirt1,
+      img2: overshirt2,
+      img3: overshirt3,
+      img4: overshirt4,
+      path: "/details"
+     },
+     {
+      id:9,
+      name: "Word Wide Cup Print T-shirt",
+      tag: "21%",
+      oldPrice: "$29.99",
+      price: "$23.99",
+      review: "1 review",
+      img1: cup1,
+      img2: cup2,
+      img3: cup3,
+      img4: cup4,
+      path: "/details"
+     },
+     {
+      id:10,
+      name: "Slogan Hoodie With Label Detail",
+      tag: "37%",
+      oldPrice: "$18.99",
+      price: "$11.90",
+      review: "1 review",
+      img1: slogan1,
+      img2: slogan2,
+      img3: slogan3,
+      img4: slogan4,
+      path: "/details"
+     },
+    {
+      id:11,
+      name: "Pouch Pocket Hoodie Orange",
+      tag: "22%",
+      oldPrice: "$37.50",
+      price: "$29.50",
+      review: "1 review",
+      img1: pocketmen1,
+      img2: pocketmen2,
+      img3: pocketmen3,
+      img4: pocketmen4,
+      path: "/details"
+    },
+    {
+      id:12,
+      name: "Basic Colored Sweatpants With Elastic Hems",
+      tag: "24%",
+      oldPrice: "$25.90",
+      price: "$19.90",
+      review: "2 reviews",
+      img1: pants1,
+      img2: pants2,
+      img3: pants3,
+      img4: pants4,
+      path: "/details"
+     },
+ 
+     {
+       id:13,
+       name: "Basic High-Neck Puff Jacket",
+       tag: "Trending",
+       price: "$89.90",
+       review: "1 review",
+       img1: basic1,
+       img2: basic2,
+       img3: basic3,
+       img4: basic4,
+       path: "/details"
+      },
+ 
+      {
+       id:14,
+       name: "Basic Relax Fit Leggings",
+       tag: "17%",
+       oldPrice: "$29.90",
+       price: "$24.90",
+       review: "1 review",
+       img1: leggings1,
+       img2: leggings2,
+       img3: leggings3,
+       img4: leggings4,
+       path: "/details"
+      },
+]

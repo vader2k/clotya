@@ -23,7 +23,7 @@ const Products = () => {
     <div>
       <div className={`${styles.boxWidth} ${styles.paddingY}`}>
         <div className="flex items-start justify-center gap-14">
-          <div className="flex-[0.5]">
+          <div className="flex-[0.5] sticky top-0">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-5">
                 <h2 className="text-[0.9rem] font-bold">Filter by price</h2>
