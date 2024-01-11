@@ -1,8 +1,14 @@
+import Card from '../ui/Card'
+import {cardItems} from '../constants'
 
-const List = () => {
+const List = ({catId, maxValue, SubCats}) => {
   return (
     <div>
-      List
+      {
+        cardItems.map((item) => {
+            <Card item={item} key={item.id}/>
+        })
+      }
     </div>
   )
 }

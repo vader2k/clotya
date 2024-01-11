@@ -5,7 +5,7 @@ import { List } from '../components'
 import { useState } from "react"
 const Products = () => {
 
-    // const catId = parseInt(useParams().id)
+    const catId = parseInt(useParams().id)
     const colorsBg = [
       'bg-red-600',
       'bg-blue-600',
@@ -18,6 +18,8 @@ const Products = () => {
     ]
   
     const [maxValue, setMaxValue] = useState(1300)
+    const [selectedSubCategory, setSelectedSubCategory] = useState([])
+    
 
     // created an onChange function to handle the change event of the checkbox. it takes the event as an argument and updates the selected sub category state.
     const handleChange = (e) => {
@@ -38,14 +40,15 @@ const Products = () => {
               <div className="flex flex-col gap-5">
                 <h2 className="text-[0.9rem] font-bold">Filter by price</h2>
                 <div className="flex items-center justify-between">
-                  <div className="flex items-center gap-2"><p>Price:</p> <span>$0 - $1,300</span></div>
+                  <div className="flex items-center gap-2"><p>Price:</p> <span>$0 - ${maxValue}</span></div>
                   <button className="bg-gray-200 text-[0.65rem] p-2">FILTER</button>
                 </div>
                 <input 
                   type="range"
-                  min="0"
-                  max="1,300" 
-                  className="h-[2px] appearance-none bg-red-500 cursor-pointer rounded-full outline-none"/>
+                  min={1}
+                  max={1300} 
+                  className="h-[2px] appearance-none bg-red-500 cursor-pointer rounded-full outline-none"
+                  onChange={(e)=>setMaxValue(e.target.value)}/>
               </div>
 
               <div className="flex flex-col gap-5">
@@ -132,7 +135,7 @@ const Products = () => {
             </div>
 
             <div className="py-10">
-              <List />
+              <List catId={catId} maxValue={maxValue} SubCats={selectedSubCategory}/>
             </div>
           </div>
         </div>
