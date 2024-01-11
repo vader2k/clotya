@@ -1,6 +1,8 @@
 import cloth from '../assets/arizona1.jpeg'
 import { RiDeleteBin5Line } from "react-icons/ri";
-
+import { useSelector } from 'react-redux'
+import { removeItem, resetCart } from "../Redux/cartReducer";
+import { useDispatch } from "react-redux";
 
 const Cart = () => {
   return (
