@@ -653,6 +653,7 @@ export const news = [
   },
 ]
 
+// this is an array of products for womens tab section
 export const womenRelatedProducts = [
   {
     id:1,
