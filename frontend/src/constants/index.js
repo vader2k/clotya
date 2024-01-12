@@ -349,6 +349,7 @@ export const FeaturedData1 = [
        },
   ]
 
+  // an array of top blouse 2 items
   export const TopBlouse2 = [
     {
       id:5,
