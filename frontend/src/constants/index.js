@@ -708,6 +708,7 @@ export const womenRelatedProducts = [
    }
 ]
 
+// this array contains different products for men in men tab
 export const menProducts = [
   {
     id:1,
