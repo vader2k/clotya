@@ -402,6 +402,7 @@ export const FeaturedData1 = [
        },
   ]
 
+  // an array of topWomen details
  
   export const TopWomen2 = [
     {
@@ -459,6 +460,7 @@ export const FeaturedData1 = [
        }
 ]
 
+// outer wear 1 array items
 export const Outwear1 = [
   {
     id:1,
