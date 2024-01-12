@@ -940,4 +940,45 @@ export const cardItems = [
        img4: leggings4,
        path: "/details"
       },
+      {
+        id:15,
+        name: "Sleeveless Ribbed Short Dress Black",
+        tag: "26%",
+        oldPrice: "$19.99",
+        price: "$14.99",
+        review: "1 review",
+        img1: dressblack1,
+        img2: dressblack2,
+        img3: dressblack3,
+        img4: dressblack4,
+        path: "/details"
+       },
+  
+       {
+        id:16,
+        name: "Slogan Hoodie With Label Detail",
+        tag: "37%",
+        oldPrice: "$18.99",
+        price: "$11.90",
+        review: "1 review",
+        img1: slogan1,
+        img2: slogan2,
+        img3: slogan3,
+        img4: slogan4,
+        path: "/details"
+       },
+  
+       {  
+          id:17,
+          name: "Basic Colored Sweatpants With Elastic Hems",
+          tag: "24%",
+          oldPrice: "$25.90",
+          price: "$19.90",
+          review: "2 review",
+          img1: pants1,
+          img2: pants2,
+          img3: pants3,
+          img4: pants4,
+          path: "/details"
+      },
 ]
