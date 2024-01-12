@@ -511,6 +511,7 @@ export const Outwear1 = [
    },
 ]
 
+// outer wear tab component items
 export const Outwear2 = [
   {
     id:5,
