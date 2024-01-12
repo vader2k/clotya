@@ -981,4 +981,52 @@ export const cardItems = [
           img4: pants4,
           path: "/details"
       },
+      {
+        id:18,
+        name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
+        price: "$28.00",
+        review: "1 reviews",
+        img1: ribbed1,
+        img2: ribbed2,
+        img3: ribbed3,
+        img4: ribbed4,
+        path: "/details"
+       },
+   
+       {
+         id:19,
+         name: "Blue Starter Logo T-shirt",
+         tag: "18%",
+         oldPrice: "$22.70",
+         price: "%18.70",
+         review: "1 review",
+         img1: starter1,
+         img2: starter2,
+         img3: starter3,
+         img4: starter4,
+         path: "/details"
+        },
+   
+        {
+         id:20,
+         name: "Oversize Corduroy Shirt",
+         price: "$24.99",
+         review: "1 review",
+         img1: corduroy1,
+         img2: corduroy2,
+         img3: corduroy3,
+         img4: corduroy1,
+         path: "/details"
+        },
+        {
+          id:21,
+          name: "Faux Leather Blazer",
+          price: "$139.00",
+          review: "1 review",
+          img1: faux1,
+          img2: faux2,
+          img3: faux3,
+          img4: faux4,
+          path: "/details"
+         },
 ]
