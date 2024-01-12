@@ -27,7 +27,7 @@ const Navbar = () => {
             </Link>
           </span>
           <span className="font-semibold hidden md:block">
-            <Link to="/shop">
+            <Link to="/products/1">
               SHOP
             </Link>
           </span>
