@@ -761,6 +761,8 @@ export const menProducts = [
    }
 ]
 
+
+// this items are temporary items that contains an array of products for the shop card component
 export const cardItems = [
   {
     id:1,
