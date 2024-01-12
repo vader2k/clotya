@@ -595,6 +595,8 @@ export const BestSeller1 = [
   },
 ]
 
+// an array of best seller items
+
 export const BestSeller2 = [
   {
     id:3,
