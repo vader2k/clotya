@@ -622,6 +622,7 @@ export const BestSeller2 = [
   },
 ]
 
+// this is new details in news compknent
 export const news = [
   {
     id:1,
