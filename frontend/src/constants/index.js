@@ -566,6 +566,7 @@ export const Outwear2 = [
    },
 ]
 
+// an array of best seller item 1
 export const BestSeller1 = [
   {
     id:1,
@@ -595,7 +596,7 @@ export const BestSeller1 = [
   },
 ]
 
-// an array of best seller items
+// an array of best seller item 2
 
 export const BestSeller2 = [
   {
