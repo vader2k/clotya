@@ -454,7 +454,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
                 className="flex-none relative"
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
-                <Link>
+                <Link to={`/details/${item.id}`}>
                   <div className="img-holder">
                     <img
                       className="object-cover w-[290px] h-[500px] cursor-pointer"
