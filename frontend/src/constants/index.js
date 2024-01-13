@@ -120,6 +120,111 @@ export const FeaturedData = [
     },
 ]
 
+export const TopMen = [
+  {
+    id:1,
+    name: "Check Overshirt With Pocket Detail",
+    tag: "14%",
+    oldPrice: "$129.00",
+    price: "$112.00",
+    review: " review",
+    img1: overshirt1,
+    img2: overshirt2,
+    img3: overshirt3,
+    img4: overshirt4,
+    path: "/details"
+   },
+   {
+    id:2,
+    name: "Word Wide Cup Print T-shirt",
+    tag: "21%",
+    oldPrice: "$29.99",
+    price: "$23.99",
+    review: "1 review",
+    img1: cup1,
+    img2: cup2,
+    img3: cup3,
+    img4: cup4,
+    path: "/details"
+   },
+   {
+    id:3,
+    name: "Slogan Hoodie With Label Detail",
+    tag: "37%",
+    oldPrice: "$18.99",
+    price: "$11.90",
+    review: "1 review",
+    img1: slogan1,
+    img2: slogan2,
+    img3: slogan3,
+    img4: slogan4,
+    path: "/details"
+   },
+  {
+    id:4,
+    name: "Pouch Pocket Hoodie Orange",
+    tag: "22%",
+    oldPrice: "$37.50",
+    price: "$29.50",
+    review: "1 review",
+    img1: pocketmen1,
+    img2: pocketmen2,
+    img3: pocketmen3,
+    img4: pocketmen4,
+    path: "/details"
+  },
+  {
+    id:5,
+    name: "Riptop Cargo Trousers With Pockets",
+    tag: "29%",
+    oldPrice: "$69.99",
+    price: "$49.99",
+    review: " review",
+    img1: trousers1,
+    img2: trousers2,
+    img3: trousers3,
+    img4: trousers4,
+    path: "/details"
+   },
+   {
+    id:6,
+    name: "Relaxed Fit Plaid Flannel Shirt",
+    price: "$34.99",
+    review: "1 review",
+    img1: shirt1,
+    img2: shirt2,
+    img3: shirt3,
+    img4: shirt4,
+    path: "/details"
+   },
+   {
+    id:7,
+    name: "Quilted Bomber Jacket With Ribbed Trims",
+    tag: "32%",
+    oldPrice: "$69.49",
+    price: "$47.58",
+    review: "1 review",
+    img1: bomber1,
+    img2: bomber2,
+    img3: bomber3,
+    img4: bomber4,
+    path: "/details"
+   },
+  {
+    id:8,
+    name: "Pouch Pocket Hoodie",
+    tag: "16%",
+    oldPrice: "$32.40",
+    price: "$27.40",
+    review: "1 review",
+    img1: pocket1,
+    img2: pocket2,
+    img3: pocket3,
+    img4: pocket4,
+    path: "/details"
+  }
+]
+
     export const TopMen1 = [
       {
         id:1,
@@ -227,6 +332,7 @@ export const FeaturedData = [
       path: "/details"
     }
   ]
+
 
   export const TopWomen1 = [
     {
