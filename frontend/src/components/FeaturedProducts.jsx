@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { FeaturedData1, FeaturedData2, FeaturedData3 } from "../constants";
+import  { useState } from 'react';
 import { Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -9,9 +8,10 @@ import { LiaCompressSolid } from "react-icons/lia";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
+import { FeaturedData1, FeaturedData2, FeaturedData3 } from "../constants";
+
 
 const FeaturedProducts = () => {
-
   const [activeImageIndices, setActiveImageIndices] = useState({});
 
   const handleHover = (id, event) => {
@@ -32,6 +32,8 @@ const FeaturedProducts = () => {
     setActiveImageIndices((prev) => ({ ...prev, [id]: newIndex }));
   };
 
+  const featuredData = [...FeaturedData1, ...FeaturedData2, ...FeaturedData3];
+
   return (
     <div className="py-8 xxs:py-4 relative ">
       <div className="lg:flex lg:flex-row xl:flex xl:flex-row md:flex md:flex-row sm:flex sm:flex-col sm:gap-2 justify-between ">
@@ -40,7 +42,6 @@ const FeaturedProducts = () => {
       </div>
       <div className="relative ">
         <Swiper
-          // install Swiper modules
           modules={[Pagination, A11y]}
           spaceBetween={50}
           slidesPerView={1}
@@ -50,125 +51,48 @@ const FeaturedProducts = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          <SwiperSlide>
-            <div className="py-20 flex overflow-x-auto gap-8 lg:h-[750px] md:h-[750px] sm:h-[650px] h-[550px] holder relative">
-            {FeaturedData1.map((item) => (
-              <div
-                key={item.id}
-                className="flex-none relative"
-                onMouseMove={(event) => handleHover(item.id, event)}
-              >
-                <div className="img-holder">
-                  <Link to={`/details/${item.id}`}>
-                    <img
-                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                      src={item[`img${activeImageIndices[item.id] || 1}`]}
-                      alt={`product-${item.id}`}
-                    />
-                    {/* side functions */}
-                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+          {[...Array(Math.ceil(featuredData.length / 3))].map((_, index) => (
+            <SwiperSlide key={index}>
+              <div className="py-20 flex overflow-x-auto gap-8 lg:h-[750px] md:h-[750px] sm:h-[650px] h-[550px] holder relative">
+                {featuredData.slice(index * 3, (index + 1) * 3).map((item) => (
+                  <div
+                    key={item.id}
+                    className="flex-none relative"
+                    onMouseMove={(event) => handleHover(item.id, event)}
+                  >
+                    <div className="img-holder">
+                      <Link to={`/details/${item.id}`}>
+                        <img
+                          className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
+                          src={item[`img${activeImageIndices[item.id] || 1}`]}
+                          alt={`product-${item.id}`}
+                        />
+                        {/* side functions */}
+                        <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                          <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                          <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                          <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                          <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                        </div>
+                      </Link>
                     </div>
-                  </Link>
-                  
-                </div>
-                {/* item properties */}
-                <div className="absolute bg-white p-5 px-6 xl:w-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] w-[170px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] bottom-[-20px] left-[20px] flex flex-col gap-3 h-[160px]">
-                  <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
-                  <p className="text-[0.8rem] capitalize">{item?.name}</p>
-                  <div className="flex items-center gap-5 text-[0.9rem]">
-                    <span className="text-gray-400 line-through">{item?.oldPrice}</span>
-                    <span>{item?.price}</span>
-                  </div>
-                </div>
-                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-                  {item.tag}
-                </div>
-              </div> 
-            ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="py-20 flex overflow-x-auto gap-8 lg:max-h-[750px] md:max-h-[750px] sm:max-h-[650px] max-h-[550px] holder relative">
-            {FeaturedData2.map((item) => (
-              <div
-                key={item.id}
-                className="flex-none relative"
-                onMouseMove={(event) => handleHover(item.id, event)}
-              >
-                <div className="img-holder">
-                  <Link to={`/details/${item.id}`}>
-                    <img
-                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                      src={item[`img${activeImageIndices[item.id] || 1}`]}
-                      alt={`product-${item.id}`}
-                    />
-                    {/* side functions */}
-                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    {/* item properties */}
+                    <div className="absolute bg-white p-5 px-6 xl:w-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] w-[170px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] bottom-[-20px] left-[20px] flex flex-col gap-3 h-[160px]">
+                      <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
+                      <p className="text-[0.8rem] capitalize">{item?.name}</p>
+                      <div className="flex items-center gap-5 text-[0.9rem]">
+                        <span className="text-gray-400 line-through">{item?.oldPrice}</span>
+                        <span>{item?.price}</span>
+                      </div>
                     </div>
-                  </Link>
-                </div>
-                <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
-                  <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
-                  <p className="text-[0.8rem] capitalize">{item?.name}</p>
-                  <div className="flex items-center gap-5 text-[0.9rem]">
-                    <span className="text-gray-400 line-through">{item?.oldPrice}</span>
-                    <span>{item?.price}</span>
-                  </div>
-                </div>
-                <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-                  {item?.tag}
-                </div>
+                    <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
+                      {item.tag}
+                    </div>
+                  </div> 
+                ))}
               </div>
-            ))}
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="py-20 flex overflow-x-auto gap-8 lg:max-h-[750px] md:max-h-[750px] sm:max-h-[650px] max-h-[550px] holder relative">
-            {FeaturedData3.map((item) => (
-              <div
-                key={item.id}
-                className="flex-none relative"
-                onMouseMove={(event) => handleHover(item.id, event)}
-              >
-                <div className="img-holder">
-                  <Link to={`/details/${item.id}`}>
-                    <img
-                      className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                      src={item[`img${activeImageIndices[item.id] || 1}`]}
-                      alt={`product-${item.id}`}
-                    />
-                    {/* side functions */}
-                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    </div>
-                  </Link>                 
-                </div>
-                <div className="absolute bg-white p-5 px-6 xlw-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] left-[20px] flex flex-col gap-3 h-[160px]">
-                  <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
-                  <p className="text-[0.8rem] capitalize">{item?.name}</p>
-                  <div className="flex items-center gap-5 text-[0.9rem]">
-                    <span className="text-gray-400 line-through">{item?.oldPrice}</span>
-                    <span>{item?.price}</span>
-                  </div>
-                </div>
-                <div className="absolute top-4  left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-                  {item?.tag}
-                </div>
-              </div>
-            ))}
-            </div>
-          </SwiperSlide>
+            </SwiperSlide>
+          ))}
         </Swiper>
       </div>
     </div>
