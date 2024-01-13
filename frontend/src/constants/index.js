@@ -225,116 +225,8 @@ export const TopMen = [
   }
 ]
 
-    export const TopMen1 = [
-      {
-        id:1,
-        name: "Check Overshirt With Pocket Detail",
-        tag: "14%",
-        oldPrice: "$129.00",
-        price: "$112.00",
-        review: " review",
-        img1: overshirt1,
-        img2: overshirt2,
-        img3: overshirt3,
-        img4: overshirt4,
-        path: "/details"
-       },
-       {
-        id:2,
-        name: "Word Wide Cup Print T-shirt",
-        tag: "21%",
-        oldPrice: "$29.99",
-        price: "$23.99",
-        review: "1 review",
-        img1: cup1,
-        img2: cup2,
-        img3: cup3,
-        img4: cup4,
-        path: "/details"
-       },
-       {
-        id:3,
-        name: "Slogan Hoodie With Label Detail",
-        tag: "37%",
-        oldPrice: "$18.99",
-        price: "$11.90",
-        review: "1 review",
-        img1: slogan1,
-        img2: slogan2,
-        img3: slogan3,
-        img4: slogan4,
-        path: "/details"
-       },
-      {
-        id:4,
-        name: "Pouch Pocket Hoodie Orange",
-        tag: "22%",
-        oldPrice: "$37.50",
-        price: "$29.50",
-        review: "1 review",
-        img1: pocketmen1,
-        img2: pocketmen2,
-        img3: pocketmen3,
-        img4: pocketmen4,
-        path: "/details"
-      }
-    ]
 
-  export const TopMen2 = [
-    {
-      id:5,
-      name: "Riptop Cargo Trousers With Pockets",
-      tag: "29%",
-      oldPrice: "$69.99",
-      price: "$49.99",
-      review: " review",
-      img1: trousers1,
-      img2: trousers2,
-      img3: trousers3,
-      img4: trousers4,
-      path: "/details"
-     },
-     {
-      id:6,
-      name: "Relaxed Fit Plaid Flannel Shirt",
-      price: "$34.99",
-      review: "1 review",
-      img1: shirt1,
-      img2: shirt2,
-      img3: shirt3,
-      img4: shirt4,
-      path: "/details"
-     },
-     {
-      id:7,
-      name: "Quilted Bomber Jacket With Ribbed Trims",
-      tag: "32%",
-      oldPrice: "$69.49",
-      price: "$47.58",
-      review: "1 review",
-      img1: bomber1,
-      img2: bomber2,
-      img3: bomber3,
-      img4: bomber4,
-      path: "/details"
-     },
-    {
-      id:8,
-      name: "Pouch Pocket Hoodie",
-      tag: "16%",
-      oldPrice: "$32.40",
-      price: "$27.40",
-      review: "1 review",
-      img1: pocket1,
-      img2: pocket2,
-      img3: pocket3,
-      img4: pocket4,
-      path: "/details"
-    }
-  ]
-
-
-  export const TopWomen1 = [
+  export const TopWomen = [
     {
       id:1,
       name: "Basic Colored Sweatpants With Elastic Hems",
@@ -386,9 +278,62 @@ export const TopMen = [
         img4: pink4,
         path: "/details"
        },
+       {
+        id:5,
+        name: "Sleeveless Ribbed Short Dress Black",
+        tag: "26%",
+        oldPrice: "$19.99",
+        price: "$14.99",
+        review: "1 review",
+        img1: dressblack1,
+        img2: dressblack2,
+        img3: dressblack3,
+        img4: dressblack4,
+        path: "/details"
+       },
+   
+       {
+        id:6,
+        name: "Slogan Hoodie With Label Detail",
+        tag: "37%",
+        oldPrice: "$18.99",
+        price: "$11.90",
+        review: "1 review",
+        img1: slogan1,
+        img2: slogan2,
+        img3: slogan3,
+        img4: slogan4,
+        path: "/details"
+       },
+   
+       {
+        id:7,
+        name: "Short Nylon-Effe t Puffer Jacket",
+        tag: "26%",
+        price: "$29.90",
+        review: "2 reviews",
+        img1: nylon1,
+        img2: nylon2,
+        img3: nylon3,
+        img4: nylon4,
+        path: "/details"
+       },
+         {
+          id:8,
+          name: "Sleeveless Ribbed Short Dress",
+          tag: "26%",
+          oldPrice: "$19.99",
+          price: "%14.99",
+          review: "1 review",
+          img1: sleev1,
+          img2: sleev2,
+          img3: sleev3,
+          img4: sleev4,
+          path: "/details"
+         }
   ]
 
-  export const TopBlouse1 = [
+  export const TopBlouse = [
     {
       id:1,
       name: "Ribbed V-Neck Cardigan With Rhinestone Detail",
@@ -437,122 +382,62 @@ export const TopMen = [
         img4: faux4,
         path: "/details"
        },
-  ]
-
-  // an array of top blouse 2 items
-  export const TopBlouse2 = [
-    {
-      id:5,
-      name: "Brown Arizona Sweatshirt",
-      tag: "21%",
-      oldPrice: "$28.00",
-      price: "$22.60",
-      review: "1 reviews",
-      img1: arizona1,
-      img2: arizona2,
-      img3: arizona3,
-      img4: arizona4,
-      path: "/details"
-     },
- 
-     {
-       id:6,
-       name: "Sweater With Chain Detail",
-       tag: "37%",
-       oldPrice: "$74.99",
-       price: "$47.99",
-       review: "1 review",
-       img1: sweater1,
-       img2: sweater2,
-       img3: sweater3,
-       img4: sweater4,
-       path: "/details"
-      },
- 
-      {
-       id:7,
-       name: "Oversize Corduroy Shirt",
-       price: "$24.99",
-       review: "1 review",
-       img1: corduroy1,
-       img2: corduroy2,
-       img3: corduroy3,
-       img4: corduroy1,
-       path: "/details"
-      },
-      {
-        id:8,
-        name: "Faux Leather Blazer",
-        price: "$139.00",
-        review: "1 review",
-        img1: faux1,
-        img2: faux2,
-        img3: faux3,
-        img4: faux4,
+       {
+        id:5,
+        name: "Brown Arizona Sweatshirt",
+        tag: "21%",
+        oldPrice: "$28.00",
+        price: "$22.60",
+        review: "1 reviews",
+        img1: arizona1,
+        img2: arizona2,
+        img3: arizona3,
+        img4: arizona4,
         path: "/details"
        },
+   
+       {
+         id:6,
+         name: "Sweater With Chain Detail",
+         tag: "37%",
+         oldPrice: "$74.99",
+         price: "$47.99",
+         review: "1 review",
+         img1: sweater1,
+         img2: sweater2,
+         img3: sweater3,
+         img4: sweater4,
+         path: "/details"
+        },
+   
+        {
+         id:7,
+         name: "Oversize Corduroy Shirt",
+         price: "$24.99",
+         review: "1 review",
+         img1: corduroy1,
+         img2: corduroy2,
+         img3: corduroy3,
+         img4: corduroy1,
+         path: "/details"
+        },
+        {
+          id:8,
+          name: "Faux Leather Blazer",
+          price: "$139.00",
+          review: "1 review",
+          img1: faux1,
+          img2: faux2,
+          img3: faux3,
+          img4: faux4,
+          path: "/details"
+         },
   ]
 
-  // an array of topWomen details
- 
-  export const TopWomen2 = [
-    {
-      id:5,
-      name: "Sleeveless Ribbed Short Dress Black",
-      tag: "26%",
-      oldPrice: "$19.99",
-      price: "$14.99",
-      review: "1 review",
-      img1: dressblack1,
-      img2: dressblack2,
-      img3: dressblack3,
-      img4: dressblack4,
-      path: "/details"
-     },
- 
-     {
-      id:6,
-      name: "Slogan Hoodie With Label Detail",
-      tag: "37%",
-      oldPrice: "$18.99",
-      price: "$11.90",
-      review: "1 review",
-      img1: slogan1,
-      img2: slogan2,
-      img3: slogan3,
-      img4: slogan4,
-      path: "/details"
-     },
- 
-     {
-      id:7,
-      name: "Short Nylon-Effe t Puffer Jacket",
-      tag: "26%",
-      price: "$29.90",
-      review: "2 reviews",
-      img1: nylon1,
-      img2: nylon2,
-      img3: nylon3,
-      img4: nylon4,
-      path: "/details"
-     },
-       {
-        id:8,
-        name: "Sleeveless Ribbed Short Dress",
-        tag: "26%",
-        oldPrice: "$19.99",
-        price: "%14.99",
-        review: "1 review",
-        img1: sleev1,
-        img2: sleev2,
-        img3: sleev3,
-        img4: sleev4,
-        path: "/details"
-       }
-]
+
 
 // outer wear 1 array items
-export const Outwear1 = [
+export const Outwear = [
   {
     id:1,
     name: "Basic High-Neck Puff Jacket",
@@ -602,11 +487,7 @@ export const Outwear1 = [
     img4: zipper4,
     path: "/details"
    },
-]
-
-// outer wear tab component items
-export const Outwear2 = [
-  {
+   {
     id:5,
     name: "Oversize Faux Leather Biker Jacket",
     tag: "42%",
@@ -659,6 +540,7 @@ export const Outwear2 = [
     path: "/details"
    },
 ]
+
 
 // an array of best seller item 1
 export const BestSeller1 = [
