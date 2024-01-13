@@ -8,7 +8,7 @@ import { LiaCompressSolid } from "react-icons/lia";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import { FeaturedData1, FeaturedData2, FeaturedData3 } from "../constants";
+import { FeaturedData } from "../constants";
 
 
 const FeaturedProducts = () => {
@@ -32,7 +32,7 @@ const FeaturedProducts = () => {
     setActiveImageIndices((prev) => ({ ...prev, [id]: newIndex }));
   };
 
-  const featuredData = [...FeaturedData1, ...FeaturedData2, ...FeaturedData3];
+
 
   return (
     <div className="py-8 xxs:py-4 relative ">
@@ -51,10 +51,10 @@ const FeaturedProducts = () => {
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {[...Array(Math.ceil(featuredData.length / 3))].map((_, index) => (
+          {[...Array(Math.ceil(FeaturedData.length / 3))].map((_, index) => (
             <SwiperSlide key={index}>
               <div className="py-20 flex overflow-x-auto gap-8 lg:h-[750px] md:h-[750px] sm:h-[650px] h-[550px] holder relative">
-                {featuredData.slice(index * 3, (index + 1) * 3).map((item) => (
+                {FeaturedData.slice(index * 3, (index + 1) * 3).map((item) => (
                   <div
                     key={item.id}
                     className="flex-none relative"
