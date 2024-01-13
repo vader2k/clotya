@@ -30,7 +30,7 @@ const Card = ({item}) => {
 
 
   return (
-    <Link to={`/detail/${item.id}`}>
+    <Link to={`/details/${item.id}`}>
       <div className="holder relative py-10">
           <div
             className="flex-none relative w-[200px] h-[300px] "

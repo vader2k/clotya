@@ -35,7 +35,7 @@ const Products = () => {
     <div>
       <div className={`${styles.boxWidth} ${styles.paddingY}`}>
         <div className="flex items-start justify-center gap-14">
-          <div className="flex-[0.5] sticky top-0">
+          <div className="flex-[0.5] sticky top-[50px]">
             <div className="flex flex-col gap-10">
               <div className="flex flex-col gap-5">
                 <h2 className="text-[0.9rem] font-bold">Filter by price</h2>
@@ -59,6 +59,7 @@ const Products = () => {
                       colorsBg.map((color, index) => (
                         <div key={index} 
                         className={`${color} w-[20px] h-[20px] rounded-full cursor-pointer`}></div>
+                        // <input key={index} type="checkbox" name="color" id="" className={`${color} w-[20px] h-[20px] rounded-full cursor-pointer`}/>
                       ))
                     }
                   </div>
@@ -79,31 +80,31 @@ const Products = () => {
                 <h2 className="text-[0.9rem] font-bold">Filter by Size</h2>
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="1" value={1} />
                     <span>XXS</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="2" value={2} />
                     <span>XS</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="3" value={3} />
                     <span>S</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="4" value={4} />
                     <span>M</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="5" value={5} />
                     <span>L</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="6" value={6} />
                     <span>XL</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" id="7" value={7} />
                     <span>XXL</span>
                   </div>
                 </div>
@@ -113,11 +114,11 @@ const Products = () => {
                 <h2 className="text-[0.9rem] font-bold">Product Status</h2>
                 <div className="flex flex-col gap-3">
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" name="status" id="" />
                     <span>In Stock</span>
                   </div>
                   <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" name="" id="" />
+                    <input type="checkbox" name="status" id="" />
                     <span>On Sale</span>
                   </div>
                 </div>

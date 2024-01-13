@@ -17,7 +17,6 @@ export const FeaturedData1 = [
      img2: pants2,
      img3: pants3,
      img4: pants4,
-     path: "/details"
     },
 
     {
@@ -30,7 +29,6 @@ export const FeaturedData1 = [
       img2: basic2,
       img3: basic3,
       img4: basic4,
-      path: "/details"
      },
 
      {
@@ -44,7 +42,6 @@ export const FeaturedData1 = [
       img2: leggings2,
       img3: leggings3,
       img4: leggings4,
-      path: "/details"
      },
   ]
     
@@ -60,7 +57,6 @@ export const FeaturedData1 = [
       img2: overshirt2,
       img3: overshirt3,
       img4: overshirt4,
-      path: "/details"
      },
 
      {
@@ -72,7 +68,6 @@ export const FeaturedData1 = [
       img2: pink2,
       img3: pink3,
       img4: pink4,
-      path: "/details"
      },
 
      {
@@ -86,7 +81,6 @@ export const FeaturedData1 = [
       img2: cup2,
       img3: cup3,
       img4: cup4,
-      path: "/details"
      },
 
   ]
@@ -104,7 +98,6 @@ export const FeaturedData1 = [
         img2: dressblack2,
         img3: dressblack3,
         img4: dressblack4,
-        path: "/details"
        },
   
        {
@@ -118,7 +111,6 @@ export const FeaturedData1 = [
         img2: slogan2,
         img3: slogan3,
         img4: slogan4,
-        path: "/details"
        },
   
        {  
@@ -132,7 +124,6 @@ export const FeaturedData1 = [
           img2: pants2,
           img3: pants3,
           img4: pants4,
-          path: "/details"
       },
     ]
 
