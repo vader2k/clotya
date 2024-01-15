@@ -107,6 +107,17 @@
     },
     "oldPrice": {
       "type": "decimal"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Featured",
+        "Top Seller Men",
+        "Top Seller Women",
+        "Top Seller Blouse",
+        "Top Seller Outerwear",
+        "Best Seller"
+      ]
     }
   }
 }

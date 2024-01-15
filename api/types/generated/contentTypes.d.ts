@@ -855,6 +855,16 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'api::sub-category.sub-category'
     >;
     oldPrice: Attribute.Decimal;
+    type: Attribute.Enumeration<
+      [
+        'Featured',
+        'Top Seller Men',
+        'Top Seller Women',
+        'Top Seller Blouse',
+        'Top Seller Outerwear',
+        'Best Seller'
+      ]
+    >;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
