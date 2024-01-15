@@ -50,7 +50,7 @@ export const FeaturedData = [
       tag: "14%",
       oldPrice: "$129.00",
       price: "$112.00",
-      review: " review",
+      review: "1 review",
       img1: overshirt1,
       img2: overshirt2,
       img3: overshirt3,
