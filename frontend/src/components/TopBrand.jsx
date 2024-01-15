@@ -125,7 +125,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
             onSlideChange={() => console.log('slide change')}
             onSwiper={(swiper) => console.log(swiper)}
           >
-            {[...Array(2)].map((_, index) => (
+            {[...Array(Math.ceil(TopMen.length / 4))].map((_, index) => (
               <SwiperSlide key={index}>
                 <div className="flex overflow-x-auto gap-8 holder relative py-10">
                   {TopMen.slice(index * 4, (index + 1) * 4).map((item) => (
@@ -185,7 +185,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {[...Array(2)].map((_, index) => (
+          {[...Array(Math.ceil(TopWomen.length / 4))].map((_, index) => (
               <SwiperSlide key={index}>
                 <div className="flex overflow-x-auto gap-8 holder relative py-10">
                   {TopWomen.slice(index * 4, (index + 1) * 4).map((item) => (
@@ -245,7 +245,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
-          {[...Array(2)].map((_, index) => (
+          {[...Array(Math.ceil(TopBlouse.length / 4))].map((_, index) => (
               <SwiperSlide key={index}>
                 <div className="flex overflow-x-auto gap-8 holder relative py-10">
                   {TopBlouse.slice(index * 4, (index + 1) * 4).map((item) => (
@@ -304,7 +304,7 @@ const [activeImageIndices, setActiveImageIndices] = useState({});
           parallax
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
-        >{[...Array(2)].map((_, index) => (
+        >{[...Array(Math.ceil(Outwear.length / 4))].map((_, index) => (
           <SwiperSlide key={index}>
             <div className="flex overflow-x-auto gap-8 holder relative py-10">
               {Outwear.slice(index * 4, (index + 1) * 4).map((item) => (

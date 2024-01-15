@@ -7,7 +7,7 @@ import { IoIosHeartEmpty } from "react-icons/io";
 import { LiaCompressSolid } from "react-icons/lia";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
-
+import { Link } from 'react-router-dom';
 import { BestSeller1, BestSeller2 } from '../constants/index'
 
 const Collections = () => {
@@ -129,20 +129,22 @@ const Collections = () => {
                 className="flex-none relative "
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
-                <div className="img-holder">
-                  <img
-                    className="object-cover w-[290px] h-[450px] cursor-pointer"
-                    src={item[`img${activeImageIndices[item.id] || 1}`]}
-                    alt={`product-${item.id}`}
-                  />
-                  {/* side functions */}
-                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                <Link to={`/details/${item.id}`}>
+                  <div className="img-holder">
+                    <img
+                      className="object-cover w-[290px] h-[450px] cursor-pointer"
+                      src={item[`img${activeImageIndices[item.id] || 1}`]}
+                      alt={`product-${item.id}`}
+                    />
+                    {/* side functions */}
+                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 <div className="bg-white flex flex-col gap- my-3">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
@@ -182,20 +184,22 @@ const Collections = () => {
                 className="flex-none relative "
                 onMouseMove={(event) => handleHover(item.id, event)}
               >
-                <div className="img-holder">
-                  <img
-                    className="object-cover w-[290px] h-[450px] cursor-pointer"
-                    src={item[`img${activeImageIndices[item.id] || 1}`]}
-                    alt={`product-${item.id}`}
-                  />
-                  {/* side functions */}
-                  <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
-                    <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
-                    <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                <Link to={`/details/${item.id}`}>
+                  <div className="img-holder">
+                    <img
+                      className="object-cover w-[290px] h-[450px] cursor-pointer"
+                      src={item[`img${activeImageIndices[item.id] || 1}`]}
+                      alt={`product-${item.id}`}
+                    />
+                    {/* side functions */}
+                    <div className="sideBtns absolute top-5 right-5 text-[2.2rem] flex flex-col gap-3">
+                      <IoIosHeartEmpty className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <LiaCompressSolid className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <BsArrowRepeat className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                      <IoBagOutline className="p-2 bg-white rounded-full text-gray-600 hover:bg-red-500 hover:text-white hover:font-medium"/>
+                    </div>
                   </div>
-                </div>
+                </Link>
                 <div className="bg-white flex flex-col gap- my-3">
                   <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
                   <p className="text-[0.8rem] capitalize">{item?.name}</p>
