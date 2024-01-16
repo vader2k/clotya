@@ -38,9 +38,9 @@ const FeaturedProducts = () => {
   useEffect(()=> {
     const fetchData = async () => {
       try {
-        const res = await axios.get(import.meta.env.VITE_REACT_APP_API_URL+"/products", {
-          headers:{
-            Authorization: "bearer" + import.meta.env.VITE_REACT_APP_API_TOKEN
+        const res = await axios.get(import.meta.env.VITE_API_URL + '/products', {
+          headers: {
+            Authorization : `Bearer ${import.meta.env.VITE_API_TOKEN}`
           }
         })
         console.log(res)
@@ -48,8 +48,9 @@ const FeaturedProducts = () => {
         console.log(error)
       }
     }
-    fetchData() 
+    fetchData()
   }, [])
+
 
   return (
     <div className="py-8 xxs:py-4 relative ">
