@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "product"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "desc": {
+      "type": "text"
+    },
+    "review": {
+      "type": "string"
+    },
+    "oldPrice": {
+      "type": "float"
+    },
+    "price": {
+      "type": "float"
+    },
+    "color": {
+      "type": "enumeration",
+      "enum": [
+        "red",
+        "blue",
+        "orange",
+        "sky blue",
+        "green",
+        "pink",
+        "black",
+        "white"
+      ]
+    },
+    "size": {
+      "type": "enumeration",
+      "enum": [
+        "xxs",
+        "xs",
+        "s",
+        "m",
+        "l",
+        "xl",
+        "xxl"
+      ]
+    },
+    "img1": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img2": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img3": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "img4": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}
