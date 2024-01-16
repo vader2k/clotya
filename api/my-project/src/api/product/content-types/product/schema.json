@@ -106,6 +106,18 @@
       "relation": "manyToMany",
       "target": "api::sub-category.sub-category",
       "inversedBy": "products"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Featured",
+        "TopSellerMen",
+        "TopSellerWomen",
+        "Outerwear",
+        "blouse&shirt",
+        "bestSellerTop",
+        "bestSellerBottom"
+      ]
     }
   }
 }
