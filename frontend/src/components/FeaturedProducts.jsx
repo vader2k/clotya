@@ -38,12 +38,13 @@ const FeaturedProducts = () => {
   useEffect(()=> {
     const fetchData = async () => {
       try {
-        const res = await axios.get(import.meta.env.VITE_API_URL + '/products', {
+        const res = await axios.get(import.meta.env.VITE_API_URL + '/products?populate=*', {
           headers: {
             Authorization : `Bearer ${import.meta.env.VITE_API_TOKEN}`
           }
         })
-        console.log(res)
+        setProducts(res.data.data)
+        console.log(res.data.data)
       } catch (error) {
         console.log(error)
       }
@@ -72,7 +73,7 @@ const FeaturedProducts = () => {
           {[...Array(Math.ceil(FeaturedData.length / 3))].map((_, index) => (
             <SwiperSlide key={index}>
               <div className="py-20 flex overflow-x-auto gap-8 lg:h-[750px] md:h-[750px] sm:h-[650px] h-[550px] holder relative">
-                {FeaturedData.slice(index * 3, (index + 1) * 3).map((item) => (
+                {Products.slice(index * 3, (index + 1) * 3).map((item) => (
                   <div
                     key={item.id}
                     className="flex-none relative"
@@ -96,15 +97,15 @@ const FeaturedProducts = () => {
                     </div>
                     {/* item properties */}
                     <div className="absolute bg-white p-5 px-6 xl:w-[345px] lg:w-[345px] md:w-[345px] sm:w-[260px] w-[170px] lg:bottom-[10px] xl:bottom-[-80px] md:bottom-[10px] sm:bottom-[-70px] bottom-[-20px] left-[20px] flex flex-col gap-3 h-[160px]">
-                      <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
-                      <p className="text-[0.8rem] capitalize">{item?.name}</p>
+                      <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.attributes.review}</span></div>
+                      <p className="text-[0.8rem] capitalize">{item?.attributes.title}</p>
                       <div className="flex items-center gap-5 text-[0.9rem]">
-                        <span className="text-gray-400 line-through">{item?.oldPrice}</span>
-                        <span>{item?.price}</span>
+                        <span className="text-gray-400 line-through">{item?.attributes.oldPrice || item?.attributes.price+20}</span>
+                        <span>{item?.attributes.price}</span>
                       </div>
                     </div>
                     <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-                      {item.tag}
+                      {item.attributes.tag}
                     </div>
                   </div> 
                 ))}
