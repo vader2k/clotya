@@ -121,6 +121,12 @@
     },
     "tag": {
       "type": "string"
+    },
+    "featured_products": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::featured-product.featured-product",
+      "mappedBy": "products"
     }
   }
 }
