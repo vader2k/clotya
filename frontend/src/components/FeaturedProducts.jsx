@@ -83,7 +83,7 @@ const FeaturedProducts = () => {
                       <Link to={`/details/${item.id}`}>
                         <img
                           className="object-contain max-w-[210px] sm:max-w-[300px] md:max-w-[390px] lg:max-w-[390px] xl:max-w-[390px] lg:max-h-[600px] xl:max-h-[600px] md:max-h-[600px] sm:max-h-[510px] max-h-[390px] cursor-pointer"
-                          src={item[`img${activeImageIndices[item.id] || 1}`]}
+                          src={import.meta.env.VITE_UPLOAD_URL + item?.attributes[`img${activeImageIndices[item.id] || 1}`].data?.attributes?.url}
                           alt={`product-${item.id}`}
                         />
                         {/* side functions */}
