@@ -1,4 +1,4 @@
-import  { useState } from 'react';
+import  { useEffect, useState } from 'react';
 import { Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -9,9 +9,12 @@ import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 import { FeaturedData } from "../constants";
-
+import axios from 'axios'
 
 const FeaturedProducts = () => {
+
+  const [ Products, setProducts ] = useState([])
+
   const [activeImageIndices, setActiveImageIndices] = useState({});
 
   const handleHover = (id, event) => {
@@ -32,7 +35,21 @@ const FeaturedProducts = () => {
     setActiveImageIndices((prev) => ({ ...prev, [id]: newIndex }));
   };
 
-
+  useEffect(()=> {
+    const fetchData = async () => {
+      try {
+        const res = await axios.get(import.meta.env.VITE_REACT_APP_API_URL+"/products", {
+          headers:{
+            Authorization: "bearer" + import.meta.env.VITE_REACT_APP_API_TOKEN
+          }
+        })
+        console.log(res)
+      } catch (error) {
+        console.log(error)
+      }
+    }
+    fetchData() 
+  }, [])
 
   return (
     <div className="py-8 xxs:py-4 relative ">
