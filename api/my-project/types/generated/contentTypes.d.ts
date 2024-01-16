@@ -856,6 +856,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
         'bestSellerBottom'
       ]
     >;
+    tag: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

@@ -118,6 +118,9 @@
         "bestSellerTop",
         "bestSellerBottom"
       ]
+    },
+    "tag": {
+      "type": "string"
     }
   }
 }
