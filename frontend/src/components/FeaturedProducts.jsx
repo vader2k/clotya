@@ -1,4 +1,4 @@
-import  { useEffect, useState } from 'react';
+import  { useState } from 'react';
 import { Pagination, A11y } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
@@ -8,11 +8,12 @@ import { LiaCompressSolid } from "react-icons/lia";
 import { BsArrowRepeat } from "react-icons/bs";
 import { IoBagOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import axios from 'axios'
+import useFetch from '../hooks/useFetch';
+
 
 const FeaturedProducts = () => {
 
-  const [ data, setData ] = useState([])
+  const {data, loading, error} = useFetch('/products?populate=*&[filters][type][$eq]=Featured')
 
   const [activeImageIndices, setActiveImageIndices] = useState({});
 
@@ -33,23 +34,6 @@ const FeaturedProducts = () => {
 
     setActiveImageIndices((prev) => ({ ...prev, [id]: newIndex }));
   };
-
-  useEffect(()=> {
-    const fetchData = async () => {
-      try {
-        const res = await axios.get(import.meta.env.VITE_API_URL + '/products?populate=*&[filters][type][$eq]=Featured', {
-          headers: {
-            Authorization : `Bearer ${import.meta.env.VITE_API_TOKEN}`
-          }
-        })
-        setData(res.data.data)
-        console.log(res.data.data)
-      } catch (error) {
-        console.log(error)
-      }
-    }
-    fetchData()
-  }, [])
 
 
   return (
@@ -72,7 +56,11 @@ const FeaturedProducts = () => {
           {[...Array(Math.ceil(data.length / 3))].map((_, index) => (
             <SwiperSlide key={index}>
               <div className="py-20 flex overflow-x-auto gap-8 lg:h-[750px] md:h-[750px] sm:h-[650px] h-[550px] holder relative">
-                {data.slice(index * 3, (index + 1) * 3).map((item) => (
+                {error 
+                ? "something went wrong!" 
+                :loading 
+                ? "loading"
+                 :data.slice(index * 3, (index + 1) * 3).map((item) => (
                   <div
                     key={item.id}
                     className="flex-none relative"
