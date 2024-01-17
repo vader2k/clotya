@@ -122,7 +122,7 @@ const Products = () => {
             </div>
 
             <div className="py-10">
-              <List catId={catId} maxValue={maxValue} Size={selectedSize}/>
+              <List catId={catId} maxValue={maxValue} selectedSize={selectedSize}/>
             </div>
           </div>
         </div>
