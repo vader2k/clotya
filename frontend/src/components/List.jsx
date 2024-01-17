@@ -4,9 +4,9 @@ import { cardItems } from '../constants';
 const List = ({ catId, maxValue, SubCats }) => {
   return (
     <div className='flex flex-wrap gap-12 '>
-      {cardItems.map((item) => (
+      {/* {cardItems.map((item) => (
         <Card item={item} key={item.id} />
-      ))}
+      ))} */}
     </div>
   );
 };
