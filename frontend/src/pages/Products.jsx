@@ -3,6 +3,7 @@ import styles from '../style'
 import cover from '../assets/banner-26.jpg'
 import { List } from '../components'
 import { useState } from "react"
+import useFetch from "../hooks/useFetch"
 const Products = () => {
 
     const catId = parseInt(useParams().id)
@@ -19,8 +20,9 @@ const Products = () => {
   
     const [maxValue, setMaxValue] = useState(1300)
     const [selectedSubCategory, setSelectedSubCategory] = useState([])
-    
+    const {data, loading, error} = useFetch(`/sizes?[filters][products][id][$eq]=${catId}`)
 
+    console.log(data)
     // created an onChange function to handle the change event of the checkbox. it takes the event as an argument and updates the selected sub category state.
     const handleChange = (e) => {
       const value = e.target.value
@@ -79,37 +81,21 @@ const Products = () => {
               <div className="flex flex-col gap-5">
                 <h2 className="text-[0.9rem] font-bold">Filter by Size</h2>
                 <div className="flex flex-col gap-3">
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="1" value={1} />
-                    <span>XXS</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="2" value={2} />
-                    <span>XS</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="3" value={3} />
-                    <span>S</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="4" value={4} />
-                    <span>M</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="5" value={5} />
-                    <span>L</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="6" value={6} />
-                    <span>XL</span>
-                  </div>
-                  <div className="flex items-center gap-3 text-[0.8rem]">
-                    <input type="checkbox" id="7" value={7} />
-                    <span>XXL</span>
+                  <div className="flex flex-col gap-3 text-[0.8rem]">
+                    {error 
+                      ? "something went wrong!" 
+                      : loading 
+                      ? "loading"
+                      :data?.map((item)=> (
+                        <div key={item.id} className="flex gap-3">
+                          <input type="checkbox" id={item.id} value={item.id} className="cursor-pointer" />
+                          <label htmlFor={item.id}>{item.attributes.title}</label>
+                        </div>
+                      ))
+                    }
                   </div>
                 </div>
               </div>
-
               <div className="flex flex-col gap-5">
                 <h2 className="text-[0.9rem] font-bold">Product Status</h2>
                 <div className="flex flex-col gap-3">
