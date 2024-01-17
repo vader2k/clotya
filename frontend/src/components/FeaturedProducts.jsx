@@ -38,7 +38,7 @@ const FeaturedProducts = () => {
   useEffect(()=> {
     const fetchData = async () => {
       try {
-        const res = await axios.get(import.meta.env.VITE_API_URL + '/products?populate=*', {
+        const res = await axios.get(import.meta.env.VITE_API_URL + '/products?populate=*&[filters][type][$eq]=Featured', {
           headers: {
             Authorization : `Bearer ${import.meta.env.VITE_API_TOKEN}`
           }
