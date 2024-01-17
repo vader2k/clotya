@@ -19,7 +19,7 @@ const Products = () => {
     ]
   
     const [maxValue, setMaxValue] = useState(1300)
-    const [selectedSubCategory, setSelectedSubCategory] = useState([])
+    const [selectedSize, setSelectedSize] = useState([])
     const {data, loading, error} = useFetch(`/sizes?[filters][products][id][$eq]=${catId}`)
 
     console.log(data)
@@ -29,7 +29,7 @@ const Products = () => {
       const isChecked = e.target.checked
       // if the checkbox is checked, the selected sub category state is updated with the value of the checkbox
       // if the checkbox is unchecked, the selected sub category state is updated with the value of the checkbox
-      setSelectedSubCategory(isChecked ? [...selectedSubCategory, value] : selectedSubCategory.filter((item) => item !== value))
+      setSelectedSize(isChecked ? [...selectedSize, value] : selectedSize.filter((item) => item !== value))
     }
 
 
@@ -88,7 +88,7 @@ const Products = () => {
                       ? "loading"
                       :data?.map((item)=> (
                         <div key={item.id} className="flex gap-3">
-                          <input type="checkbox" id={item.id} value={item.id} className="cursor-pointer" />
+                          <input type="checkbox" id={item.id} value={item.id} className="cursor-pointer" onChange={handleChange}/>
                           <label htmlFor={item.id}>{item.attributes.title}</label>
                         </div>
                       ))
@@ -122,7 +122,7 @@ const Products = () => {
             </div>
 
             <div className="py-10">
-              <List catId={catId} maxValue={maxValue} SubCats={selectedSubCategory}/>
+              <List catId={catId} maxValue={maxValue} Size={selectedSize}/>
             </div>
           </div>
         </div>
