@@ -810,41 +810,6 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
   };
 }
 
-export interface ApiFeaturedProductFeaturedProduct
-  extends Schema.CollectionType {
-  collectionName: 'featured_products';
-  info: {
-    singularName: 'featured-product';
-    pluralName: 'featured-products';
-    displayName: 'FeaturedProducts';
-  };
-  options: {
-    draftAndPublish: true;
-  };
-  attributes: {
-    products: Attribute.Relation<
-      'api::featured-product.featured-product',
-      'manyToMany',
-      'api::product.product'
-    >;
-    createdAt: Attribute.DateTime;
-    updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
-    createdBy: Attribute.Relation<
-      'api::featured-product.featured-product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-    updatedBy: Attribute.Relation<
-      'api::featured-product.featured-product',
-      'oneToOne',
-      'admin::user'
-    > &
-      Attribute.Private;
-  };
-}
-
 export interface ApiProductProduct extends Schema.CollectionType {
   collectionName: 'products';
   info: {
@@ -891,12 +856,7 @@ export interface ApiProductProduct extends Schema.CollectionType {
         'bestSellerBottom'
       ]
     >;
-    tag: Attribute.String;
-    featured_products: Attribute.Relation<
-      'api::product.product',
-      'manyToMany',
-      'api::featured-product.featured-product'
-    >;
+    tag: Attribute.Boolean & Attribute.DefaultTo<false>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -975,7 +935,6 @@ declare module '@strapi/types' {
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'plugin::i18n.locale': PluginI18NLocale;
       'api::category.category': ApiCategoryCategory;
-      'api::featured-product.featured-product': ApiFeaturedProductFeaturedProduct;
       'api::product.product': ApiProductProduct;
       'api::sub-category.sub-category': ApiSubCategorySubCategory;
     }

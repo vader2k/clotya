@@ -100,12 +100,12 @@ const FeaturedProducts = () => {
                       <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.attributes.review}</span></div>
                       <p className="text-[0.8rem] capitalize">{item?.attributes.title}</p>
                       <div className="flex items-center gap-5 text-[0.9rem]">
-                        <span className="text-gray-400 line-through">{item?.attributes.oldPrice || item?.attributes.price+20}</span>
-                        <span>{item?.attributes.price}</span>
+                        <span className="text-gray-400 line-through">${item?.attributes.oldPrice || item?.attributes.price+20}</span>
+                        <span>${item?.attributes.price}</span>
                       </div>
                     </div>
-                    <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-                      {item.attributes.tag}
+                    <div>
+                      {item?.attributes.tag && <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">26%</div>}
                     </div>
                   </div> 
                 ))}
