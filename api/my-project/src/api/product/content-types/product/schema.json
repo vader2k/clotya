@@ -122,6 +122,12 @@
     "tag": {
       "type": "boolean",
       "default": false
+    },
+    "sizes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::size.size",
+      "mappedBy": "products"
     }
   }
 }
