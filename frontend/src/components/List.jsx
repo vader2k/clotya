@@ -1,10 +1,11 @@
 import useFetch from '../hooks/useFetch';
 import Card from '../ui/Card';
 
-const List = ({ catId, maxValue, selectedSize }) => {
+const List = ({ catId, maxValue, size }) => {
   
-const {data, loading, error} = useFetch(`/products?populate=*&[filters][categories][id]=${catId}
-)}`)
+const {data, loading, error} = useFetch(`/products?populate=*&[filters][categories][id]=${catId}${size.map(
+  (item)=> `&[filters][sizes][id][$eq]=${item}`
+  )}&[filters][price][$lte]=${maxValue}`)
 
 console.log(data)
 

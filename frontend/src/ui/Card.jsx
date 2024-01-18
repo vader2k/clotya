@@ -39,7 +39,8 @@ const Card = ({item}) => {
             <div className="img-holder">
               <img
                 className="object-cover w-[200px] h-[300px] cursor-pointer"
-                src={item[`img${activeImageIndices[item.id] || 1}`]}
+                // src={item[`img${activeImageIndices[item.id] || 1}`]}
+                src={import.meta.env.VITE_UPLOAD_URL + item?.attributes[`img${activeImageIndices[item.id] || 1}`].data?.attributes?.url}
                 alt={`product-${item.id}`}
               />
               {/* side functions */}
@@ -51,15 +52,15 @@ const Card = ({item}) => {
               </div>
             </div>
             <div className="bg-white flex flex-col gap- my-3">
-              <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.review}</span></div>
-              <p className="text-[0.8rem] capitalize">{item?.name}</p>
+              <div className="flex  items-center gap-3"><FaStar className="text-[0.8rem] text-yellow-400"/> <span className="text-[0.8rem] font-medium">{item?.attributes.review}</span></div>
+              <p className="text-[0.8rem] capitalize">{item?.attributes.title}</p>
               <div className="flex items-center gap-5 text-[0.9rem]">
-                <span className="text-gray-400 line-through">{item?.oldPrice}</span>
-                <span>{item?.price}</span>
+                <span className="text-gray-400 line-through">${item?.attributes.oldPrice || item.attributes.price + 20}</span>
+                <span>${item?.attributes.price}</span>
               </div>
             </div>
-            <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">
-              {item.tag}
+            <div>
+              {item?.attributes.tag && <div className="absolute top-4 left-2  px-2 py-1 text-[0.7rem] bg-white text-green-500 font-medium">26%</div>}
             </div>
           </div> 
       </div>
