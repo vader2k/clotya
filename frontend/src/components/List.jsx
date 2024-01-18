@@ -1,5 +1,5 @@
 import Card from '../ui/Card';
-import { cardItems } from '../constants';
+
 
 const List = ({ catId, maxValue, selectedSize }) => {
   return (

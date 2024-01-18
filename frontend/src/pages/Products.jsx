@@ -22,7 +22,6 @@ const Products = () => {
     const [selectedSize, setSelectedSize] = useState([])
     const {data, loading, error} = useFetch(`/sizes?[filters][products][id][$eq]=${catId}`)
 
-    console.log(data)
     // created an onChange function to handle the change event of the checkbox. it takes the event as an argument and updates the selected sub category state.
     const handleChange = (e) => {
       const value = e.target.value
