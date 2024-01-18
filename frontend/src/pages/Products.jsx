@@ -26,8 +26,8 @@ const Products = () => {
     const handleChange = (e) => {
       const value = e.target.value
       const isChecked = e.target.checked
-      // if the checkbox is checked, the selected sub category state is updated with the value of the checkbox
-      // if the checkbox is unchecked, the selected sub category state is updated with the value of the checkbox
+      // if the checkbox is checked, the selected size state is updated with the value of the checkbox
+      // if the checkbox is unchecked, the selected size state is updated with the value of the checkbox
       setSelectedSize(isChecked ? [...selectedSize, value] : selectedSize.filter((item) => item !== value))
     }
 

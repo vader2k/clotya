@@ -3,8 +3,8 @@ import { CiCreditCard1 } from "react-icons/ci";
 import { SlCallOut } from "react-icons/sl";
 import { women, men, accessory, shoe } from "../assets";
 import { Link } from "react-router-dom";
-
 const Categories = () => {
+
   return (
     // services
     <div className="font-poppins">
@@ -44,7 +44,7 @@ const Categories = () => {
       
       <div className="flex flex-col md:flex-row gap-5  items-center justify-between xs:gap-8 py-10 w-full">
         <div className="relative cursor-pointer w-full">
-        <Link to='/products/1'>
+        <Link to='/products/2'>
           <img src={women} className="w-full" alt="women banner" />
             <div className="absolute top-[8%] xxs:top-[5%] left-[8%] flex flex-col gap-4 xxs:gap-2">
               <span className="text-[0.8rem]">54 products</span>
@@ -84,7 +84,7 @@ const Categories = () => {
 
           <div className="flex gap-8 w-full">
             <div className="relative w-full cursor-pointer">
-              <Link to='/products/1'>
+              <Link to='/products/3'>
                 <img src={shoe} alt="shoe banner" className=" object-contain w-full"/>
                 <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                   <span className="text-[0.8rem]">1 product</span>
@@ -93,7 +93,7 @@ const Categories = () => {
               </Link>
             </div>
             <div className="relative w-full cursor-pointer">
-              <Link to="/products/1">
+              <Link to="/products/4">
                 <img src={accessory} alt="accessories banner" className="object-contain w-full"/>
                 <div className="absolute top-[15%] left-[8%] flex flex-col gap-4">
                   <span className="text-[0.8rem]">3 products</span>
