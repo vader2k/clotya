@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from '../style.js'
-import { arizona1, arizona2, arizona3, arizona4 } from '../assets/index.js'
 import { FaStar } from "react-icons/fa";
 import { TbWorldHeart } from "react-icons/tb";
 import { IoMdHeartEmpty } from "react-icons/io";
@@ -8,19 +7,17 @@ import { CiShare1 } from "react-icons/ci";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { RelatedProducts } from '../components/index.js'
 import useFetch from '../hooks/useFetch.js';
-import { Params, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 
 const Details = () => {
 
   const id = useParams().id
 
   const {data, loading, error} = useFetch(`/products/${id}?populate=*`)
-  console.log(data
-    )
+  console.log(data)
   const [ colors, setColors ] = useState(null)
   const [ sizes, setSizes] =  useState(null)
   const [ quantity, setQuantity ] = useState(1)
-  const [ activeImage, setActiveImage ] = useState(0)
   const [ activeTab, setActiveTab ] = useState("description")
 
   // star icon
@@ -51,19 +48,19 @@ const Details = () => {
               <div className='flex-1'>
                 <div className='flex flex-col gap-3 '>
                   <div className='relative w-fit'>
-                    <img className='h-[650px]' src={data?.attributes?.img1?.attributes?.url[activeImage]} alt="arizona1" />
+                  <img className='h-[650px]' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1.data?.attributes?.url} alt="" />
                     <div className='absolute top-[50%] text-[2rem] text-gray-500'>
-                      <IoIosArrowBack className='cursor-pointer' onClick={()=>setActiveImage( activeImage === 0 ? 3 : activeImage - 1)}/>
+                      <IoIosArrowBack className='cursor-pointer'/>
                     </div>
                     <div className='absolute top-[50%] right-0 text-[2rem] text-gray-500'>
-                      <IoIosArrowForward className='cursor-pointer' onClick={()=> setActiveImage( activeImage === 3 ? 0 : activeImage + 1)}/>
+                      <IoIosArrowForward className='cursor-pointer'/>
                     </div>
                   </div>
                   <div className='flex items-center gap-3'>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={data?.attributes?.img1?.attributes?.url} alt="arizona1" onClick={()=>setActiveImage(0)}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={data?.attributes?.img2?.attributes?.url} alt="arizona2" onClick={()=>setActiveImage(1)}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={data?.attributes?.img3?.attributes?.url} alt="arizona3" onClick={()=>setActiveImage(2)}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={data?.attributes?.img4?.attributes?.url} alt="arizona4" onClick={()=>setActiveImage(3)}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt="arizona1" />
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="arizona2" />
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt="arizona3" />
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt="arizona4" />
                   </div>
                 </div>
               </div>
