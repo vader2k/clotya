@@ -19,7 +19,13 @@ const Details = () => {
   const [ sizes, setSizes] =  useState(null)
   const [ quantity, setQuantity ] = useState(1)
   const [ activeTab, setActiveTab ] = useState("description")
+  // created a useState to handle active picture gallery
+  const [picture, setPicture] = useState('img1')
 
+  // function to set the image onClick
+  const handlePictureClick = (pictureType) => {
+    setPicture(pictureType)
+  }
   // star icon
   const noOfStars = 5;
 
@@ -48,7 +54,7 @@ const Details = () => {
               <div className='flex-1'>
                 <div className='flex flex-col gap-3 '>
                   <div className='relative w-fit'>
-                  <img className='h-[650px]' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1.data?.attributes?.url} alt="" />
+                  <img className='h-[650px]' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt="" />
                     <div className='absolute top-[50%] text-[2rem] text-gray-500'>
                       <IoIosArrowBack className='cursor-pointer'/>
                     </div>
@@ -57,30 +63,30 @@ const Details = () => {
                     </div>
                   </div>
                   <div className='flex items-center gap-3'>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt="arizona1" />
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="arizona2" />
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt="arizona3" />
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt="arizona4" />
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt="arizona1" onClick={()=> handlePictureClick('img1')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="arizona2" onClick={()=> handlePictureClick('img2')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt="arizona3" onClick={()=> handlePictureClick('img3')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt="arizona4" onClick={()=> handlePictureClick('img4')}/>
                   </div>
                 </div>
               </div>
 
               <div className='flex flex-col gap-2 flex-1'>
-                <h1 className='text-[1.5rem] font-medium max-w-[400px]'>Basic Colred Sweatpants With Elastic Hems</h1>
+                <h1 className='text-[1.5rem] font-medium max-w-[400px]'>{data?.attributes?.title}</h1>
                 <div className='flex items-center gap-3 text-[0.8rem] font-medium'>
                   <div className='flex gap-1'>
                     {[...Array(noOfStars)].map((_,index) => (
                       <FaStar key={index} className='text-yellow-400'/>
                     ))}
                   </div>
-                  <p>2 reviews</p>
+                  <p>{data?.attributes?.review}</p>
                 </div>
 
                 <div className='flex items-center gap-4 text-[1.3rem] font-normal'>
-                  <span className='line-through text-gray-300'>$25.90</span>
-                  <span>$19.90</span>
+                  <span className='line-through text-gray-300'>${data?.attributes?.oldPrice || data?.attributes?.price + 20}</span>
+                  <span>${data?.attributes?.price}</span>
                 </div>
-                <p className='text-[0.8rem] leading-[1.5rem] max-w-[500px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <p className='text-[0.8rem] leading-[1.5rem] max-w-[500px]'>{data?.attributes?.desc}</p>
 
                 <div className='flex flex-col gap-3'>
                   <span className='text-[0.85rem]'>Color</span>
@@ -104,8 +110,8 @@ const Details = () => {
                           <button className={`${item} h-[40px] w-[80px] p-2 border border-gray-200 ${sizes === item ? 'bg-red-500 text-white' : ""}`} 
                           onClick={()=> setSizes(item)}>{item}</button>
                         </div>
-                      ))
-                    }
+                      ))  
+                    }               
                   </div>
                 </div>
 
