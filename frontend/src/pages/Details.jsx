@@ -26,6 +26,21 @@ const Details = () => {
   const handlePictureClick = (pictureType) => {
     setPicture(pictureType)
   }
+
+  // function to handle next picture
+const handleNextPicture = () => {
+  const pictureIndex = parseInt(picture.charAt(picture.length - 1), 10);
+  const nextIndex = pictureIndex % 4 + 1;
+  setPicture(`img${nextIndex}`);
+}
+
+// function to handle previous picture
+const handlePrevPicture = () => {
+  const pictureIndex = parseInt(picture.charAt(picture.length - 1), 10);
+  const prevIndex = (pictureIndex - 2 + 4) % 4 + 1;
+  setPicture(`img${prevIndex}`);
+}
+
   // star icon
   const noOfStars = 5;
 
@@ -56,10 +71,10 @@ const Details = () => {
                   <div className='relative w-fit'>
                   <img className='h-[650px]' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt="" />
                     <div className='absolute top-[50%] text-[2rem] text-gray-500'>
-                      <IoIosArrowBack className='cursor-pointer'/>
+                      <IoIosArrowBack className='cursor-pointer' onClick={handlePrevPicture}/>
                     </div>
                     <div className='absolute top-[50%] right-0 text-[2rem] text-gray-500'>
-                      <IoIosArrowForward className='cursor-pointer'/>
+                      <IoIosArrowForward className='cursor-pointer' onClick={handleNextPicture}/>
                     </div>
                   </div>
                   <div className='flex items-center gap-3'>
