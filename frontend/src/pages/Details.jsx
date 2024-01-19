@@ -69,7 +69,7 @@ const handlePrevPicture = () => {
               <div className='flex-1'>
                 <div className='flex flex-col gap-3 '>
                   <div className='relative w-fit'>
-                  <img className='h-[650px]' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt="" />
+                  <img className='h-[650px] cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt="" />
                     <div className='absolute top-[50%] text-[2rem] text-gray-500'>
                       <IoIosArrowBack className='cursor-pointer' onClick={handlePrevPicture}/>
                     </div>
@@ -110,7 +110,7 @@ const handlePrevPicture = () => {
                       colorsBg.map((color, index) => (
                         <div key={index} 
                           className={`${color} w-[30px] h-[30px] rounded-full cursor-pointer ${
-                          colors === color ? 'border-[2px] border-red-500 p-2 w-[25px] h-[25px]' : ''
+                          colors === color ? 'border-[2px] border-yellow-500 p-2 w-[10px] h-[10px]' : ''
                         }`} onClick={()=>setColors(color)}></div>
                         ))
                     }
