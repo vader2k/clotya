@@ -2,7 +2,8 @@ import { RiDeleteBin5Line } from "react-icons/ri";
 import { useSelector } from 'react-redux'
 import { removeItem, resetCart } from "../Redux/cartReducer";
 import { useDispatch } from "react-redux";
-
+import {loadStripe} from '@stripe/stripe-js';
+import { makeRequest } from '../makeRequest'
 const Cart = () => {
 
   const dispatch = useDispatch()
@@ -13,6 +14,20 @@ const Cart = () => {
     let total = 0;
     products.forEach((item)=> (total += item.quantity * item.price))
     return total.toFixed(2)
+  }
+
+  const stripePromise = loadStripe('pk_test_51OSjQxKW4OXIG6CaafP2wkL3XIFOO2dvdSLzWENhacIc030OTYfktlGNk5eZ4qW9QfvQl2mRgoTiWXibnqV7gunW00vmtBoSFn');
+  const handlePayment = async() => {
+    try {
+      const stripe = await stripePromise
+      const res = await makeRequest.post("/orders", products)
+
+      await stripe.redirectToCheckout({
+        sessionId:res.data.stripeSession.id,
+      })
+    } catch (error) {
+      console.log(error)
+    }
   }
   return (
     <div className='absolute right-[100px] top-[80px] z-50 bg-white border rounded-md'>
@@ -49,7 +64,7 @@ const Cart = () => {
 
         <div className='flex flex-col gap-2 text-[0.85rem] text-white'>
           <button className='bg-gray-500 py-3'>View cart</button>
-          <button className='bg-red-500 py-3'>Checkout</button>
+          <button className='bg-red-500 py-3' onClick={handlePayment}>Checkout</button>
         </div>
       </div>
     </div>
