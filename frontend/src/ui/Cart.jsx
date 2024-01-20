@@ -7,6 +7,11 @@ const Cart = () => {
 
   const products = useSelector(state=> state.cart.products)
 
+  const totalPrice = () => {
+    let total = 0;
+    products.forEach((item)=> (total += item.quantity * item.price))
+    return total.toFixed(2)
+  }
   return (
     <div className='absolute right-[100px] top-[80px] z-50 bg-white border rounded-md'>
       <div className='flex flex-col gap-5 px-3 py-5'>
@@ -22,7 +27,7 @@ const Cart = () => {
                   <span>${item.price}</span>
                 </div>
                 <div className='flex gap-3 text-[0.85rem]'>
-                  <div>Color: {item.color}</div> <div>Size: {item.size}</div>
+                  <div>Color: {item.colors}</div> <div>Size: {item.sizes}</div>
                 </div>
               </div>
               <div>
@@ -34,7 +39,7 @@ const Cart = () => {
         <div className='flex flex-col gap-2'>
           <div className='flex items-start justify-between'>
             <span className='text-gray-300 font-medium text-[0.9rem]'>Subtotal:</span>
-            <span className='text-[1rem] font-bold text-red-500'>$19.90</span>
+            <span className='text-[1rem] font-bold text-red-500'>${totalPrice()}</span>
           </div>
           <p className='text-[0.85rem]'>You have {products.length} item in your cart</p>
           <p className='text-[0.75rem] text-red-500 cursor-pointer font-bold'>RESET</p>
