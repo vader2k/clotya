@@ -18,7 +18,7 @@ const Cart = () => {
         {
           products.map(item=> (
             <div key={item.id} className='flex items-start gap-5 pb-5 border-b border-gray-300'>
-              <img className='h-[80px] object-contain' src={import.meta.env.VITE_UPLOAD_URL + item.img} alt=""/>
+              <img className='h-[80px] object-contain' src={import.meta.env.VITE_UPLOAD_URL + item.img} alt={item.title}/>
               <div className='flex flex-col gap-3'>
                 <p className='capitalize font-bold max-w-[200px] text-[0.9rem]'>{item.title}</p>
                 <div className='flex gap-2 text-[0.85rem]'>

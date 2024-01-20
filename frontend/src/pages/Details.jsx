@@ -74,7 +74,7 @@ const handlePrevPicture = () => {
               <div className='flex-1'>
                 <div className='flex flex-col gap-3 '>
                   <div className='relative w-fit'>
-                  <img className='h-[650px] cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt="" />
+                  <img className='h-[650px] cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.[picture]?.data?.attributes?.url} alt={data?.attributes?.title} />
                     <div className='absolute top-[50%] text-[2rem] text-gray-500'>
                       <IoIosArrowBack className='cursor-pointer' onClick={handlePrevPicture}/>
                     </div>
@@ -83,10 +83,10 @@ const handlePrevPicture = () => {
                     </div>
                   </div>
                   <div className='flex items-center gap-3'>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt="arizona1" onClick={()=> handlePictureClick('img1')}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="arizona2" onClick={()=> handlePictureClick('img2')}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt="arizona3" onClick={()=> handlePictureClick('img3')}/>
-                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt="arizona4" onClick={()=> handlePictureClick('img4')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img1?.data?.attributes?.url} alt={data?.attributes?.title} onClick={()=> handlePictureClick('img1')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt={data?.attributes?.title} onClick={()=> handlePictureClick('img2')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img3?.data?.attributes?.url} alt={data?.attributes?.title} onClick={()=> handlePictureClick('img3')}/>
+                    <img className='w-[80px] h-[80px] object-cover cursor-pointer' src={import.meta.env.VITE_UPLOAD_URL + data?.attributes?.img4?.data?.attributes?.url} alt={data?.attributes?.title} onClick={()=> handlePictureClick('img4')}/>
                   </div>
                 </div>
               </div>
