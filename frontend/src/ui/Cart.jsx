@@ -1,4 +1,3 @@
-import cloth from '../assets/arizona1.jpeg'
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { useSelector } from 'react-redux'
 import { removeItem, resetCart } from "../Redux/cartReducer";
@@ -6,31 +5,24 @@ import { useDispatch } from "react-redux";
 
 const Cart = () => {
 
-  const data = [
-    {
-      id: 1,
-      img: cloth,
-      title: "Basic Colored Sweatpants With Elastic Hems",
-      price: 19.90
-    }
-  ]
+  const products = useSelector(state=> state.cart.products)
 
   return (
     <div className='absolute right-[100px] top-[80px] z-50 bg-white border rounded-md'>
       <div className='flex flex-col gap-5 px-3 py-5'>
         {
-          data.map(item=> (
+          products.map(item=> (
             <div key={item.id} className='flex items-start gap-5 pb-5 border-b border-gray-300'>
               <img className='h-[80px] object-contain' src={item.img} alt=""/>
               <div className='flex flex-col gap-3'>
                 <p className='capitalize font-bold max-w-[200px] text-[0.9rem]'>{item.title}</p>
                 <div className='flex gap-2 text-[0.85rem]'>
-                  <span>1</span>
+                  <span>{item.quantity}</span>
                   <span>x</span>
                   <span>${item.price}</span>
                 </div>
                 <div className='flex gap-3 text-[0.85rem]'>
-                  <div>Color: Black</div> <div>Size: M</div>
+                  <div>Color: {item.color}</div> <div>Size: {item.size}</div>
                 </div>
               </div>
               <div>
@@ -44,7 +36,7 @@ const Cart = () => {
             <span className='text-gray-300 font-medium text-[0.9rem]'>Subtotal:</span>
             <span className='text-[1rem] font-bold text-red-500'>$19.90</span>
           </div>
-          <p className='text-[0.85rem]'>You have 1 item in your cart</p>
+          <p className='text-[0.85rem]'>You have {products.length} item in your cart</p>
           <p className='text-[0.75rem] text-red-500 cursor-pointer font-bold'>RESET</p>
         </div> 
 
