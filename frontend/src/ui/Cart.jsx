@@ -5,6 +5,8 @@ import { useDispatch } from "react-redux";
 
 const Cart = () => {
 
+  const dispatch = useDispatch()
+
   const products = useSelector(state=> state.cart.products)
 
   const totalPrice = () => {
@@ -31,7 +33,7 @@ const Cart = () => {
                 </div>
               </div>
               <div>
-                <RiDeleteBin5Line className='text-red-500 cursor-pointer'/>
+                <RiDeleteBin5Line className='text-red-500 cursor-pointer' onClick={()=>dispatch(removeItem)}/>
               </div>
             </div>
           ))
@@ -42,7 +44,7 @@ const Cart = () => {
             <span className='text-[1rem] font-bold text-red-500'>${totalPrice()}</span>
           </div>
           <p className='text-[0.85rem]'>You have {products.length} item in your cart</p>
-          <p className='text-[0.75rem] text-red-500 cursor-pointer font-bold'>RESET</p>
+          <p className='text-[0.75rem] text-red-500 cursor-pointer font-bold' onClick={()=> dispatch(resetCart)}>RESET</p>
         </div> 
 
         <div className='flex flex-col gap-2 text-[0.85rem] text-white'>
