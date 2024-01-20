@@ -8,6 +8,9 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { RelatedProducts } from '../components/index.js'
 import useFetch from '../hooks/useFetch.js';
 import { useParams } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
+import { addToCart } from '../Redux/cartReducer.js';
+
 
 const Details = () => {
 
@@ -58,6 +61,8 @@ const handlePrevPicture = () => {
 
   // sizes options
   const sizeContent = [ "XXS", "XS", "S", "M", "L", "XL", "XXL" ]
+
+  const dispatch = useDispatch()
 
   return (
     <div className={`${styles.boxWidth} ${styles.paddingY}`}>
@@ -137,7 +142,15 @@ const handlePrevPicture = () => {
                     <button className='text-[1.5rem] font-medium cursor-pointer' onClick={()=>setQuantity(quantity + 1)}>+</button>
                   </div>
                   <div>
-                    <button className='text-center text-white bg-gray-400 h-[50px] w-[300px] text-[0.85rem]'>Add to cart</button>
+                    <button className='text-center text-white bg-gray-400 h-[50px] w-[300px] text-[0.85rem] hover:bg-blue-500' onClick={()=> dispatch(addToCart({
+                      id: data.id,
+                      title: data.attributes.title,
+                      price: data.attributes.price,
+                      img: data.attributes.img1.data.attributes.url,
+                      quantity,
+                      colors,
+                      sizes
+                    }))}>Add to cart</button>
                   </div>
                 </div>
                 {/* size guide, wishlist, share */}
