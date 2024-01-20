@@ -5,10 +5,15 @@ import { BsBag } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 import { useState } from "react";
 import Cart from "../ui/Cart";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
+
+  const products = useSelector(state=> state.cart.products)
  
+  // state to open and close sidebar and modal
   const [isOpen, setIsOpen] = useState(false)
+  // state to open and close cart onClick
   const [ isCartOpen, setIsCartOpen ] = useState(false)
 
   return (
@@ -32,7 +37,7 @@ const Navbar = () => {
             </Link>
           </span>
           <span className="font-semibold hidden md:block">
-            <Link to="/women">
+            <Link to="/products/2">
               WOMEN
             </Link>
           </span>
@@ -54,7 +59,7 @@ const Navbar = () => {
           <p className="text-[0.9rem]">$0.00</p>
           <div className="relative cursor-pointer">
             <BsBag onClick={()=> setIsCartOpen(!isCartOpen)}/>
-            <p className="absolute px-1 bg-red-500 rounded-full text-white text-[0.5rem] top-[-3px] right-[-2px]">0</p>
+            <p className="absolute px-1 bg-red-500 rounded-full text-white text-[0.5rem] top-[-3px] right-[-2px]">{products.length}</p>
           </div>
         </div>
       </div>
@@ -92,7 +97,6 @@ const Navbar = () => {
           <div className="text-[0.8rem] flex flex-col gap-5 py-10">
             <h1 className="text-[0.7rem] text-gray-600">categories</h1>
             <span className="cursor-pointer">Men</span>
-            <span className="cursor-pointer">Women</span>
             <span className="cursor-pointer">Women</span>
             <span className="cursor-pointer">Kids</span>
             <span className="cursor-pointer">Baby</span>
