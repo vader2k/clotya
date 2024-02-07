@@ -1,7 +1,6 @@
 import { RiDeleteBin5Line } from "react-icons/ri";
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { removeItem, resetCart } from "../Redux/cartReducer";
-import { useDispatch } from "react-redux";
 import {loadStripe} from '@stripe/stripe-js';
 import { makeRequest } from '../makeRequest'
 const Cart = () => {
