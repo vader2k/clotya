@@ -26,7 +26,7 @@ const Cart = () => {
       })
     } catch (error) {
       console.log(error)
-    }
+    } 
   }
   return (
     <div className='absolute right-[100px] top-[80px] z-50 bg-white border rounded-md'>
